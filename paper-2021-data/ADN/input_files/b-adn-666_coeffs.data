@@ -1,0 +1,2024 @@
+Created by: 2 component lmpfep spherical, Feb 2016
+
+      56  atom types
+      62  bond types
+     102  angle types
+     148  dihedral types
+      34  improper types
+
+
+ Masses
+
+       1     12.011
+       2     12.011
+       3      1.008
+       4     12.011
+       5      1.008
+       6     12.011
+       7     12.011
+       8     12.011
+       9     12.011
+      10     12.011
+      11     12.011
+      12     12.011
+      13     12.011
+      14     12.011
+      15     12.011
+      16     12.011
+      17     12.011
+      18     12.011
+      19      1.008
+      20     12.011
+      21     12.011
+      22      1.008
+      23     12.011
+      24      1.008
+      25     12.011
+      26      1.008
+      27      1.008
+      28      1.008
+      29      1.008
+      30      1.008
+      31     12.011
+      32     12.011
+      33      1.008
+      34     12.011
+      35      1.008
+      36     12.011
+      37     12.011
+      38      1.008
+      39     12.011
+      40      1.008
+      41     12.011
+      42      1.008
+      43     12.011
+      44     12.011
+      45     12.011
+      46     12.011
+      47     12.011
+      48     12.011
+      49      1.008
+      50      1.008
+      51      1.008
+      52      1.008
+      53     12.011
+      54      1.008
+      55      1.008
+      56      1.008
+
+ Bond Coeffs
+
+     1   b-adn-666_excl.tbl exc_1_2 exc_1_2 
+     2   b-adn-666_excl.tbl exc_1_53 exc_1_53 
+     3   b-adn-666_excl.tbl exc_1_55 exc_1_55 
+     4   b-adn-666_excl.tbl exc_2_3 exc_2_3 
+     5   b-adn-666_excl.tbl exc_2_4 exc_2_4 
+     6   b-adn-666_excl.tbl exc_4_5 exc_4_5 
+     7   b-adn-666_excl.tbl exc_4_6 exc_4_6 
+     8   b-adn-666_excl.tbl exc_6_7 exc_6_7 
+     9   b-adn-666_excl.tbl exc_6_15 exc_6_15 
+    10   b-adn-666_excl.tbl exc_7_8 exc_7_8 
+    11   b-adn-666_excl.tbl exc_7_53 exc_7_53 
+    12   b-adn-666_excl.tbl exc_8_9 exc_8_9 
+    13   b-adn-666_excl.tbl exc_8_36 exc_8_36 
+    14   b-adn-666_excl.tbl exc_9_10 exc_9_10 
+    15   b-adn-666_excl.tbl exc_9_34 exc_9_34 
+    16   b-adn-666_excl.tbl exc_10_11 exc_10_11 
+    17   b-adn-666_excl.tbl exc_10_15 exc_10_15 
+    18   b-adn-666_excl.tbl exc_11_30 exc_11_30 
+    19   b-adn-666_excl.tbl exc_11_31 exc_11_31 
+    20   b-adn-666_excl.tbl exc_12_13 exc_12_13 
+    21   b-adn-666_excl.tbl exc_12_25 exc_12_25 
+    22   b-adn-666_excl.tbl exc_12_29 exc_12_29 
+    23   b-adn-666_excl.tbl exc_13_14 exc_13_14 
+    24   b-adn-666_excl.tbl exc_13_20 exc_13_20 
+    25   b-adn-666_excl.tbl exc_14_15 exc_14_15 
+    26   b-adn-666_excl.tbl exc_14_16 exc_14_16 
+    27   b-adn-666_excl.tbl exc_16_17 exc_16_17 
+    28   b-adn-666_excl.tbl exc_16_28 exc_16_28 
+    29   b-adn-666_excl.tbl exc_17_18 exc_17_18 
+    30   b-adn-666_excl.tbl exc_17_27 exc_17_27 
+    31   b-adn-666_excl.tbl exc_18_19 exc_18_19 
+    32   b-adn-666_excl.tbl exc_18_20 exc_18_20 
+    33   b-adn-666_excl.tbl exc_20_21 exc_20_21 
+    34   b-adn-666_excl.tbl exc_21_22 exc_21_22 
+    35   b-adn-666_excl.tbl exc_21_23 exc_21_23 
+    36   b-adn-666_excl.tbl exc_23_24 exc_23_24 
+    37   b-adn-666_excl.tbl exc_23_25 exc_23_25 
+    38   b-adn-666_excl.tbl exc_25_26 exc_25_26 
+    39   b-adn-666_excl.tbl exc_31_32 exc_31_32 
+    40   b-adn-666_excl.tbl exc_31_56 exc_31_56 
+    41   b-adn-666_excl.tbl exc_32_33 exc_32_33 
+    42   b-adn-666_excl.tbl exc_32_34 exc_32_34 
+    43   b-adn-666_excl.tbl exc_34_35 exc_34_35 
+    44   b-adn-666_excl.tbl exc_36_37 exc_36_37 
+    45   b-adn-666_excl.tbl exc_36_44 exc_36_44 
+    46   b-adn-666_excl.tbl exc_37_38 exc_37_38 
+    47   b-adn-666_excl.tbl exc_37_39 exc_37_39 
+    48   b-adn-666_excl.tbl exc_39_40 exc_39_40 
+    49   b-adn-666_excl.tbl exc_39_41 exc_39_41 
+    50   b-adn-666_excl.tbl exc_41_42 exc_41_42 
+    51   b-adn-666_excl.tbl exc_41_43 exc_41_43 
+    52   b-adn-666_excl.tbl exc_43_44 exc_43_44 
+    53   b-adn-666_excl.tbl exc_43_48 exc_43_48 
+    54   b-adn-666_excl.tbl exc_44_45 exc_44_45 
+    55   b-adn-666_excl.tbl exc_45_46 exc_45_46 
+    56   b-adn-666_excl.tbl exc_45_52 exc_45_52 
+    57   b-adn-666_excl.tbl exc_46_47 exc_46_47 
+    58   b-adn-666_excl.tbl exc_46_51 exc_46_51 
+    59   b-adn-666_excl.tbl exc_47_48 exc_47_48 
+    60   b-adn-666_excl.tbl exc_47_50 exc_47_50 
+    61   b-adn-666_excl.tbl exc_48_49 exc_48_49 
+    62   b-adn-666_excl.tbl exc_53_54 exc_53_54 
+
+ Angle Coeffs
+
+     1   b-adn-666_excl.tbl ang_1_53_55 ang_1_53_55
+     2   b-adn-666_excl.tbl ang_1_2_55 ang_1_2_55
+     3   b-adn-666_excl.tbl ang_1_2_53 ang_1_2_53
+     4   b-adn-666_excl.tbl ang_2_4_3 ang_2_4_3
+     5   b-adn-666_excl.tbl ang_2_1_3 ang_2_1_3
+     6   b-adn-666_excl.tbl ang_2_1_4 ang_2_1_4
+     7   b-adn-666_excl.tbl ang_4_2_5 ang_4_2_5
+     8   b-adn-666_excl.tbl ang_4_6_5 ang_4_6_5
+     9   b-adn-666_excl.tbl ang_4_6_2 ang_4_6_2
+    10   b-adn-666_excl.tbl ang_6_4_15 ang_6_4_15
+    11   b-adn-666_excl.tbl ang_6_7_15 ang_6_7_15
+    12   b-adn-666_excl.tbl ang_6_7_4 ang_6_7_4
+    13   b-adn-666_excl.tbl ang_7_53_8 ang_7_53_8
+    14   b-adn-666_excl.tbl ang_7_6_8 ang_7_6_8
+    15   b-adn-666_excl.tbl ang_7_6_53 ang_7_6_53
+    16   b-adn-666_excl.tbl ang_8_9_7 ang_8_9_7
+    17   b-adn-666_excl.tbl ang_8_36_7 ang_8_36_7
+    18   b-adn-666_excl.tbl ang_8_36_9 ang_8_36_9
+    19   b-adn-666_excl.tbl ang_9_34_8 ang_9_34_8
+    20   b-adn-666_excl.tbl ang_9_10_8 ang_9_10_8
+    21   b-adn-666_excl.tbl ang_9_10_34 ang_9_10_34
+    22   b-adn-666_excl.tbl ang_10_11_15 ang_10_11_15
+    23   b-adn-666_excl.tbl ang_10_9_15 ang_10_9_15
+    24   b-adn-666_excl.tbl ang_10_9_11 ang_10_9_11
+    25   b-adn-666_excl.tbl ang_11_31_30 ang_11_31_30
+    26   b-adn-666_excl.tbl ang_11_10_30 ang_11_10_30
+    27   b-adn-666_excl.tbl ang_11_10_31 ang_11_10_31
+    28   b-adn-666_excl.tbl ang_12_25_29 ang_12_25_29
+    29   b-adn-666_excl.tbl ang_12_13_29 ang_12_13_29
+    30   b-adn-666_excl.tbl ang_12_13_25 ang_12_13_25
+    31   b-adn-666_excl.tbl ang_13_14_12 ang_13_14_12
+    32   b-adn-666_excl.tbl ang_13_20_12 ang_13_20_12
+    33   b-adn-666_excl.tbl ang_13_20_14 ang_13_20_14
+    34   b-adn-666_excl.tbl ang_14_13_16 ang_14_13_16
+    35   b-adn-666_excl.tbl ang_14_15_16 ang_14_15_16
+    36   b-adn-666_excl.tbl ang_14_15_13 ang_14_15_13
+    37   b-adn-666_excl.tbl ang_15_10_6 ang_15_10_6
+    38   b-adn-666_excl.tbl ang_15_14_6 ang_15_14_6
+    39   b-adn-666_excl.tbl ang_15_14_10 ang_15_14_10
+    40   b-adn-666_excl.tbl ang_16_14_28 ang_16_14_28
+    41   b-adn-666_excl.tbl ang_16_17_28 ang_16_17_28
+    42   b-adn-666_excl.tbl ang_16_17_14 ang_16_17_14
+    43   b-adn-666_excl.tbl ang_17_18_27 ang_17_18_27
+    44   b-adn-666_excl.tbl ang_17_16_27 ang_17_16_27
+    45   b-adn-666_excl.tbl ang_17_16_18 ang_17_16_18
+    46   b-adn-666_excl.tbl ang_18_17_19 ang_18_17_19
+    47   b-adn-666_excl.tbl ang_18_20_19 ang_18_20_19
+    48   b-adn-666_excl.tbl ang_18_20_17 ang_18_20_17
+    49   b-adn-666_excl.tbl ang_20_21_18 ang_20_21_18
+    50   b-adn-666_excl.tbl ang_20_13_18 ang_20_13_18
+    51   b-adn-666_excl.tbl ang_20_13_21 ang_20_13_21
+    52   b-adn-666_excl.tbl ang_21_23_22 ang_21_23_22
+    53   b-adn-666_excl.tbl ang_21_20_22 ang_21_20_22
+    54   b-adn-666_excl.tbl ang_21_20_23 ang_21_20_23
+    55   b-adn-666_excl.tbl ang_23_21_24 ang_23_21_24
+    56   b-adn-666_excl.tbl ang_23_25_24 ang_23_25_24
+    57   b-adn-666_excl.tbl ang_23_25_21 ang_23_25_21
+    58   b-adn-666_excl.tbl ang_25_12_26 ang_25_12_26
+    59   b-adn-666_excl.tbl ang_25_23_26 ang_25_23_26
+    60   b-adn-666_excl.tbl ang_25_23_12 ang_25_23_12
+    61   b-adn-666_excl.tbl ang_31_11_56 ang_31_11_56
+    62   b-adn-666_excl.tbl ang_31_32_56 ang_31_32_56
+    63   b-adn-666_excl.tbl ang_31_32_11 ang_31_32_11
+    64   b-adn-666_excl.tbl ang_32_34_33 ang_32_34_33
+    65   b-adn-666_excl.tbl ang_32_31_33 ang_32_31_33
+    66   b-adn-666_excl.tbl ang_32_31_34 ang_32_31_34
+    67   b-adn-666_excl.tbl ang_34_32_35 ang_34_32_35
+    68   b-adn-666_excl.tbl ang_34_9_35 ang_34_9_35
+    69   b-adn-666_excl.tbl ang_34_9_32 ang_34_9_32
+    70   b-adn-666_excl.tbl ang_36_44_37 ang_36_44_37
+    71   b-adn-666_excl.tbl ang_36_8_37 ang_36_8_37
+    72   b-adn-666_excl.tbl ang_36_8_44 ang_36_8_44
+    73   b-adn-666_excl.tbl ang_37_36_38 ang_37_36_38
+    74   b-adn-666_excl.tbl ang_37_39_38 ang_37_39_38
+    75   b-adn-666_excl.tbl ang_37_39_36 ang_37_39_36
+    76   b-adn-666_excl.tbl ang_39_41_40 ang_39_41_40
+    77   b-adn-666_excl.tbl ang_39_37_40 ang_39_37_40
+    78   b-adn-666_excl.tbl ang_39_37_41 ang_39_37_41
+    79   b-adn-666_excl.tbl ang_41_39_42 ang_41_39_42
+    80   b-adn-666_excl.tbl ang_41_43_42 ang_41_43_42
+    81   b-adn-666_excl.tbl ang_41_43_39 ang_41_43_39
+    82   b-adn-666_excl.tbl ang_43_48_41 ang_43_48_41
+    83   b-adn-666_excl.tbl ang_43_44_41 ang_43_44_41
+    84   b-adn-666_excl.tbl ang_43_44_48 ang_43_44_48
+    85   b-adn-666_excl.tbl ang_44_36_45 ang_44_36_45
+    86   b-adn-666_excl.tbl ang_44_43_45 ang_44_43_45
+    87   b-adn-666_excl.tbl ang_44_43_36 ang_44_43_36
+    88   b-adn-666_excl.tbl ang_45_46_52 ang_45_46_52
+    89   b-adn-666_excl.tbl ang_45_44_52 ang_45_44_52
+    90   b-adn-666_excl.tbl ang_45_44_46 ang_45_44_46
+    91   b-adn-666_excl.tbl ang_46_45_51 ang_46_45_51
+    92   b-adn-666_excl.tbl ang_46_47_51 ang_46_47_51
+    93   b-adn-666_excl.tbl ang_46_47_45 ang_46_47_45
+    94   b-adn-666_excl.tbl ang_47_48_50 ang_47_48_50
+    95   b-adn-666_excl.tbl ang_47_46_50 ang_47_46_50
+    96   b-adn-666_excl.tbl ang_47_46_48 ang_47_46_48
+    97   b-adn-666_excl.tbl ang_48_47_49 ang_48_47_49
+    98   b-adn-666_excl.tbl ang_48_43_49 ang_48_43_49
+    99   b-adn-666_excl.tbl ang_48_43_47 ang_48_43_47
+   100   b-adn-666_excl.tbl ang_53_1_54 ang_53_1_54
+   101   b-adn-666_excl.tbl ang_53_7_54 ang_53_7_54
+   102   b-adn-666_excl.tbl ang_53_7_1 ang_53_7_1
+
+ Dihedral Coeffs
+
+     1   b-adn-666_dih.tbl dih_55_1_53_54 dih_55_1_53_54
+     2   b-adn-666_dih.tbl dih_2_1_53_54 dih_2_1_53_54
+     3   b-adn-666_dih.tbl dih_55_1_53_7 dih_55_1_53_7
+     4   b-adn-666_dih.tbl dih_2_1_53_7 dih_2_1_53_7
+     5   b-adn-666_dih.tbl dih_55_1_2_3 dih_55_1_2_3
+     6   b-adn-666_dih.tbl dih_53_1_2_3 dih_53_1_2_3
+     7   b-adn-666_dih.tbl dih_55_1_2_4 dih_55_1_2_4
+     8   b-adn-666_dih.tbl dih_53_1_2_4 dih_53_1_2_4
+     9   b-adn-666_dih.tbl dih_3_2_4_5 dih_3_2_4_5
+    10   b-adn-666_dih.tbl dih_1_2_4_5 dih_1_2_4_5
+    11   b-adn-666_dih.tbl dih_3_2_4_6 dih_3_2_4_6
+    12   b-adn-666_dih.tbl dih_1_2_4_6 dih_1_2_4_6
+    13   b-adn-666_dih.tbl dih_5_4_6_15 dih_5_4_6_15
+    14   b-adn-666_dih.tbl dih_2_4_6_15 dih_2_4_6_15
+    15   b-adn-666_dih.tbl dih_5_4_6_7 dih_5_4_6_7
+    16   b-adn-666_dih.tbl dih_2_4_6_7 dih_2_4_6_7
+    17   b-adn-666_dih.tbl dih_4_6_15_10 dih_4_6_15_10
+    18   b-adn-666_dih.tbl dih_7_6_15_10 dih_7_6_15_10
+    19   b-adn-666_dih.tbl dih_4_6_15_14 dih_4_6_15_14
+    20   b-adn-666_dih.tbl dih_7_6_15_14 dih_7_6_15_14
+    21   b-adn-666_dih.tbl dih_4_6_7_8 dih_4_6_7_8
+    22   b-adn-666_dih.tbl dih_15_6_7_53 dih_15_6_7_53
+    23   b-adn-666_dih.tbl dih_4_6_7_53 dih_4_6_7_53
+    24   b-adn-666_dih.tbl dih_53_7_8_9 dih_53_7_8_9
+    25   b-adn-666_dih.tbl dih_6_7_8_9 dih_6_7_8_9
+    26   b-adn-666_dih.tbl dih_53_7_8_36 dih_53_7_8_36
+    27   b-adn-666_dih.tbl dih_6_7_8_36 dih_6_7_8_36
+    28   b-adn-666_dih.tbl dih_8_7_53_54 dih_8_7_53_54
+    29   b-adn-666_dih.tbl dih_6_7_53_54 dih_6_7_53_54
+    30   b-adn-666_dih.tbl dih_8_7_53_1 dih_8_7_53_1
+    31   b-adn-666_dih.tbl dih_6_7_53_1 dih_6_7_53_1
+    32   b-adn-666_dih.tbl dih_7_8_9_34 dih_7_8_9_34
+    33   b-adn-666_dih.tbl dih_36_8_9_34 dih_36_8_9_34
+    34   b-adn-666_dih.tbl dih_7_8_9_10 dih_7_8_9_10
+    35   b-adn-666_dih.tbl dih_36_8_9_10 dih_36_8_9_10
+    36   b-adn-666_dih.tbl dih_8_9_34_35 dih_8_9_34_35
+    37   b-adn-666_dih.tbl dih_10_9_34_35 dih_10_9_34_35
+    38   b-adn-666_dih.tbl dih_8_9_34_32 dih_8_9_34_32
+    39   b-adn-666_dih.tbl dih_10_9_34_32 dih_10_9_34_32
+    40   b-adn-666_dih.tbl dih_34_9_10_15 dih_34_9_10_15
+    41   b-adn-666_dih.tbl dih_8_9_10_11 dih_8_9_10_11
+    42   b-adn-666_dih.tbl dih_34_9_10_11 dih_34_9_10_11
+    43   b-adn-666_dih.tbl dih_11_10_15_6 dih_11_10_15_6
+    44   b-adn-666_dih.tbl dih_9_10_15_6 dih_9_10_15_6
+    45   b-adn-666_dih.tbl dih_11_10_15_14 dih_11_10_15_14
+    46   b-adn-666_dih.tbl dih_9_10_15_14 dih_9_10_15_14
+    47   b-adn-666_dih.tbl dih_15_10_11_30 dih_15_10_11_30
+    48   b-adn-666_dih.tbl dih_9_10_11_30 dih_9_10_11_30
+    49   b-adn-666_dih.tbl dih_15_10_11_31 dih_15_10_11_31
+    50   b-adn-666_dih.tbl dih_9_10_11_31 dih_9_10_11_31
+    51   b-adn-666_dih.tbl dih_30_11_31_56 dih_30_11_31_56
+    52   b-adn-666_dih.tbl dih_10_11_31_56 dih_10_11_31_56
+    53   b-adn-666_dih.tbl dih_30_11_31_32 dih_30_11_31_32
+    54   b-adn-666_dih.tbl dih_10_11_31_32 dih_10_11_31_32
+    55   b-adn-666_dih.tbl dih_29_12_25_26 dih_29_12_25_26
+    56   b-adn-666_dih.tbl dih_13_12_25_26 dih_13_12_25_26
+    57   b-adn-666_dih.tbl dih_29_12_25_23 dih_29_12_25_23
+    58   b-adn-666_dih.tbl dih_29_12_13_14 dih_29_12_13_14
+    59   b-adn-666_dih.tbl dih_25_12_13_14 dih_25_12_13_14
+    60   b-adn-666_dih.tbl dih_29_12_13_20 dih_29_12_13_20
+    61   b-adn-666_dih.tbl dih_25_12_13_20 dih_25_12_13_20
+    62   b-adn-666_dih.tbl dih_12_13_14_16 dih_12_13_14_16
+    63   b-adn-666_dih.tbl dih_12_13_14_15 dih_12_13_14_15
+    64   b-adn-666_dih.tbl dih_20_13_14_15 dih_20_13_14_15
+    65   b-adn-666_dih.tbl dih_12_13_20_18 dih_12_13_20_18
+    66   b-adn-666_dih.tbl dih_14_13_20_18 dih_14_13_20_18
+    67   b-adn-666_dih.tbl dih_14_13_20_21 dih_14_13_20_21
+    68   b-adn-666_dih.tbl dih_13_14_16_28 dih_13_14_16_28
+    69   b-adn-666_dih.tbl dih_15_14_16_28 dih_15_14_16_28
+    70   b-adn-666_dih.tbl dih_13_14_16_17 dih_13_14_16_17
+    71   b-adn-666_dih.tbl dih_15_14_16_17 dih_15_14_16_17
+    72   b-adn-666_dih.tbl dih_28_16_17_27 dih_28_16_17_27
+    73   b-adn-666_dih.tbl dih_14_16_17_27 dih_14_16_17_27
+    74   b-adn-666_dih.tbl dih_28_16_17_18 dih_28_16_17_18
+    75   b-adn-666_dih.tbl dih_14_16_17_18 dih_14_16_17_18
+    76   b-adn-666_dih.tbl dih_27_17_18_19 dih_27_17_18_19
+    77   b-adn-666_dih.tbl dih_16_17_18_19 dih_16_17_18_19
+    78   b-adn-666_dih.tbl dih_27_17_18_20 dih_27_17_18_20
+    79   b-adn-666_dih.tbl dih_16_17_18_20 dih_16_17_18_20
+    80   b-adn-666_dih.tbl dih_19_18_20_21 dih_19_18_20_21
+    81   b-adn-666_dih.tbl dih_17_18_20_21 dih_17_18_20_21
+    82   b-adn-666_dih.tbl dih_19_18_20_13 dih_19_18_20_13
+    83   b-adn-666_dih.tbl dih_18_20_21_22 dih_18_20_21_22
+    84   b-adn-666_dih.tbl dih_13_20_21_22 dih_13_20_21_22
+    85   b-adn-666_dih.tbl dih_18_20_21_23 dih_18_20_21_23
+    86   b-adn-666_dih.tbl dih_13_20_21_23 dih_13_20_21_23
+    87   b-adn-666_dih.tbl dih_22_21_23_24 dih_22_21_23_24
+    88   b-adn-666_dih.tbl dih_20_21_23_24 dih_20_21_23_24
+    89   b-adn-666_dih.tbl dih_22_21_23_25 dih_22_21_23_25
+    90   b-adn-666_dih.tbl dih_24_23_25_26 dih_24_23_25_26
+    91   b-adn-666_dih.tbl dih_21_23_25_26 dih_21_23_25_26
+    92   b-adn-666_dih.tbl dih_24_23_25_12 dih_24_23_25_12
+    93   b-adn-666_dih.tbl dih_21_23_25_12 dih_21_23_25_12
+    94   b-adn-666_dih.tbl dih_56_31_32_33 dih_56_31_32_33
+    95   b-adn-666_dih.tbl dih_11_31_32_33 dih_11_31_32_33
+    96   b-adn-666_dih.tbl dih_56_31_32_34 dih_56_31_32_34
+    97   b-adn-666_dih.tbl dih_11_31_32_34 dih_11_31_32_34
+    98   b-adn-666_dih.tbl dih_33_32_34_35 dih_33_32_34_35
+    99   b-adn-666_dih.tbl dih_31_32_34_35 dih_31_32_34_35
+   100   b-adn-666_dih.tbl dih_33_32_34_9 dih_33_32_34_9
+   101   b-adn-666_dih.tbl dih_31_32_34_9 dih_31_32_34_9
+   102   b-adn-666_dih.tbl dih_44_36_37_38 dih_44_36_37_38
+   103   b-adn-666_dih.tbl dih_8_36_37_38 dih_8_36_37_38
+   104   b-adn-666_dih.tbl dih_44_36_37_39 dih_44_36_37_39
+   105   b-adn-666_dih.tbl dih_8_36_37_39 dih_8_36_37_39
+   106   b-adn-666_dih.tbl dih_37_36_44_45 dih_37_36_44_45
+   107   b-adn-666_dih.tbl dih_8_36_44_45 dih_8_36_44_45
+   108   b-adn-666_dih.tbl dih_37_36_44_43 dih_37_36_44_43
+   109   b-adn-666_dih.tbl dih_8_36_44_43 dih_8_36_44_43
+   110   b-adn-666_dih.tbl dih_36_37_39_40 dih_36_37_39_40
+   111   b-adn-666_dih.tbl dih_38_37_39_41 dih_38_37_39_41
+   112   b-adn-666_dih.tbl dih_40_39_41_42 dih_40_39_41_42
+   113   b-adn-666_dih.tbl dih_37_39_41_42 dih_37_39_41_42
+   114   b-adn-666_dih.tbl dih_40_39_41_43 dih_40_39_41_43
+   115   b-adn-666_dih.tbl dih_37_39_41_43 dih_37_39_41_43
+   116   b-adn-666_dih.tbl dih_42_41_43_48 dih_42_41_43_48
+   117   b-adn-666_dih.tbl dih_39_41_43_48 dih_39_41_43_48
+   118   b-adn-666_dih.tbl dih_42_41_43_44 dih_42_41_43_44
+   119   b-adn-666_dih.tbl dih_39_41_43_44 dih_39_41_43_44
+   120   b-adn-666_dih.tbl dih_41_43_48_49 dih_41_43_48_49
+   121   b-adn-666_dih.tbl dih_44_43_48_49 dih_44_43_48_49
+   122   b-adn-666_dih.tbl dih_41_43_48_47 dih_41_43_48_47
+   123   b-adn-666_dih.tbl dih_44_43_48_47 dih_44_43_48_47
+   124   b-adn-666_dih.tbl dih_41_43_44_45 dih_41_43_44_45
+   125   b-adn-666_dih.tbl dih_41_43_44_36 dih_41_43_44_36
+   126   b-adn-666_dih.tbl dih_48_43_44_36 dih_48_43_44_36
+   127   b-adn-666_dih.tbl dih_43_44_45_52 dih_43_44_45_52
+   128   b-adn-666_dih.tbl dih_36_44_45_46 dih_36_44_45_46
+   129   b-adn-666_dih.tbl dih_43_44_45_46 dih_43_44_45_46
+   130   b-adn-666_dih.tbl dih_52_45_46_51 dih_52_45_46_51
+   131   b-adn-666_dih.tbl dih_44_45_46_51 dih_44_45_46_51
+   132   b-adn-666_dih.tbl dih_52_45_46_47 dih_52_45_46_47
+   133   b-adn-666_dih.tbl dih_44_45_46_47 dih_44_45_46_47
+   134   b-adn-666_dih.tbl dih_45_46_47_50 dih_45_46_47_50
+   135   b-adn-666_dih.tbl dih_51_46_47_48 dih_51_46_47_48
+   136   b-adn-666_dih.tbl dih_45_46_47_48 dih_45_46_47_48
+   137   b-adn-666_dih.tbl dih_50_47_48_49 dih_50_47_48_49
+   138   b-adn-666_dih.tbl dih_46_47_48_49 dih_46_47_48_49
+   139   b-adn-666_dih.tbl dih_50_47_48_43 dih_50_47_48_43
+   140   b-adn-666_dih.tbl dih_46_47_48_43 dih_46_47_48_43
+   141   b-adn-666_dih.tbl dih_7_8_36_37 dih_7_8_36_37
+   142   b-adn-666_dih.tbl dih_9_8_36_37 dih_9_8_36_37
+   143   b-adn-666_dih.tbl dih_7_8_36_44 dih_7_8_36_44
+   144   b-adn-666_dih.tbl dih_9_8_36_44 dih_9_8_36_44
+   145   b-adn-666_dih.tbl dih_16_14_15_6 dih_16_14_15_6
+   146   b-adn-666_dih.tbl dih_13_14_15_6 dih_13_14_15_6
+   147   b-adn-666_dih.tbl dih_16_14_15_10 dih_16_14_15_10
+   148   b-adn-666_dih.tbl dih_13_14_15_10 dih_13_14_15_10
+
+ Improper Coeffs
+
+     1	 104.45	   1.00	-1.00	   0.00	 104.45	   1.00	  -1.00	   0.00	0 
+     2	  60.58	   1.00	-1.00	   0.00	  60.58	   1.00	  -1.00	   0.00	0 
+     3	  60.43	   1.00	-1.00	   0.00	  60.43	   1.00	  -1.00	   0.00	0 
+     4	  58.40	   1.00	-1.00	   0.00	  58.40	   1.00	  -1.00	   0.00	0 
+     5	  59.45	   1.00	-1.00	   0.00	  59.45	   1.00	  -1.00	   0.00	0 
+     6	  58.59	   1.00	-1.00	   0.00	  58.59	   1.00	  -1.00	   0.00	0 
+     7	  52.58	   1.00	-1.00	   0.00	  52.58	   1.00	  -1.00	   0.00	0 
+     8	  48.50	   1.00	-1.00	   0.00	  48.50	   1.00	  -1.00	   0.00	0 
+     9	  74.41	   1.00	-1.00	   0.00	  74.41	   1.00	  -1.00	   0.00	0 
+    10	  56.76	   1.00	-1.00	   0.00	  56.76	   1.00	  -1.00	   0.00	0 
+    11	  28.88	   1.00	-1.00	   0.00	  28.88	   1.00	  -1.00	   0.00	0 
+    12	  77.65	   1.00	-1.00	   0.00	  77.65	   1.00	  -1.00	   0.00	0 
+    13	  56.02	   1.00	-1.00	   0.00	  56.02	   1.00	  -1.00	   0.00	0 
+    14	  56.09	   1.00	-1.00	   0.00	  56.09	   1.00	  -1.00	   0.00	0 
+    15	  58.91	   1.00	-1.00	   0.00	  58.91	   1.00	  -1.00	   0.00	0 
+    16	  63.14	   1.00	-1.00	   0.00	  63.14	   1.00	  -1.00	   0.00	0 
+    17	  37.25	   1.00	-1.00	   0.00	  37.25	   1.00	  -1.00	   0.00	0 
+    18	  54.09	   1.00	-1.00	   0.00	  54.09	   1.00	  -1.00	   0.00	0 
+    19	  70.69	   1.00	-1.00	   0.00	  70.69	   1.00	  -1.00	   0.00	0 
+    20	  64.18	   1.00	-1.00	   0.00	  64.18	   1.00	  -1.00	   0.00	0 
+    21	 103.68	   1.00	-1.00	   0.00	 103.68	   1.00	  -1.00	   0.00	0 
+    22	 109.34	   1.00	-1.00	   0.00	 109.34	   1.00	  -1.00	   0.00	0 
+    23	  91.77	   1.00	-1.00	   0.00	  91.77	   1.00	  -1.00	   0.00	0 
+    24	  79.78	   1.00	-1.00	   0.00	  79.78	   1.00	  -1.00	   0.00	0 
+    25	 109.79	   1.00	-1.00	   0.00	 109.79	   1.00	  -1.00	   0.00	0 
+    26	 164.69	   1.00	-1.00	   0.00	 164.69	   1.00	  -1.00	   0.00	0 
+    27	 109.16	   1.00	-1.00	   0.00	 109.16	   1.00	  -1.00	   0.00	0 
+    28	  36.39	   1.00	-1.00	   0.00	  36.39	   1.00	  -1.00	   0.00	0 
+    29	  43.03	   1.00	-1.00	   0.00	  43.03	   1.00	  -1.00	   0.00	0 
+    30	 126.45	   1.00	-1.00	   0.00	 126.45	   1.00	  -1.00	   0.00	0 
+    31	 171.23	   1.00	-1.00	   0.00	 171.23	   1.00	  -1.00	   0.00	0 
+    32	 151.60	   1.00	-1.00	   0.00	 151.60	   1.00	  -1.00	   0.00	0 
+    33	  70.30	   1.00	-1.00	   0.00	  70.30	   1.00	  -1.00	   0.00	0 
+    34	  94.11	   1.00	-1.00	   0.00	  94.11	   1.00	  -1.00	   0.00	0 
+
+ PairIJ Coeffs
+
+     1 1 table b-adn-666_c6.tbl int_1_1         10.50 1.0
+     1 2 table b-adn-666_c6.tbl int_1_2         10.50 1.0
+     1 3 table b-adn-666_c6.tbl int_1_3         10.50 1.0
+     1 4 table b-adn-666_c6.tbl int_1_4         10.50 1.0
+     1 5 table b-adn-666_c6.tbl int_1_5         10.50 1.0
+     1 6 table b-adn-666_c6.tbl int_1_6         10.50 1.0
+     1 7 table b-adn-666_c6.tbl int_1_7         10.50 1.0
+     1 8 table b-adn-666_c6.tbl int_1_8         10.50 1.0
+     1 9 table b-adn-666_c6.tbl int_1_9         10.50 1.0
+     1 10 table b-adn-666_c6.tbl int_1_10        10.50 1.0
+     1 11 table b-adn-666_c6.tbl int_1_11        10.50 1.0
+     1 12 table b-adn-666_c6.tbl int_1_12        10.50 1.0
+     1 13 table b-adn-666_c6.tbl int_1_13        10.50 1.0
+     1 14 table b-adn-666_c6.tbl int_1_14        10.50 1.0
+     1 15 table b-adn-666_c6.tbl int_1_15        10.50 1.0
+     1 16 table b-adn-666_c6.tbl int_1_16        10.50 1.0
+     1 17 table b-adn-666_c6.tbl int_1_17        10.50 1.0
+     1 18 table b-adn-666_c6.tbl int_1_18        10.50 1.0
+     1 19 table b-adn-666_c6.tbl int_1_19        10.50 1.0
+     1 20 table b-adn-666_c6.tbl int_1_20        10.50 1.0
+     1 21 table b-adn-666_c6.tbl int_1_21        10.50 1.0
+     1 22 table b-adn-666_c6.tbl int_1_22        10.50 1.0
+     1 23 table b-adn-666_c6.tbl int_1_23        10.50 1.0
+     1 24 table b-adn-666_c6.tbl int_1_24        10.50 1.0
+     1 25 table b-adn-666_c6.tbl int_1_25        10.50 1.0
+     1 26 table b-adn-666_c6.tbl int_1_26        10.50 1.0
+     1 27 table b-adn-666_c6.tbl int_1_27        10.50 1.0
+     1 28 table b-adn-666_c6.tbl int_1_28        10.50 1.0
+     1 29 table b-adn-666_c6.tbl int_1_29        10.50 1.0
+     1 30 table b-adn-666_c6.tbl int_1_30        10.50 1.0
+     1 31 table b-adn-666_c6.tbl int_1_31        10.50 1.0
+     1 32 table b-adn-666_c6.tbl int_1_32        10.50 1.0
+     1 33 table b-adn-666_c6.tbl int_1_33        10.50 1.0
+     1 34 table b-adn-666_c6.tbl int_1_34        10.50 1.0
+     1 35 table b-adn-666_c6.tbl int_1_35        10.50 1.0
+     1 36 table b-adn-666_c6.tbl int_1_36        10.50 1.0
+     1 37 table b-adn-666_c6.tbl int_1_37        10.50 1.0
+     1 38 table b-adn-666_c6.tbl int_1_38        10.50 1.0
+     1 39 table b-adn-666_c6.tbl int_1_39        10.50 1.0
+     1 40 table b-adn-666_c6.tbl int_1_40        10.50 1.0
+     1 41 table b-adn-666_c6.tbl int_1_41        10.50 1.0
+     1 42 table b-adn-666_c6.tbl int_1_42        10.50 1.0
+     1 43 table b-adn-666_c6.tbl int_1_43        10.50 1.0
+     1 44 table b-adn-666_c6.tbl int_1_44        10.50 1.0
+     1 45 table b-adn-666_c6.tbl int_1_45        10.50 1.0
+     1 46 table b-adn-666_c6.tbl int_1_46        10.50 1.0
+     1 47 table b-adn-666_c6.tbl int_1_47        10.50 1.0
+     1 48 table b-adn-666_c6.tbl int_1_48        10.50 1.0
+     1 49 table b-adn-666_c6.tbl int_1_49        10.50 1.0
+     1 50 table b-adn-666_c6.tbl int_1_50        10.50 1.0
+     1 51 table b-adn-666_c6.tbl int_1_51        10.50 1.0
+     1 52 table b-adn-666_c6.tbl int_1_52        10.50 1.0
+     1 53 table b-adn-666_c6.tbl int_1_53        10.50 1.0
+     1 54 table b-adn-666_c6.tbl int_1_54        10.50 1.0
+     1 55 table b-adn-666_c6.tbl int_1_55        10.50 1.0
+     1 56 table b-adn-666_c6.tbl int_1_56        10.50 1.0
+     2 2 table b-adn-666_c6.tbl int_2_2         10.50 1.0
+     2 3 table b-adn-666_c6.tbl int_2_3         10.50 1.0
+     2 4 table b-adn-666_c6.tbl int_2_4         10.50 1.0
+     2 5 table b-adn-666_c6.tbl int_2_5         10.50 1.0
+     2 6 table b-adn-666_c6.tbl int_2_6         10.50 1.0
+     2 7 table b-adn-666_c6.tbl int_2_7         10.50 1.0
+     2 8 table b-adn-666_c6.tbl int_2_8         10.50 1.0
+     2 9 table b-adn-666_c6.tbl int_2_9         10.50 1.0
+     2 10 table b-adn-666_c6.tbl int_2_10        10.50 1.0
+     2 11 table b-adn-666_c6.tbl int_2_11        10.50 1.0
+     2 12 table b-adn-666_c6.tbl int_2_12        10.50 1.0
+     2 13 table b-adn-666_c6.tbl int_2_13        10.50 1.0
+     2 14 table b-adn-666_c6.tbl int_2_14        10.50 1.0
+     2 15 table b-adn-666_c6.tbl int_2_15        10.50 1.0
+     2 16 table b-adn-666_c6.tbl int_2_16        10.50 1.0
+     2 17 table b-adn-666_c6.tbl int_2_17        10.50 1.0
+     2 18 table b-adn-666_c6.tbl int_2_18        10.50 1.0
+     2 19 table b-adn-666_c6.tbl int_2_19        10.50 1.0
+     2 20 table b-adn-666_c6.tbl int_2_20        10.50 1.0
+     2 21 table b-adn-666_c6.tbl int_2_21        10.50 1.0
+     2 22 table b-adn-666_c6.tbl int_2_22        10.50 1.0
+     2 23 table b-adn-666_c6.tbl int_2_23        10.50 1.0
+     2 24 table b-adn-666_c6.tbl int_2_24        10.50 1.0
+     2 25 table b-adn-666_c6.tbl int_2_25        10.50 1.0
+     2 26 table b-adn-666_c6.tbl int_2_26        10.50 1.0
+     2 27 table b-adn-666_c6.tbl int_2_27        10.50 1.0
+     2 28 table b-adn-666_c6.tbl int_2_28        10.50 1.0
+     2 29 table b-adn-666_c6.tbl int_2_29        10.50 1.0
+     2 30 table b-adn-666_c6.tbl int_2_30        10.50 1.0
+     2 31 table b-adn-666_c6.tbl int_2_31        10.50 1.0
+     2 32 table b-adn-666_c6.tbl int_2_32        10.50 1.0
+     2 33 table b-adn-666_c6.tbl int_2_33        10.50 1.0
+     2 34 table b-adn-666_c6.tbl int_2_34        10.50 1.0
+     2 35 table b-adn-666_c6.tbl int_2_35        10.50 1.0
+     2 36 table b-adn-666_c6.tbl int_2_36        10.50 1.0
+     2 37 table b-adn-666_c6.tbl int_2_37        10.50 1.0
+     2 38 table b-adn-666_c6.tbl int_2_38        10.50 1.0
+     2 39 table b-adn-666_c6.tbl int_2_39        10.50 1.0
+     2 40 table b-adn-666_c6.tbl int_2_40        10.50 1.0
+     2 41 table b-adn-666_c6.tbl int_2_41        10.50 1.0
+     2 42 table b-adn-666_c6.tbl int_2_42        10.50 1.0
+     2 43 table b-adn-666_c6.tbl int_2_43        10.50 1.0
+     2 44 table b-adn-666_c6.tbl int_2_44        10.50 1.0
+     2 45 table b-adn-666_c6.tbl int_2_45        10.50 1.0
+     2 46 table b-adn-666_c6.tbl int_2_46        10.50 1.0
+     2 47 table b-adn-666_c6.tbl int_2_47        10.50 1.0
+     2 48 table b-adn-666_c6.tbl int_2_48        10.50 1.0
+     2 49 table b-adn-666_c6.tbl int_2_49        10.50 1.0
+     2 50 table b-adn-666_c6.tbl int_2_50        10.50 1.0
+     2 51 table b-adn-666_c6.tbl int_2_51        10.50 1.0
+     2 52 table b-adn-666_c6.tbl int_2_52        10.50 1.0
+     2 53 table b-adn-666_c6.tbl int_2_53        10.50 1.0
+     2 54 table b-adn-666_c6.tbl int_2_54        10.50 1.0
+     2 55 table b-adn-666_c6.tbl int_2_55        10.50 1.0
+     2 56 table b-adn-666_c6.tbl int_2_56        10.50 1.0
+     3 3 table b-adn-666_c6.tbl int_3_3         10.50 1.0
+     3 4 table b-adn-666_c6.tbl int_3_4         10.50 1.0
+     3 5 table b-adn-666_c6.tbl int_3_5         10.50 1.0
+     3 6 table b-adn-666_c6.tbl int_3_6         10.50 1.0
+     3 7 table b-adn-666_c6.tbl int_3_7         10.50 1.0
+     3 8 table b-adn-666_c6.tbl int_3_8         10.50 1.0
+     3 9 table b-adn-666_c6.tbl int_3_9         10.50 1.0
+     3 10 table b-adn-666_c6.tbl int_3_10        10.50 1.0
+     3 11 table b-adn-666_c6.tbl int_3_11        10.50 1.0
+     3 12 table b-adn-666_c6.tbl int_3_12        10.50 1.0
+     3 13 table b-adn-666_c6.tbl int_3_13        10.50 1.0
+     3 14 table b-adn-666_c6.tbl int_3_14        10.50 1.0
+     3 15 table b-adn-666_c6.tbl int_3_15        10.50 1.0
+     3 16 table b-adn-666_c6.tbl int_3_16        10.50 1.0
+     3 17 table b-adn-666_c6.tbl int_3_17        10.50 1.0
+     3 18 table b-adn-666_c6.tbl int_3_18        10.50 1.0
+     3 19 table b-adn-666_c6.tbl int_3_19        10.50 1.0
+     3 20 table b-adn-666_c6.tbl int_3_20        10.50 1.0
+     3 21 table b-adn-666_c6.tbl int_3_21        10.50 1.0
+     3 22 table b-adn-666_c6.tbl int_3_22        10.50 1.0
+     3 23 table b-adn-666_c6.tbl int_3_23        10.50 1.0
+     3 24 table b-adn-666_c6.tbl int_3_24        10.50 1.0
+     3 25 table b-adn-666_c6.tbl int_3_25        10.50 1.0
+     3 26 table b-adn-666_c6.tbl int_3_26        10.50 1.0
+     3 27 table b-adn-666_c6.tbl int_3_27        10.50 1.0
+     3 28 table b-adn-666_c6.tbl int_3_28        10.50 1.0
+     3 29 table b-adn-666_c6.tbl int_3_29        10.50 1.0
+     3 30 table b-adn-666_c6.tbl int_3_30        10.50 1.0
+     3 31 table b-adn-666_c6.tbl int_3_31        10.50 1.0
+     3 32 table b-adn-666_c6.tbl int_3_32        10.50 1.0
+     3 33 table b-adn-666_c6.tbl int_3_33        10.50 1.0
+     3 34 table b-adn-666_c6.tbl int_3_34        10.50 1.0
+     3 35 table b-adn-666_c6.tbl int_3_35        10.50 1.0
+     3 36 table b-adn-666_c6.tbl int_3_36        10.50 1.0
+     3 37 table b-adn-666_c6.tbl int_3_37        10.50 1.0
+     3 38 table b-adn-666_c6.tbl int_3_38        10.50 1.0
+     3 39 table b-adn-666_c6.tbl int_3_39        10.50 1.0
+     3 40 table b-adn-666_c6.tbl int_3_40        10.50 1.0
+     3 41 table b-adn-666_c6.tbl int_3_41        10.50 1.0
+     3 42 table b-adn-666_c6.tbl int_3_42        10.50 1.0
+     3 43 table b-adn-666_c6.tbl int_3_43        10.50 1.0
+     3 44 table b-adn-666_c6.tbl int_3_44        10.50 1.0
+     3 45 table b-adn-666_c6.tbl int_3_45        10.50 1.0
+     3 46 table b-adn-666_c6.tbl int_3_46        10.50 1.0
+     3 47 table b-adn-666_c6.tbl int_3_47        10.50 1.0
+     3 48 table b-adn-666_c6.tbl int_3_48        10.50 1.0
+     3 49 table b-adn-666_c6.tbl int_3_49        10.50 1.0
+     3 50 table b-adn-666_c6.tbl int_3_50        10.50 1.0
+     3 51 table b-adn-666_c6.tbl int_3_51        10.50 1.0
+     3 52 table b-adn-666_c6.tbl int_3_52        10.50 1.0
+     3 53 table b-adn-666_c6.tbl int_3_53        10.50 1.0
+     3 54 table b-adn-666_c6.tbl int_3_54        10.50 1.0
+     3 55 table b-adn-666_c6.tbl int_3_55        10.50 1.0
+     3 56 table b-adn-666_c6.tbl int_3_56        10.50 1.0
+     4 4 table b-adn-666_c6.tbl int_4_4         10.50 1.0
+     4 5 table b-adn-666_c6.tbl int_4_5         10.50 1.0
+     4 6 table b-adn-666_c6.tbl int_4_6         10.50 1.0
+     4 7 table b-adn-666_c6.tbl int_4_7         10.50 1.0
+     4 8 table b-adn-666_c6.tbl int_4_8         10.50 1.0
+     4 9 table b-adn-666_c6.tbl int_4_9         10.50 1.0
+     4 10 table b-adn-666_c6.tbl int_4_10        10.50 1.0
+     4 11 table b-adn-666_c6.tbl int_4_11        10.50 1.0
+     4 12 table b-adn-666_c6.tbl int_4_12        10.50 1.0
+     4 13 table b-adn-666_c6.tbl int_4_13        10.50 1.0
+     4 14 table b-adn-666_c6.tbl int_4_14        10.50 1.0
+     4 15 table b-adn-666_c6.tbl int_4_15        10.50 1.0
+     4 16 table b-adn-666_c6.tbl int_4_16        10.50 1.0
+     4 17 table b-adn-666_c6.tbl int_4_17        10.50 1.0
+     4 18 table b-adn-666_c6.tbl int_4_18        10.50 1.0
+     4 19 table b-adn-666_c6.tbl int_4_19        10.50 1.0
+     4 20 table b-adn-666_c6.tbl int_4_20        10.50 1.0
+     4 21 table b-adn-666_c6.tbl int_4_21        10.50 1.0
+     4 22 table b-adn-666_c6.tbl int_4_22        10.50 1.0
+     4 23 table b-adn-666_c6.tbl int_4_23        10.50 1.0
+     4 24 table b-adn-666_c6.tbl int_4_24        10.50 1.0
+     4 25 table b-adn-666_c6.tbl int_4_25        10.50 1.0
+     4 26 table b-adn-666_c6.tbl int_4_26        10.50 1.0
+     4 27 table b-adn-666_c6.tbl int_4_27        10.50 1.0
+     4 28 table b-adn-666_c6.tbl int_4_28        10.50 1.0
+     4 29 table b-adn-666_c6.tbl int_4_29        10.50 1.0
+     4 30 table b-adn-666_c6.tbl int_4_30        10.50 1.0
+     4 31 table b-adn-666_c6.tbl int_4_31        10.50 1.0
+     4 32 table b-adn-666_c6.tbl int_4_32        10.50 1.0
+     4 33 table b-adn-666_c6.tbl int_4_33        10.50 1.0
+     4 34 table b-adn-666_c6.tbl int_4_34        10.50 1.0
+     4 35 table b-adn-666_c6.tbl int_4_35        10.50 1.0
+     4 36 table b-adn-666_c6.tbl int_4_36        10.50 1.0
+     4 37 table b-adn-666_c6.tbl int_4_37        10.50 1.0
+     4 38 table b-adn-666_c6.tbl int_4_38        10.50 1.0
+     4 39 table b-adn-666_c6.tbl int_4_39        10.50 1.0
+     4 40 table b-adn-666_c6.tbl int_4_40        10.50 1.0
+     4 41 table b-adn-666_c6.tbl int_4_41        10.50 1.0
+     4 42 table b-adn-666_c6.tbl int_4_42        10.50 1.0
+     4 43 table b-adn-666_c6.tbl int_4_43        10.50 1.0
+     4 44 table b-adn-666_c6.tbl int_4_44        10.50 1.0
+     4 45 table b-adn-666_c6.tbl int_4_45        10.50 1.0
+     4 46 table b-adn-666_c6.tbl int_4_46        10.50 1.0
+     4 47 table b-adn-666_c6.tbl int_4_47        10.50 1.0
+     4 48 table b-adn-666_c6.tbl int_4_48        10.50 1.0
+     4 49 table b-adn-666_c6.tbl int_4_49        10.50 1.0
+     4 50 table b-adn-666_c6.tbl int_4_50        10.50 1.0
+     4 51 table b-adn-666_c6.tbl int_4_51        10.50 1.0
+     4 52 table b-adn-666_c6.tbl int_4_52        10.50 1.0
+     4 53 table b-adn-666_c6.tbl int_4_53        10.50 1.0
+     4 54 table b-adn-666_c6.tbl int_4_54        10.50 1.0
+     4 55 table b-adn-666_c6.tbl int_4_55        10.50 1.0
+     4 56 table b-adn-666_c6.tbl int_4_56        10.50 1.0
+     5 5 table b-adn-666_c6.tbl int_5_5         10.50 1.0
+     5 6 table b-adn-666_c6.tbl int_5_6         10.50 1.0
+     5 7 table b-adn-666_c6.tbl int_5_7         10.50 1.0
+     5 8 table b-adn-666_c6.tbl int_5_8         10.50 1.0
+     5 9 table b-adn-666_c6.tbl int_5_9         10.50 1.0
+     5 10 table b-adn-666_c6.tbl int_5_10        10.50 1.0
+     5 11 table b-adn-666_c6.tbl int_5_11        10.50 1.0
+     5 12 table b-adn-666_c6.tbl int_5_12        10.50 1.0
+     5 13 table b-adn-666_c6.tbl int_5_13        10.50 1.0
+     5 14 table b-adn-666_c6.tbl int_5_14        10.50 1.0
+     5 15 table b-adn-666_c6.tbl int_5_15        10.50 1.0
+     5 16 table b-adn-666_c6.tbl int_5_16        10.50 1.0
+     5 17 table b-adn-666_c6.tbl int_5_17        10.50 1.0
+     5 18 table b-adn-666_c6.tbl int_5_18        10.50 1.0
+     5 19 table b-adn-666_c6.tbl int_5_19        10.50 1.0
+     5 20 table b-adn-666_c6.tbl int_5_20        10.50 1.0
+     5 21 table b-adn-666_c6.tbl int_5_21        10.50 1.0
+     5 22 table b-adn-666_c6.tbl int_5_22        10.50 1.0
+     5 23 table b-adn-666_c6.tbl int_5_23        10.50 1.0
+     5 24 table b-adn-666_c6.tbl int_5_24        10.50 1.0
+     5 25 table b-adn-666_c6.tbl int_5_25        10.50 1.0
+     5 26 table b-adn-666_c6.tbl int_5_26        10.50 1.0
+     5 27 table b-adn-666_c6.tbl int_5_27        10.50 1.0
+     5 28 table b-adn-666_c6.tbl int_5_28        10.50 1.0
+     5 29 table b-adn-666_c6.tbl int_5_29        10.50 1.0
+     5 30 table b-adn-666_c6.tbl int_5_30        10.50 1.0
+     5 31 table b-adn-666_c6.tbl int_5_31        10.50 1.0
+     5 32 table b-adn-666_c6.tbl int_5_32        10.50 1.0
+     5 33 table b-adn-666_c6.tbl int_5_33        10.50 1.0
+     5 34 table b-adn-666_c6.tbl int_5_34        10.50 1.0
+     5 35 table b-adn-666_c6.tbl int_5_35        10.50 1.0
+     5 36 table b-adn-666_c6.tbl int_5_36        10.50 1.0
+     5 37 table b-adn-666_c6.tbl int_5_37        10.50 1.0
+     5 38 table b-adn-666_c6.tbl int_5_38        10.50 1.0
+     5 39 table b-adn-666_c6.tbl int_5_39        10.50 1.0
+     5 40 table b-adn-666_c6.tbl int_5_40        10.50 1.0
+     5 41 table b-adn-666_c6.tbl int_5_41        10.50 1.0
+     5 42 table b-adn-666_c6.tbl int_5_42        10.50 1.0
+     5 43 table b-adn-666_c6.tbl int_5_43        10.50 1.0
+     5 44 table b-adn-666_c6.tbl int_5_44        10.50 1.0
+     5 45 table b-adn-666_c6.tbl int_5_45        10.50 1.0
+     5 46 table b-adn-666_c6.tbl int_5_46        10.50 1.0
+     5 47 table b-adn-666_c6.tbl int_5_47        10.50 1.0
+     5 48 table b-adn-666_c6.tbl int_5_48        10.50 1.0
+     5 49 table b-adn-666_c6.tbl int_5_49        10.50 1.0
+     5 50 table b-adn-666_c6.tbl int_5_50        10.50 1.0
+     5 51 table b-adn-666_c6.tbl int_5_51        10.50 1.0
+     5 52 table b-adn-666_c6.tbl int_5_52        10.50 1.0
+     5 53 table b-adn-666_c6.tbl int_5_53        10.50 1.0
+     5 54 table b-adn-666_c6.tbl int_5_54        10.50 1.0
+     5 55 table b-adn-666_c6.tbl int_5_55        10.50 1.0
+     5 56 table b-adn-666_c6.tbl int_5_56        10.50 1.0
+     6 6 table b-adn-666_c6.tbl int_6_6         10.50 1.0
+     6 7 table b-adn-666_c6.tbl int_6_7         10.50 1.0
+     6 8 table b-adn-666_c6.tbl int_6_8         10.50 1.0
+     6 9 table b-adn-666_c6.tbl int_6_9         10.50 1.0
+     6 10 table b-adn-666_c6.tbl int_6_10        10.50 1.0
+     6 11 table b-adn-666_c6.tbl int_6_11        10.50 1.0
+     6 12 table b-adn-666_c6.tbl int_6_12        10.50 1.0
+     6 13 table b-adn-666_c6.tbl int_6_13        10.50 1.0
+     6 14 table b-adn-666_c6.tbl int_6_14        10.50 1.0
+     6 15 table b-adn-666_c6.tbl int_6_15        10.50 1.0
+     6 16 table b-adn-666_c6.tbl int_6_16        10.50 1.0
+     6 17 table b-adn-666_c6.tbl int_6_17        10.50 1.0
+     6 18 table b-adn-666_c6.tbl int_6_18        10.50 1.0
+     6 19 table b-adn-666_c6.tbl int_6_19        10.50 1.0
+     6 20 table b-adn-666_c6.tbl int_6_20        10.50 1.0
+     6 21 table b-adn-666_c6.tbl int_6_21        10.50 1.0
+     6 22 table b-adn-666_c6.tbl int_6_22        10.50 1.0
+     6 23 table b-adn-666_c6.tbl int_6_23        10.50 1.0
+     6 24 table b-adn-666_c6.tbl int_6_24        10.50 1.0
+     6 25 table b-adn-666_c6.tbl int_6_25        10.50 1.0
+     6 26 table b-adn-666_c6.tbl int_6_26        10.50 1.0
+     6 27 table b-adn-666_c6.tbl int_6_27        10.50 1.0
+     6 28 table b-adn-666_c6.tbl int_6_28        10.50 1.0
+     6 29 table b-adn-666_c6.tbl int_6_29        10.50 1.0
+     6 30 table b-adn-666_c6.tbl int_6_30        10.50 1.0
+     6 31 table b-adn-666_c6.tbl int_6_31        10.50 1.0
+     6 32 table b-adn-666_c6.tbl int_6_32        10.50 1.0
+     6 33 table b-adn-666_c6.tbl int_6_33        10.50 1.0
+     6 34 table b-adn-666_c6.tbl int_6_34        10.50 1.0
+     6 35 table b-adn-666_c6.tbl int_6_35        10.50 1.0
+     6 36 table b-adn-666_c6.tbl int_6_36        10.50 1.0
+     6 37 table b-adn-666_c6.tbl int_6_37        10.50 1.0
+     6 38 table b-adn-666_c6.tbl int_6_38        10.50 1.0
+     6 39 table b-adn-666_c6.tbl int_6_39        10.50 1.0
+     6 40 table b-adn-666_c6.tbl int_6_40        10.50 1.0
+     6 41 table b-adn-666_c6.tbl int_6_41        10.50 1.0
+     6 42 table b-adn-666_c6.tbl int_6_42        10.50 1.0
+     6 43 table b-adn-666_c6.tbl int_6_43        10.50 1.0
+     6 44 table b-adn-666_c6.tbl int_6_44        10.50 1.0
+     6 45 table b-adn-666_c6.tbl int_6_45        10.50 1.0
+     6 46 table b-adn-666_c6.tbl int_6_46        10.50 1.0
+     6 47 table b-adn-666_c6.tbl int_6_47        10.50 1.0
+     6 48 table b-adn-666_c6.tbl int_6_48        10.50 1.0
+     6 49 table b-adn-666_c6.tbl int_6_49        10.50 1.0
+     6 50 table b-adn-666_c6.tbl int_6_50        10.50 1.0
+     6 51 table b-adn-666_c6.tbl int_6_51        10.50 1.0
+     6 52 table b-adn-666_c6.tbl int_6_52        10.50 1.0
+     6 53 table b-adn-666_c6.tbl int_6_53        10.50 1.0
+     6 54 table b-adn-666_c6.tbl int_6_54        10.50 1.0
+     6 55 table b-adn-666_c6.tbl int_6_55        10.50 1.0
+     6 56 table b-adn-666_c6.tbl int_6_56        10.50 1.0
+     7 7 table b-adn-666_c6.tbl int_7_7         10.50 1.0
+     7 8 table b-adn-666_c6.tbl int_7_8         10.50 1.0
+     7 9 table b-adn-666_c6.tbl int_7_9         10.50 1.0
+     7 10 table b-adn-666_c6.tbl int_7_10        10.50 1.0
+     7 11 table b-adn-666_c6.tbl int_7_11        10.50 1.0
+     7 12 table b-adn-666_c6.tbl int_7_12        10.50 1.0
+     7 13 table b-adn-666_c6.tbl int_7_13        10.50 1.0
+     7 14 table b-adn-666_c6.tbl int_7_14        10.50 1.0
+     7 15 table b-adn-666_c6.tbl int_7_15        10.50 1.0
+     7 16 table b-adn-666_c6.tbl int_7_16        10.50 1.0
+     7 17 table b-adn-666_c6.tbl int_7_17        10.50 1.0
+     7 18 table b-adn-666_c6.tbl int_7_18        10.50 1.0
+     7 19 table b-adn-666_c6.tbl int_7_19        10.50 1.0
+     7 20 table b-adn-666_c6.tbl int_7_20        10.50 1.0
+     7 21 table b-adn-666_c6.tbl int_7_21        10.50 1.0
+     7 22 table b-adn-666_c6.tbl int_7_22        10.50 1.0
+     7 23 table b-adn-666_c6.tbl int_7_23        10.50 1.0
+     7 24 table b-adn-666_c6.tbl int_7_24        10.50 1.0
+     7 25 table b-adn-666_c6.tbl int_7_25        10.50 1.0
+     7 26 table b-adn-666_c6.tbl int_7_26        10.50 1.0
+     7 27 table b-adn-666_c6.tbl int_7_27        10.50 1.0
+     7 28 table b-adn-666_c6.tbl int_7_28        10.50 1.0
+     7 29 table b-adn-666_c6.tbl int_7_29        10.50 1.0
+     7 30 table b-adn-666_c6.tbl int_7_30        10.50 1.0
+     7 31 table b-adn-666_c6.tbl int_7_31        10.50 1.0
+     7 32 table b-adn-666_c6.tbl int_7_32        10.50 1.0
+     7 33 table b-adn-666_c6.tbl int_7_33        10.50 1.0
+     7 34 table b-adn-666_c6.tbl int_7_34        10.50 1.0
+     7 35 table b-adn-666_c6.tbl int_7_35        10.50 1.0
+     7 36 table b-adn-666_c6.tbl int_7_36        10.50 1.0
+     7 37 table b-adn-666_c6.tbl int_7_37        10.50 1.0
+     7 38 table b-adn-666_c6.tbl int_7_38        10.50 1.0
+     7 39 table b-adn-666_c6.tbl int_7_39        10.50 1.0
+     7 40 table b-adn-666_c6.tbl int_7_40        10.50 1.0
+     7 41 table b-adn-666_c6.tbl int_7_41        10.50 1.0
+     7 42 table b-adn-666_c6.tbl int_7_42        10.50 1.0
+     7 43 table b-adn-666_c6.tbl int_7_43        10.50 1.0
+     7 44 table b-adn-666_c6.tbl int_7_44        10.50 1.0
+     7 45 table b-adn-666_c6.tbl int_7_45        10.50 1.0
+     7 46 table b-adn-666_c6.tbl int_7_46        10.50 1.0
+     7 47 table b-adn-666_c6.tbl int_7_47        10.50 1.0
+     7 48 table b-adn-666_c6.tbl int_7_48        10.50 1.0
+     7 49 table b-adn-666_c6.tbl int_7_49        10.50 1.0
+     7 50 table b-adn-666_c6.tbl int_7_50        10.50 1.0
+     7 51 table b-adn-666_c6.tbl int_7_51        10.50 1.0
+     7 52 table b-adn-666_c6.tbl int_7_52        10.50 1.0
+     7 53 table b-adn-666_c6.tbl int_7_53        10.50 1.0
+     7 54 table b-adn-666_c6.tbl int_7_54        10.50 1.0
+     7 55 table b-adn-666_c6.tbl int_7_55        10.50 1.0
+     7 56 table b-adn-666_c6.tbl int_7_56        10.50 1.0
+     8 8 table b-adn-666_c6.tbl int_8_8         10.50 1.0
+     8 9 table b-adn-666_c6.tbl int_8_9         10.50 1.0
+     8 10 table b-adn-666_c6.tbl int_8_10        10.50 1.0
+     8 11 table b-adn-666_c6.tbl int_8_11        10.50 1.0
+     8 12 table b-adn-666_c6.tbl int_8_12        10.50 1.0
+     8 13 table b-adn-666_c6.tbl int_8_13        10.50 1.0
+     8 14 table b-adn-666_c6.tbl int_8_14        10.50 1.0
+     8 15 table b-adn-666_c6.tbl int_8_15        10.50 1.0
+     8 16 table b-adn-666_c6.tbl int_8_16        10.50 1.0
+     8 17 table b-adn-666_c6.tbl int_8_17        10.50 1.0
+     8 18 table b-adn-666_c6.tbl int_8_18        10.50 1.0
+     8 19 table b-adn-666_c6.tbl int_8_19        10.50 1.0
+     8 20 table b-adn-666_c6.tbl int_8_20        10.50 1.0
+     8 21 table b-adn-666_c6.tbl int_8_21        10.50 1.0
+     8 22 table b-adn-666_c6.tbl int_8_22        10.50 1.0
+     8 23 table b-adn-666_c6.tbl int_8_23        10.50 1.0
+     8 24 table b-adn-666_c6.tbl int_8_24        10.50 1.0
+     8 25 table b-adn-666_c6.tbl int_8_25        10.50 1.0
+     8 26 table b-adn-666_c6.tbl int_8_26        10.50 1.0
+     8 27 table b-adn-666_c6.tbl int_8_27        10.50 1.0
+     8 28 table b-adn-666_c6.tbl int_8_28        10.50 1.0
+     8 29 table b-adn-666_c6.tbl int_8_29        10.50 1.0
+     8 30 table b-adn-666_c6.tbl int_8_30        10.50 1.0
+     8 31 table b-adn-666_c6.tbl int_8_31        10.50 1.0
+     8 32 table b-adn-666_c6.tbl int_8_32        10.50 1.0
+     8 33 table b-adn-666_c6.tbl int_8_33        10.50 1.0
+     8 34 table b-adn-666_c6.tbl int_8_34        10.50 1.0
+     8 35 table b-adn-666_c6.tbl int_8_35        10.50 1.0
+     8 36 table b-adn-666_c6.tbl int_8_36        10.50 1.0
+     8 37 table b-adn-666_c6.tbl int_8_37        10.50 1.0
+     8 38 table b-adn-666_c6.tbl int_8_38        10.50 1.0
+     8 39 table b-adn-666_c6.tbl int_8_39        10.50 1.0
+     8 40 table b-adn-666_c6.tbl int_8_40        10.50 1.0
+     8 41 table b-adn-666_c6.tbl int_8_41        10.50 1.0
+     8 42 table b-adn-666_c6.tbl int_8_42        10.50 1.0
+     8 43 table b-adn-666_c6.tbl int_8_43        10.50 1.0
+     8 44 table b-adn-666_c6.tbl int_8_44        10.50 1.0
+     8 45 table b-adn-666_c6.tbl int_8_45        10.50 1.0
+     8 46 table b-adn-666_c6.tbl int_8_46        10.50 1.0
+     8 47 table b-adn-666_c6.tbl int_8_47        10.50 1.0
+     8 48 table b-adn-666_c6.tbl int_8_48        10.50 1.0
+     8 49 table b-adn-666_c6.tbl int_8_49        10.50 1.0
+     8 50 table b-adn-666_c6.tbl int_8_50        10.50 1.0
+     8 51 table b-adn-666_c6.tbl int_8_51        10.50 1.0
+     8 52 table b-adn-666_c6.tbl int_8_52        10.50 1.0
+     8 53 table b-adn-666_c6.tbl int_8_53        10.50 1.0
+     8 54 table b-adn-666_c6.tbl int_8_54        10.50 1.0
+     8 55 table b-adn-666_c6.tbl int_8_55        10.50 1.0
+     8 56 table b-adn-666_c6.tbl int_8_56        10.50 1.0
+     9 9 table b-adn-666_c6.tbl int_9_9         10.50 1.0
+     9 10 table b-adn-666_c6.tbl int_9_10        10.50 1.0
+     9 11 table b-adn-666_c6.tbl int_9_11        10.50 1.0
+     9 12 table b-adn-666_c6.tbl int_9_12        10.50 1.0
+     9 13 table b-adn-666_c6.tbl int_9_13        10.50 1.0
+     9 14 table b-adn-666_c6.tbl int_9_14        10.50 1.0
+     9 15 table b-adn-666_c6.tbl int_9_15        10.50 1.0
+     9 16 table b-adn-666_c6.tbl int_9_16        10.50 1.0
+     9 17 table b-adn-666_c6.tbl int_9_17        10.50 1.0
+     9 18 table b-adn-666_c6.tbl int_9_18        10.50 1.0
+     9 19 table b-adn-666_c6.tbl int_9_19        10.50 1.0
+     9 20 table b-adn-666_c6.tbl int_9_20        10.50 1.0
+     9 21 table b-adn-666_c6.tbl int_9_21        10.50 1.0
+     9 22 table b-adn-666_c6.tbl int_9_22        10.50 1.0
+     9 23 table b-adn-666_c6.tbl int_9_23        10.50 1.0
+     9 24 table b-adn-666_c6.tbl int_9_24        10.50 1.0
+     9 25 table b-adn-666_c6.tbl int_9_25        10.50 1.0
+     9 26 table b-adn-666_c6.tbl int_9_26        10.50 1.0
+     9 27 table b-adn-666_c6.tbl int_9_27        10.50 1.0
+     9 28 table b-adn-666_c6.tbl int_9_28        10.50 1.0
+     9 29 table b-adn-666_c6.tbl int_9_29        10.50 1.0
+     9 30 table b-adn-666_c6.tbl int_9_30        10.50 1.0
+     9 31 table b-adn-666_c6.tbl int_9_31        10.50 1.0
+     9 32 table b-adn-666_c6.tbl int_9_32        10.50 1.0
+     9 33 table b-adn-666_c6.tbl int_9_33        10.50 1.0
+     9 34 table b-adn-666_c6.tbl int_9_34        10.50 1.0
+     9 35 table b-adn-666_c6.tbl int_9_35        10.50 1.0
+     9 36 table b-adn-666_c6.tbl int_9_36        10.50 1.0
+     9 37 table b-adn-666_c6.tbl int_9_37        10.50 1.0
+     9 38 table b-adn-666_c6.tbl int_9_38        10.50 1.0
+     9 39 table b-adn-666_c6.tbl int_9_39        10.50 1.0
+     9 40 table b-adn-666_c6.tbl int_9_40        10.50 1.0
+     9 41 table b-adn-666_c6.tbl int_9_41        10.50 1.0
+     9 42 table b-adn-666_c6.tbl int_9_42        10.50 1.0
+     9 43 table b-adn-666_c6.tbl int_9_43        10.50 1.0
+     9 44 table b-adn-666_c6.tbl int_9_44        10.50 1.0
+     9 45 table b-adn-666_c6.tbl int_9_45        10.50 1.0
+     9 46 table b-adn-666_c6.tbl int_9_46        10.50 1.0
+     9 47 table b-adn-666_c6.tbl int_9_47        10.50 1.0
+     9 48 table b-adn-666_c6.tbl int_9_48        10.50 1.0
+     9 49 table b-adn-666_c6.tbl int_9_49        10.50 1.0
+     9 50 table b-adn-666_c6.tbl int_9_50        10.50 1.0
+     9 51 table b-adn-666_c6.tbl int_9_51        10.50 1.0
+     9 52 table b-adn-666_c6.tbl int_9_52        10.50 1.0
+     9 53 table b-adn-666_c6.tbl int_9_53        10.50 1.0
+     9 54 table b-adn-666_c6.tbl int_9_54        10.50 1.0
+     9 55 table b-adn-666_c6.tbl int_9_55        10.50 1.0
+     9 56 table b-adn-666_c6.tbl int_9_56        10.50 1.0
+    10 10 table b-adn-666_c6.tbl int_10_10       10.50 1.0
+    10 11 table b-adn-666_c6.tbl int_10_11       10.50 1.0
+    10 12 table b-adn-666_c6.tbl int_10_12       10.50 1.0
+    10 13 table b-adn-666_c6.tbl int_10_13       10.50 1.0
+    10 14 table b-adn-666_c6.tbl int_10_14       10.50 1.0
+    10 15 table b-adn-666_c6.tbl int_10_15       10.50 1.0
+    10 16 table b-adn-666_c6.tbl int_10_16       10.50 1.0
+    10 17 table b-adn-666_c6.tbl int_10_17       10.50 1.0
+    10 18 table b-adn-666_c6.tbl int_10_18       10.50 1.0
+    10 19 table b-adn-666_c6.tbl int_10_19       10.50 1.0
+    10 20 table b-adn-666_c6.tbl int_10_20       10.50 1.0
+    10 21 table b-adn-666_c6.tbl int_10_21       10.50 1.0
+    10 22 table b-adn-666_c6.tbl int_10_22       10.50 1.0
+    10 23 table b-adn-666_c6.tbl int_10_23       10.50 1.0
+    10 24 table b-adn-666_c6.tbl int_10_24       10.50 1.0
+    10 25 table b-adn-666_c6.tbl int_10_25       10.50 1.0
+    10 26 table b-adn-666_c6.tbl int_10_26       10.50 1.0
+    10 27 table b-adn-666_c6.tbl int_10_27       10.50 1.0
+    10 28 table b-adn-666_c6.tbl int_10_28       10.50 1.0
+    10 29 table b-adn-666_c6.tbl int_10_29       10.50 1.0
+    10 30 table b-adn-666_c6.tbl int_10_30       10.50 1.0
+    10 31 table b-adn-666_c6.tbl int_10_31       10.50 1.0
+    10 32 table b-adn-666_c6.tbl int_10_32       10.50 1.0
+    10 33 table b-adn-666_c6.tbl int_10_33       10.50 1.0
+    10 34 table b-adn-666_c6.tbl int_10_34       10.50 1.0
+    10 35 table b-adn-666_c6.tbl int_10_35       10.50 1.0
+    10 36 table b-adn-666_c6.tbl int_10_36       10.50 1.0
+    10 37 table b-adn-666_c6.tbl int_10_37       10.50 1.0
+    10 38 table b-adn-666_c6.tbl int_10_38       10.50 1.0
+    10 39 table b-adn-666_c6.tbl int_10_39       10.50 1.0
+    10 40 table b-adn-666_c6.tbl int_10_40       10.50 1.0
+    10 41 table b-adn-666_c6.tbl int_10_41       10.50 1.0
+    10 42 table b-adn-666_c6.tbl int_10_42       10.50 1.0
+    10 43 table b-adn-666_c6.tbl int_10_43       10.50 1.0
+    10 44 table b-adn-666_c6.tbl int_10_44       10.50 1.0
+    10 45 table b-adn-666_c6.tbl int_10_45       10.50 1.0
+    10 46 table b-adn-666_c6.tbl int_10_46       10.50 1.0
+    10 47 table b-adn-666_c6.tbl int_10_47       10.50 1.0
+    10 48 table b-adn-666_c6.tbl int_10_48       10.50 1.0
+    10 49 table b-adn-666_c6.tbl int_10_49       10.50 1.0
+    10 50 table b-adn-666_c6.tbl int_10_50       10.50 1.0
+    10 51 table b-adn-666_c6.tbl int_10_51       10.50 1.0
+    10 52 table b-adn-666_c6.tbl int_10_52       10.50 1.0
+    10 53 table b-adn-666_c6.tbl int_10_53       10.50 1.0
+    10 54 table b-adn-666_c6.tbl int_10_54       10.50 1.0
+    10 55 table b-adn-666_c6.tbl int_10_55       10.50 1.0
+    10 56 table b-adn-666_c6.tbl int_10_56       10.50 1.0
+    11 11 table b-adn-666_c6.tbl int_11_11       10.50 1.0
+    11 12 table b-adn-666_c6.tbl int_11_12       10.50 1.0
+    11 13 table b-adn-666_c6.tbl int_11_13       10.50 1.0
+    11 14 table b-adn-666_c6.tbl int_11_14       10.50 1.0
+    11 15 table b-adn-666_c6.tbl int_11_15       10.50 1.0
+    11 16 table b-adn-666_c6.tbl int_11_16       10.50 1.0
+    11 17 table b-adn-666_c6.tbl int_11_17       10.50 1.0
+    11 18 table b-adn-666_c6.tbl int_11_18       10.50 1.0
+    11 19 table b-adn-666_c6.tbl int_11_19       10.50 1.0
+    11 20 table b-adn-666_c6.tbl int_11_20       10.50 1.0
+    11 21 table b-adn-666_c6.tbl int_11_21       10.50 1.0
+    11 22 table b-adn-666_c6.tbl int_11_22       10.50 1.0
+    11 23 table b-adn-666_c6.tbl int_11_23       10.50 1.0
+    11 24 table b-adn-666_c6.tbl int_11_24       10.50 1.0
+    11 25 table b-adn-666_c6.tbl int_11_25       10.50 1.0
+    11 26 table b-adn-666_c6.tbl int_11_26       10.50 1.0
+    11 27 table b-adn-666_c6.tbl int_11_27       10.50 1.0
+    11 28 table b-adn-666_c6.tbl int_11_28       10.50 1.0
+    11 29 table b-adn-666_c6.tbl int_11_29       10.50 1.0
+    11 30 table b-adn-666_c6.tbl int_11_30       10.50 1.0
+    11 31 table b-adn-666_c6.tbl int_11_31       10.50 1.0
+    11 32 table b-adn-666_c6.tbl int_11_32       10.50 1.0
+    11 33 table b-adn-666_c6.tbl int_11_33       10.50 1.0
+    11 34 table b-adn-666_c6.tbl int_11_34       10.50 1.0
+    11 35 table b-adn-666_c6.tbl int_11_35       10.50 1.0
+    11 36 table b-adn-666_c6.tbl int_11_36       10.50 1.0
+    11 37 table b-adn-666_c6.tbl int_11_37       10.50 1.0
+    11 38 table b-adn-666_c6.tbl int_11_38       10.50 1.0
+    11 39 table b-adn-666_c6.tbl int_11_39       10.50 1.0
+    11 40 table b-adn-666_c6.tbl int_11_40       10.50 1.0
+    11 41 table b-adn-666_c6.tbl int_11_41       10.50 1.0
+    11 42 table b-adn-666_c6.tbl int_11_42       10.50 1.0
+    11 43 table b-adn-666_c6.tbl int_11_43       10.50 1.0
+    11 44 table b-adn-666_c6.tbl int_11_44       10.50 1.0
+    11 45 table b-adn-666_c6.tbl int_11_45       10.50 1.0
+    11 46 table b-adn-666_c6.tbl int_11_46       10.50 1.0
+    11 47 table b-adn-666_c6.tbl int_11_47       10.50 1.0
+    11 48 table b-adn-666_c6.tbl int_11_48       10.50 1.0
+    11 49 table b-adn-666_c6.tbl int_11_49       10.50 1.0
+    11 50 table b-adn-666_c6.tbl int_11_50       10.50 1.0
+    11 51 table b-adn-666_c6.tbl int_11_51       10.50 1.0
+    11 52 table b-adn-666_c6.tbl int_11_52       10.50 1.0
+    11 53 table b-adn-666_c6.tbl int_11_53       10.50 1.0
+    11 54 table b-adn-666_c6.tbl int_11_54       10.50 1.0
+    11 55 table b-adn-666_c6.tbl int_11_55       10.50 1.0
+    11 56 table b-adn-666_c6.tbl int_11_56       10.50 1.0
+    12 12 table b-adn-666_c6.tbl int_12_12       10.50 1.0
+    12 13 table b-adn-666_c6.tbl int_12_13       10.50 1.0
+    12 14 table b-adn-666_c6.tbl int_12_14       10.50 1.0
+    12 15 table b-adn-666_c6.tbl int_12_15       10.50 1.0
+    12 16 table b-adn-666_c6.tbl int_12_16       10.50 1.0
+    12 17 table b-adn-666_c6.tbl int_12_17       10.50 1.0
+    12 18 table b-adn-666_c6.tbl int_12_18       10.50 1.0
+    12 19 table b-adn-666_c6.tbl int_12_19       10.50 1.0
+    12 20 table b-adn-666_c6.tbl int_12_20       10.50 1.0
+    12 21 table b-adn-666_c6.tbl int_12_21       10.50 1.0
+    12 22 table b-adn-666_c6.tbl int_12_22       10.50 1.0
+    12 23 table b-adn-666_c6.tbl int_12_23       10.50 1.0
+    12 24 table b-adn-666_c6.tbl int_12_24       10.50 1.0
+    12 25 table b-adn-666_c6.tbl int_12_25       10.50 1.0
+    12 26 table b-adn-666_c6.tbl int_12_26       10.50 1.0
+    12 27 table b-adn-666_c6.tbl int_12_27       10.50 1.0
+    12 28 table b-adn-666_c6.tbl int_12_28       10.50 1.0
+    12 29 table b-adn-666_c6.tbl int_12_29       10.50 1.0
+    12 30 table b-adn-666_c6.tbl int_12_30       10.50 1.0
+    12 31 table b-adn-666_c6.tbl int_12_31       10.50 1.0
+    12 32 table b-adn-666_c6.tbl int_12_32       10.50 1.0
+    12 33 table b-adn-666_c6.tbl int_12_33       10.50 1.0
+    12 34 table b-adn-666_c6.tbl int_12_34       10.50 1.0
+    12 35 table b-adn-666_c6.tbl int_12_35       10.50 1.0
+    12 36 table b-adn-666_c6.tbl int_12_36       10.50 1.0
+    12 37 table b-adn-666_c6.tbl int_12_37       10.50 1.0
+    12 38 table b-adn-666_c6.tbl int_12_38       10.50 1.0
+    12 39 table b-adn-666_c6.tbl int_12_39       10.50 1.0
+    12 40 table b-adn-666_c6.tbl int_12_40       10.50 1.0
+    12 41 table b-adn-666_c6.tbl int_12_41       10.50 1.0
+    12 42 table b-adn-666_c6.tbl int_12_42       10.50 1.0
+    12 43 table b-adn-666_c6.tbl int_12_43       10.50 1.0
+    12 44 table b-adn-666_c6.tbl int_12_44       10.50 1.0
+    12 45 table b-adn-666_c6.tbl int_12_45       10.50 1.0
+    12 46 table b-adn-666_c6.tbl int_12_46       10.50 1.0
+    12 47 table b-adn-666_c6.tbl int_12_47       10.50 1.0
+    12 48 table b-adn-666_c6.tbl int_12_48       10.50 1.0
+    12 49 table b-adn-666_c6.tbl int_12_49       10.50 1.0
+    12 50 table b-adn-666_c6.tbl int_12_50       10.50 1.0
+    12 51 table b-adn-666_c6.tbl int_12_51       10.50 1.0
+    12 52 table b-adn-666_c6.tbl int_12_52       10.50 1.0
+    12 53 table b-adn-666_c6.tbl int_12_53       10.50 1.0
+    12 54 table b-adn-666_c6.tbl int_12_54       10.50 1.0
+    12 55 table b-adn-666_c6.tbl int_12_55       10.50 1.0
+    12 56 table b-adn-666_c6.tbl int_12_56       10.50 1.0
+    13 13 table b-adn-666_c6.tbl int_13_13       10.50 1.0
+    13 14 table b-adn-666_c6.tbl int_13_14       10.50 1.0
+    13 15 table b-adn-666_c6.tbl int_13_15       10.50 1.0
+    13 16 table b-adn-666_c6.tbl int_13_16       10.50 1.0
+    13 17 table b-adn-666_c6.tbl int_13_17       10.50 1.0
+    13 18 table b-adn-666_c6.tbl int_13_18       10.50 1.0
+    13 19 table b-adn-666_c6.tbl int_13_19       10.50 1.0
+    13 20 table b-adn-666_c6.tbl int_13_20       10.50 1.0
+    13 21 table b-adn-666_c6.tbl int_13_21       10.50 1.0
+    13 22 table b-adn-666_c6.tbl int_13_22       10.50 1.0
+    13 23 table b-adn-666_c6.tbl int_13_23       10.50 1.0
+    13 24 table b-adn-666_c6.tbl int_13_24       10.50 1.0
+    13 25 table b-adn-666_c6.tbl int_13_25       10.50 1.0
+    13 26 table b-adn-666_c6.tbl int_13_26       10.50 1.0
+    13 27 table b-adn-666_c6.tbl int_13_27       10.50 1.0
+    13 28 table b-adn-666_c6.tbl int_13_28       10.50 1.0
+    13 29 table b-adn-666_c6.tbl int_13_29       10.50 1.0
+    13 30 table b-adn-666_c6.tbl int_13_30       10.50 1.0
+    13 31 table b-adn-666_c6.tbl int_13_31       10.50 1.0
+    13 32 table b-adn-666_c6.tbl int_13_32       10.50 1.0
+    13 33 table b-adn-666_c6.tbl int_13_33       10.50 1.0
+    13 34 table b-adn-666_c6.tbl int_13_34       10.50 1.0
+    13 35 table b-adn-666_c6.tbl int_13_35       10.50 1.0
+    13 36 table b-adn-666_c6.tbl int_13_36       10.50 1.0
+    13 37 table b-adn-666_c6.tbl int_13_37       10.50 1.0
+    13 38 table b-adn-666_c6.tbl int_13_38       10.50 1.0
+    13 39 table b-adn-666_c6.tbl int_13_39       10.50 1.0
+    13 40 table b-adn-666_c6.tbl int_13_40       10.50 1.0
+    13 41 table b-adn-666_c6.tbl int_13_41       10.50 1.0
+    13 42 table b-adn-666_c6.tbl int_13_42       10.50 1.0
+    13 43 table b-adn-666_c6.tbl int_13_43       10.50 1.0
+    13 44 table b-adn-666_c6.tbl int_13_44       10.50 1.0
+    13 45 table b-adn-666_c6.tbl int_13_45       10.50 1.0
+    13 46 table b-adn-666_c6.tbl int_13_46       10.50 1.0
+    13 47 table b-adn-666_c6.tbl int_13_47       10.50 1.0
+    13 48 table b-adn-666_c6.tbl int_13_48       10.50 1.0
+    13 49 table b-adn-666_c6.tbl int_13_49       10.50 1.0
+    13 50 table b-adn-666_c6.tbl int_13_50       10.50 1.0
+    13 51 table b-adn-666_c6.tbl int_13_51       10.50 1.0
+    13 52 table b-adn-666_c6.tbl int_13_52       10.50 1.0
+    13 53 table b-adn-666_c6.tbl int_13_53       10.50 1.0
+    13 54 table b-adn-666_c6.tbl int_13_54       10.50 1.0
+    13 55 table b-adn-666_c6.tbl int_13_55       10.50 1.0
+    13 56 table b-adn-666_c6.tbl int_13_56       10.50 1.0
+    14 14 table b-adn-666_c6.tbl int_14_14       10.50 1.0
+    14 15 table b-adn-666_c6.tbl int_14_15       10.50 1.0
+    14 16 table b-adn-666_c6.tbl int_14_16       10.50 1.0
+    14 17 table b-adn-666_c6.tbl int_14_17       10.50 1.0
+    14 18 table b-adn-666_c6.tbl int_14_18       10.50 1.0
+    14 19 table b-adn-666_c6.tbl int_14_19       10.50 1.0
+    14 20 table b-adn-666_c6.tbl int_14_20       10.50 1.0
+    14 21 table b-adn-666_c6.tbl int_14_21       10.50 1.0
+    14 22 table b-adn-666_c6.tbl int_14_22       10.50 1.0
+    14 23 table b-adn-666_c6.tbl int_14_23       10.50 1.0
+    14 24 table b-adn-666_c6.tbl int_14_24       10.50 1.0
+    14 25 table b-adn-666_c6.tbl int_14_25       10.50 1.0
+    14 26 table b-adn-666_c6.tbl int_14_26       10.50 1.0
+    14 27 table b-adn-666_c6.tbl int_14_27       10.50 1.0
+    14 28 table b-adn-666_c6.tbl int_14_28       10.50 1.0
+    14 29 table b-adn-666_c6.tbl int_14_29       10.50 1.0
+    14 30 table b-adn-666_c6.tbl int_14_30       10.50 1.0
+    14 31 table b-adn-666_c6.tbl int_14_31       10.50 1.0
+    14 32 table b-adn-666_c6.tbl int_14_32       10.50 1.0
+    14 33 table b-adn-666_c6.tbl int_14_33       10.50 1.0
+    14 34 table b-adn-666_c6.tbl int_14_34       10.50 1.0
+    14 35 table b-adn-666_c6.tbl int_14_35       10.50 1.0
+    14 36 table b-adn-666_c6.tbl int_14_36       10.50 1.0
+    14 37 table b-adn-666_c6.tbl int_14_37       10.50 1.0
+    14 38 table b-adn-666_c6.tbl int_14_38       10.50 1.0
+    14 39 table b-adn-666_c6.tbl int_14_39       10.50 1.0
+    14 40 table b-adn-666_c6.tbl int_14_40       10.50 1.0
+    14 41 table b-adn-666_c6.tbl int_14_41       10.50 1.0
+    14 42 table b-adn-666_c6.tbl int_14_42       10.50 1.0
+    14 43 table b-adn-666_c6.tbl int_14_43       10.50 1.0
+    14 44 table b-adn-666_c6.tbl int_14_44       10.50 1.0
+    14 45 table b-adn-666_c6.tbl int_14_45       10.50 1.0
+    14 46 table b-adn-666_c6.tbl int_14_46       10.50 1.0
+    14 47 table b-adn-666_c6.tbl int_14_47       10.50 1.0
+    14 48 table b-adn-666_c6.tbl int_14_48       10.50 1.0
+    14 49 table b-adn-666_c6.tbl int_14_49       10.50 1.0
+    14 50 table b-adn-666_c6.tbl int_14_50       10.50 1.0
+    14 51 table b-adn-666_c6.tbl int_14_51       10.50 1.0
+    14 52 table b-adn-666_c6.tbl int_14_52       10.50 1.0
+    14 53 table b-adn-666_c6.tbl int_14_53       10.50 1.0
+    14 54 table b-adn-666_c6.tbl int_14_54       10.50 1.0
+    14 55 table b-adn-666_c6.tbl int_14_55       10.50 1.0
+    14 56 table b-adn-666_c6.tbl int_14_56       10.50 1.0
+    15 15 table b-adn-666_c6.tbl int_15_15       10.50 1.0
+    15 16 table b-adn-666_c6.tbl int_15_16       10.50 1.0
+    15 17 table b-adn-666_c6.tbl int_15_17       10.50 1.0
+    15 18 table b-adn-666_c6.tbl int_15_18       10.50 1.0
+    15 19 table b-adn-666_c6.tbl int_15_19       10.50 1.0
+    15 20 table b-adn-666_c6.tbl int_15_20       10.50 1.0
+    15 21 table b-adn-666_c6.tbl int_15_21       10.50 1.0
+    15 22 table b-adn-666_c6.tbl int_15_22       10.50 1.0
+    15 23 table b-adn-666_c6.tbl int_15_23       10.50 1.0
+    15 24 table b-adn-666_c6.tbl int_15_24       10.50 1.0
+    15 25 table b-adn-666_c6.tbl int_15_25       10.50 1.0
+    15 26 table b-adn-666_c6.tbl int_15_26       10.50 1.0
+    15 27 table b-adn-666_c6.tbl int_15_27       10.50 1.0
+    15 28 table b-adn-666_c6.tbl int_15_28       10.50 1.0
+    15 29 table b-adn-666_c6.tbl int_15_29       10.50 1.0
+    15 30 table b-adn-666_c6.tbl int_15_30       10.50 1.0
+    15 31 table b-adn-666_c6.tbl int_15_31       10.50 1.0
+    15 32 table b-adn-666_c6.tbl int_15_32       10.50 1.0
+    15 33 table b-adn-666_c6.tbl int_15_33       10.50 1.0
+    15 34 table b-adn-666_c6.tbl int_15_34       10.50 1.0
+    15 35 table b-adn-666_c6.tbl int_15_35       10.50 1.0
+    15 36 table b-adn-666_c6.tbl int_15_36       10.50 1.0
+    15 37 table b-adn-666_c6.tbl int_15_37       10.50 1.0
+    15 38 table b-adn-666_c6.tbl int_15_38       10.50 1.0
+    15 39 table b-adn-666_c6.tbl int_15_39       10.50 1.0
+    15 40 table b-adn-666_c6.tbl int_15_40       10.50 1.0
+    15 41 table b-adn-666_c6.tbl int_15_41       10.50 1.0
+    15 42 table b-adn-666_c6.tbl int_15_42       10.50 1.0
+    15 43 table b-adn-666_c6.tbl int_15_43       10.50 1.0
+    15 44 table b-adn-666_c6.tbl int_15_44       10.50 1.0
+    15 45 table b-adn-666_c6.tbl int_15_45       10.50 1.0
+    15 46 table b-adn-666_c6.tbl int_15_46       10.50 1.0
+    15 47 table b-adn-666_c6.tbl int_15_47       10.50 1.0
+    15 48 table b-adn-666_c6.tbl int_15_48       10.50 1.0
+    15 49 table b-adn-666_c6.tbl int_15_49       10.50 1.0
+    15 50 table b-adn-666_c6.tbl int_15_50       10.50 1.0
+    15 51 table b-adn-666_c6.tbl int_15_51       10.50 1.0
+    15 52 table b-adn-666_c6.tbl int_15_52       10.50 1.0
+    15 53 table b-adn-666_c6.tbl int_15_53       10.50 1.0
+    15 54 table b-adn-666_c6.tbl int_15_54       10.50 1.0
+    15 55 table b-adn-666_c6.tbl int_15_55       10.50 1.0
+    15 56 table b-adn-666_c6.tbl int_15_56       10.50 1.0
+    16 16 table b-adn-666_c6.tbl int_16_16       10.50 1.0
+    16 17 table b-adn-666_c6.tbl int_16_17       10.50 1.0
+    16 18 table b-adn-666_c6.tbl int_16_18       10.50 1.0
+    16 19 table b-adn-666_c6.tbl int_16_19       10.50 1.0
+    16 20 table b-adn-666_c6.tbl int_16_20       10.50 1.0
+    16 21 table b-adn-666_c6.tbl int_16_21       10.50 1.0
+    16 22 table b-adn-666_c6.tbl int_16_22       10.50 1.0
+    16 23 table b-adn-666_c6.tbl int_16_23       10.50 1.0
+    16 24 table b-adn-666_c6.tbl int_16_24       10.50 1.0
+    16 25 table b-adn-666_c6.tbl int_16_25       10.50 1.0
+    16 26 table b-adn-666_c6.tbl int_16_26       10.50 1.0
+    16 27 table b-adn-666_c6.tbl int_16_27       10.50 1.0
+    16 28 table b-adn-666_c6.tbl int_16_28       10.50 1.0
+    16 29 table b-adn-666_c6.tbl int_16_29       10.50 1.0
+    16 30 table b-adn-666_c6.tbl int_16_30       10.50 1.0
+    16 31 table b-adn-666_c6.tbl int_16_31       10.50 1.0
+    16 32 table b-adn-666_c6.tbl int_16_32       10.50 1.0
+    16 33 table b-adn-666_c6.tbl int_16_33       10.50 1.0
+    16 34 table b-adn-666_c6.tbl int_16_34       10.50 1.0
+    16 35 table b-adn-666_c6.tbl int_16_35       10.50 1.0
+    16 36 table b-adn-666_c6.tbl int_16_36       10.50 1.0
+    16 37 table b-adn-666_c6.tbl int_16_37       10.50 1.0
+    16 38 table b-adn-666_c6.tbl int_16_38       10.50 1.0
+    16 39 table b-adn-666_c6.tbl int_16_39       10.50 1.0
+    16 40 table b-adn-666_c6.tbl int_16_40       10.50 1.0
+    16 41 table b-adn-666_c6.tbl int_16_41       10.50 1.0
+    16 42 table b-adn-666_c6.tbl int_16_42       10.50 1.0
+    16 43 table b-adn-666_c6.tbl int_16_43       10.50 1.0
+    16 44 table b-adn-666_c6.tbl int_16_44       10.50 1.0
+    16 45 table b-adn-666_c6.tbl int_16_45       10.50 1.0
+    16 46 table b-adn-666_c6.tbl int_16_46       10.50 1.0
+    16 47 table b-adn-666_c6.tbl int_16_47       10.50 1.0
+    16 48 table b-adn-666_c6.tbl int_16_48       10.50 1.0
+    16 49 table b-adn-666_c6.tbl int_16_49       10.50 1.0
+    16 50 table b-adn-666_c6.tbl int_16_50       10.50 1.0
+    16 51 table b-adn-666_c6.tbl int_16_51       10.50 1.0
+    16 52 table b-adn-666_c6.tbl int_16_52       10.50 1.0
+    16 53 table b-adn-666_c6.tbl int_16_53       10.50 1.0
+    16 54 table b-adn-666_c6.tbl int_16_54       10.50 1.0
+    16 55 table b-adn-666_c6.tbl int_16_55       10.50 1.0
+    16 56 table b-adn-666_c6.tbl int_16_56       10.50 1.0
+    17 17 table b-adn-666_c6.tbl int_17_17       10.50 1.0
+    17 18 table b-adn-666_c6.tbl int_17_18       10.50 1.0
+    17 19 table b-adn-666_c6.tbl int_17_19       10.50 1.0
+    17 20 table b-adn-666_c6.tbl int_17_20       10.50 1.0
+    17 21 table b-adn-666_c6.tbl int_17_21       10.50 1.0
+    17 22 table b-adn-666_c6.tbl int_17_22       10.50 1.0
+    17 23 table b-adn-666_c6.tbl int_17_23       10.50 1.0
+    17 24 table b-adn-666_c6.tbl int_17_24       10.50 1.0
+    17 25 table b-adn-666_c6.tbl int_17_25       10.50 1.0
+    17 26 table b-adn-666_c6.tbl int_17_26       10.50 1.0
+    17 27 table b-adn-666_c6.tbl int_17_27       10.50 1.0
+    17 28 table b-adn-666_c6.tbl int_17_28       10.50 1.0
+    17 29 table b-adn-666_c6.tbl int_17_29       10.50 1.0
+    17 30 table b-adn-666_c6.tbl int_17_30       10.50 1.0
+    17 31 table b-adn-666_c6.tbl int_17_31       10.50 1.0
+    17 32 table b-adn-666_c6.tbl int_17_32       10.50 1.0
+    17 33 table b-adn-666_c6.tbl int_17_33       10.50 1.0
+    17 34 table b-adn-666_c6.tbl int_17_34       10.50 1.0
+    17 35 table b-adn-666_c6.tbl int_17_35       10.50 1.0
+    17 36 table b-adn-666_c6.tbl int_17_36       10.50 1.0
+    17 37 table b-adn-666_c6.tbl int_17_37       10.50 1.0
+    17 38 table b-adn-666_c6.tbl int_17_38       10.50 1.0
+    17 39 table b-adn-666_c6.tbl int_17_39       10.50 1.0
+    17 40 table b-adn-666_c6.tbl int_17_40       10.50 1.0
+    17 41 table b-adn-666_c6.tbl int_17_41       10.50 1.0
+    17 42 table b-adn-666_c6.tbl int_17_42       10.50 1.0
+    17 43 table b-adn-666_c6.tbl int_17_43       10.50 1.0
+    17 44 table b-adn-666_c6.tbl int_17_44       10.50 1.0
+    17 45 table b-adn-666_c6.tbl int_17_45       10.50 1.0
+    17 46 table b-adn-666_c6.tbl int_17_46       10.50 1.0
+    17 47 table b-adn-666_c6.tbl int_17_47       10.50 1.0
+    17 48 table b-adn-666_c6.tbl int_17_48       10.50 1.0
+    17 49 table b-adn-666_c6.tbl int_17_49       10.50 1.0
+    17 50 table b-adn-666_c6.tbl int_17_50       10.50 1.0
+    17 51 table b-adn-666_c6.tbl int_17_51       10.50 1.0
+    17 52 table b-adn-666_c6.tbl int_17_52       10.50 1.0
+    17 53 table b-adn-666_c6.tbl int_17_53       10.50 1.0
+    17 54 table b-adn-666_c6.tbl int_17_54       10.50 1.0
+    17 55 table b-adn-666_c6.tbl int_17_55       10.50 1.0
+    17 56 table b-adn-666_c6.tbl int_17_56       10.50 1.0
+    18 18 table b-adn-666_c6.tbl int_18_18       10.50 1.0
+    18 19 table b-adn-666_c6.tbl int_18_19       10.50 1.0
+    18 20 table b-adn-666_c6.tbl int_18_20       10.50 1.0
+    18 21 table b-adn-666_c6.tbl int_18_21       10.50 1.0
+    18 22 table b-adn-666_c6.tbl int_18_22       10.50 1.0
+    18 23 table b-adn-666_c6.tbl int_18_23       10.50 1.0
+    18 24 table b-adn-666_c6.tbl int_18_24       10.50 1.0
+    18 25 table b-adn-666_c6.tbl int_18_25       10.50 1.0
+    18 26 table b-adn-666_c6.tbl int_18_26       10.50 1.0
+    18 27 table b-adn-666_c6.tbl int_18_27       10.50 1.0
+    18 28 table b-adn-666_c6.tbl int_18_28       10.50 1.0
+    18 29 table b-adn-666_c6.tbl int_18_29       10.50 1.0
+    18 30 table b-adn-666_c6.tbl int_18_30       10.50 1.0
+    18 31 table b-adn-666_c6.tbl int_18_31       10.50 1.0
+    18 32 table b-adn-666_c6.tbl int_18_32       10.50 1.0
+    18 33 table b-adn-666_c6.tbl int_18_33       10.50 1.0
+    18 34 table b-adn-666_c6.tbl int_18_34       10.50 1.0
+    18 35 table b-adn-666_c6.tbl int_18_35       10.50 1.0
+    18 36 table b-adn-666_c6.tbl int_18_36       10.50 1.0
+    18 37 table b-adn-666_c6.tbl int_18_37       10.50 1.0
+    18 38 table b-adn-666_c6.tbl int_18_38       10.50 1.0
+    18 39 table b-adn-666_c6.tbl int_18_39       10.50 1.0
+    18 40 table b-adn-666_c6.tbl int_18_40       10.50 1.0
+    18 41 table b-adn-666_c6.tbl int_18_41       10.50 1.0
+    18 42 table b-adn-666_c6.tbl int_18_42       10.50 1.0
+    18 43 table b-adn-666_c6.tbl int_18_43       10.50 1.0
+    18 44 table b-adn-666_c6.tbl int_18_44       10.50 1.0
+    18 45 table b-adn-666_c6.tbl int_18_45       10.50 1.0
+    18 46 table b-adn-666_c6.tbl int_18_46       10.50 1.0
+    18 47 table b-adn-666_c6.tbl int_18_47       10.50 1.0
+    18 48 table b-adn-666_c6.tbl int_18_48       10.50 1.0
+    18 49 table b-adn-666_c6.tbl int_18_49       10.50 1.0
+    18 50 table b-adn-666_c6.tbl int_18_50       10.50 1.0
+    18 51 table b-adn-666_c6.tbl int_18_51       10.50 1.0
+    18 52 table b-adn-666_c6.tbl int_18_52       10.50 1.0
+    18 53 table b-adn-666_c6.tbl int_18_53       10.50 1.0
+    18 54 table b-adn-666_c6.tbl int_18_54       10.50 1.0
+    18 55 table b-adn-666_c6.tbl int_18_55       10.50 1.0
+    18 56 table b-adn-666_c6.tbl int_18_56       10.50 1.0
+    19 19 table b-adn-666_c6.tbl int_19_19       10.50 1.0
+    19 20 table b-adn-666_c6.tbl int_19_20       10.50 1.0
+    19 21 table b-adn-666_c6.tbl int_19_21       10.50 1.0
+    19 22 table b-adn-666_c6.tbl int_19_22       10.50 1.0
+    19 23 table b-adn-666_c6.tbl int_19_23       10.50 1.0
+    19 24 table b-adn-666_c6.tbl int_19_24       10.50 1.0
+    19 25 table b-adn-666_c6.tbl int_19_25       10.50 1.0
+    19 26 table b-adn-666_c6.tbl int_19_26       10.50 1.0
+    19 27 table b-adn-666_c6.tbl int_19_27       10.50 1.0
+    19 28 table b-adn-666_c6.tbl int_19_28       10.50 1.0
+    19 29 table b-adn-666_c6.tbl int_19_29       10.50 1.0
+    19 30 table b-adn-666_c6.tbl int_19_30       10.50 1.0
+    19 31 table b-adn-666_c6.tbl int_19_31       10.50 1.0
+    19 32 table b-adn-666_c6.tbl int_19_32       10.50 1.0
+    19 33 table b-adn-666_c6.tbl int_19_33       10.50 1.0
+    19 34 table b-adn-666_c6.tbl int_19_34       10.50 1.0
+    19 35 table b-adn-666_c6.tbl int_19_35       10.50 1.0
+    19 36 table b-adn-666_c6.tbl int_19_36       10.50 1.0
+    19 37 table b-adn-666_c6.tbl int_19_37       10.50 1.0
+    19 38 table b-adn-666_c6.tbl int_19_38       10.50 1.0
+    19 39 table b-adn-666_c6.tbl int_19_39       10.50 1.0
+    19 40 table b-adn-666_c6.tbl int_19_40       10.50 1.0
+    19 41 table b-adn-666_c6.tbl int_19_41       10.50 1.0
+    19 42 table b-adn-666_c6.tbl int_19_42       10.50 1.0
+    19 43 table b-adn-666_c6.tbl int_19_43       10.50 1.0
+    19 44 table b-adn-666_c6.tbl int_19_44       10.50 1.0
+    19 45 table b-adn-666_c6.tbl int_19_45       10.50 1.0
+    19 46 table b-adn-666_c6.tbl int_19_46       10.50 1.0
+    19 47 table b-adn-666_c6.tbl int_19_47       10.50 1.0
+    19 48 table b-adn-666_c6.tbl int_19_48       10.50 1.0
+    19 49 table b-adn-666_c6.tbl int_19_49       10.50 1.0
+    19 50 table b-adn-666_c6.tbl int_19_50       10.50 1.0
+    19 51 table b-adn-666_c6.tbl int_19_51       10.50 1.0
+    19 52 table b-adn-666_c6.tbl int_19_52       10.50 1.0
+    19 53 table b-adn-666_c6.tbl int_19_53       10.50 1.0
+    19 54 table b-adn-666_c6.tbl int_19_54       10.50 1.0
+    19 55 table b-adn-666_c6.tbl int_19_55       10.50 1.0
+    19 56 table b-adn-666_c6.tbl int_19_56       10.50 1.0
+    20 20 table b-adn-666_c6.tbl int_20_20       10.50 1.0
+    20 21 table b-adn-666_c6.tbl int_20_21       10.50 1.0
+    20 22 table b-adn-666_c6.tbl int_20_22       10.50 1.0
+    20 23 table b-adn-666_c6.tbl int_20_23       10.50 1.0
+    20 24 table b-adn-666_c6.tbl int_20_24       10.50 1.0
+    20 25 table b-adn-666_c6.tbl int_20_25       10.50 1.0
+    20 26 table b-adn-666_c6.tbl int_20_26       10.50 1.0
+    20 27 table b-adn-666_c6.tbl int_20_27       10.50 1.0
+    20 28 table b-adn-666_c6.tbl int_20_28       10.50 1.0
+    20 29 table b-adn-666_c6.tbl int_20_29       10.50 1.0
+    20 30 table b-adn-666_c6.tbl int_20_30       10.50 1.0
+    20 31 table b-adn-666_c6.tbl int_20_31       10.50 1.0
+    20 32 table b-adn-666_c6.tbl int_20_32       10.50 1.0
+    20 33 table b-adn-666_c6.tbl int_20_33       10.50 1.0
+    20 34 table b-adn-666_c6.tbl int_20_34       10.50 1.0
+    20 35 table b-adn-666_c6.tbl int_20_35       10.50 1.0
+    20 36 table b-adn-666_c6.tbl int_20_36       10.50 1.0
+    20 37 table b-adn-666_c6.tbl int_20_37       10.50 1.0
+    20 38 table b-adn-666_c6.tbl int_20_38       10.50 1.0
+    20 39 table b-adn-666_c6.tbl int_20_39       10.50 1.0
+    20 40 table b-adn-666_c6.tbl int_20_40       10.50 1.0
+    20 41 table b-adn-666_c6.tbl int_20_41       10.50 1.0
+    20 42 table b-adn-666_c6.tbl int_20_42       10.50 1.0
+    20 43 table b-adn-666_c6.tbl int_20_43       10.50 1.0
+    20 44 table b-adn-666_c6.tbl int_20_44       10.50 1.0
+    20 45 table b-adn-666_c6.tbl int_20_45       10.50 1.0
+    20 46 table b-adn-666_c6.tbl int_20_46       10.50 1.0
+    20 47 table b-adn-666_c6.tbl int_20_47       10.50 1.0
+    20 48 table b-adn-666_c6.tbl int_20_48       10.50 1.0
+    20 49 table b-adn-666_c6.tbl int_20_49       10.50 1.0
+    20 50 table b-adn-666_c6.tbl int_20_50       10.50 1.0
+    20 51 table b-adn-666_c6.tbl int_20_51       10.50 1.0
+    20 52 table b-adn-666_c6.tbl int_20_52       10.50 1.0
+    20 53 table b-adn-666_c6.tbl int_20_53       10.50 1.0
+    20 54 table b-adn-666_c6.tbl int_20_54       10.50 1.0
+    20 55 table b-adn-666_c6.tbl int_20_55       10.50 1.0
+    20 56 table b-adn-666_c6.tbl int_20_56       10.50 1.0
+    21 21 table b-adn-666_c6.tbl int_21_21       10.50 1.0
+    21 22 table b-adn-666_c6.tbl int_21_22       10.50 1.0
+    21 23 table b-adn-666_c6.tbl int_21_23       10.50 1.0
+    21 24 table b-adn-666_c6.tbl int_21_24       10.50 1.0
+    21 25 table b-adn-666_c6.tbl int_21_25       10.50 1.0
+    21 26 table b-adn-666_c6.tbl int_21_26       10.50 1.0
+    21 27 table b-adn-666_c6.tbl int_21_27       10.50 1.0
+    21 28 table b-adn-666_c6.tbl int_21_28       10.50 1.0
+    21 29 table b-adn-666_c6.tbl int_21_29       10.50 1.0
+    21 30 table b-adn-666_c6.tbl int_21_30       10.50 1.0
+    21 31 table b-adn-666_c6.tbl int_21_31       10.50 1.0
+    21 32 table b-adn-666_c6.tbl int_21_32       10.50 1.0
+    21 33 table b-adn-666_c6.tbl int_21_33       10.50 1.0
+    21 34 table b-adn-666_c6.tbl int_21_34       10.50 1.0
+    21 35 table b-adn-666_c6.tbl int_21_35       10.50 1.0
+    21 36 table b-adn-666_c6.tbl int_21_36       10.50 1.0
+    21 37 table b-adn-666_c6.tbl int_21_37       10.50 1.0
+    21 38 table b-adn-666_c6.tbl int_21_38       10.50 1.0
+    21 39 table b-adn-666_c6.tbl int_21_39       10.50 1.0
+    21 40 table b-adn-666_c6.tbl int_21_40       10.50 1.0
+    21 41 table b-adn-666_c6.tbl int_21_41       10.50 1.0
+    21 42 table b-adn-666_c6.tbl int_21_42       10.50 1.0
+    21 43 table b-adn-666_c6.tbl int_21_43       10.50 1.0
+    21 44 table b-adn-666_c6.tbl int_21_44       10.50 1.0
+    21 45 table b-adn-666_c6.tbl int_21_45       10.50 1.0
+    21 46 table b-adn-666_c6.tbl int_21_46       10.50 1.0
+    21 47 table b-adn-666_c6.tbl int_21_47       10.50 1.0
+    21 48 table b-adn-666_c6.tbl int_21_48       10.50 1.0
+    21 49 table b-adn-666_c6.tbl int_21_49       10.50 1.0
+    21 50 table b-adn-666_c6.tbl int_21_50       10.50 1.0
+    21 51 table b-adn-666_c6.tbl int_21_51       10.50 1.0
+    21 52 table b-adn-666_c6.tbl int_21_52       10.50 1.0
+    21 53 table b-adn-666_c6.tbl int_21_53       10.50 1.0
+    21 54 table b-adn-666_c6.tbl int_21_54       10.50 1.0
+    21 55 table b-adn-666_c6.tbl int_21_55       10.50 1.0
+    21 56 table b-adn-666_c6.tbl int_21_56       10.50 1.0
+    22 22 table b-adn-666_c6.tbl int_22_22       10.50 1.0
+    22 23 table b-adn-666_c6.tbl int_22_23       10.50 1.0
+    22 24 table b-adn-666_c6.tbl int_22_24       10.50 1.0
+    22 25 table b-adn-666_c6.tbl int_22_25       10.50 1.0
+    22 26 table b-adn-666_c6.tbl int_22_26       10.50 1.0
+    22 27 table b-adn-666_c6.tbl int_22_27       10.50 1.0
+    22 28 table b-adn-666_c6.tbl int_22_28       10.50 1.0
+    22 29 table b-adn-666_c6.tbl int_22_29       10.50 1.0
+    22 30 table b-adn-666_c6.tbl int_22_30       10.50 1.0
+    22 31 table b-adn-666_c6.tbl int_22_31       10.50 1.0
+    22 32 table b-adn-666_c6.tbl int_22_32       10.50 1.0
+    22 33 table b-adn-666_c6.tbl int_22_33       10.50 1.0
+    22 34 table b-adn-666_c6.tbl int_22_34       10.50 1.0
+    22 35 table b-adn-666_c6.tbl int_22_35       10.50 1.0
+    22 36 table b-adn-666_c6.tbl int_22_36       10.50 1.0
+    22 37 table b-adn-666_c6.tbl int_22_37       10.50 1.0
+    22 38 table b-adn-666_c6.tbl int_22_38       10.50 1.0
+    22 39 table b-adn-666_c6.tbl int_22_39       10.50 1.0
+    22 40 table b-adn-666_c6.tbl int_22_40       10.50 1.0
+    22 41 table b-adn-666_c6.tbl int_22_41       10.50 1.0
+    22 42 table b-adn-666_c6.tbl int_22_42       10.50 1.0
+    22 43 table b-adn-666_c6.tbl int_22_43       10.50 1.0
+    22 44 table b-adn-666_c6.tbl int_22_44       10.50 1.0
+    22 45 table b-adn-666_c6.tbl int_22_45       10.50 1.0
+    22 46 table b-adn-666_c6.tbl int_22_46       10.50 1.0
+    22 47 table b-adn-666_c6.tbl int_22_47       10.50 1.0
+    22 48 table b-adn-666_c6.tbl int_22_48       10.50 1.0
+    22 49 table b-adn-666_c6.tbl int_22_49       10.50 1.0
+    22 50 table b-adn-666_c6.tbl int_22_50       10.50 1.0
+    22 51 table b-adn-666_c6.tbl int_22_51       10.50 1.0
+    22 52 table b-adn-666_c6.tbl int_22_52       10.50 1.0
+    22 53 table b-adn-666_c6.tbl int_22_53       10.50 1.0
+    22 54 table b-adn-666_c6.tbl int_22_54       10.50 1.0
+    22 55 table b-adn-666_c6.tbl int_22_55       10.50 1.0
+    22 56 table b-adn-666_c6.tbl int_22_56       10.50 1.0
+    23 23 table b-adn-666_c6.tbl int_23_23       10.50 1.0
+    23 24 table b-adn-666_c6.tbl int_23_24       10.50 1.0
+    23 25 table b-adn-666_c6.tbl int_23_25       10.50 1.0
+    23 26 table b-adn-666_c6.tbl int_23_26       10.50 1.0
+    23 27 table b-adn-666_c6.tbl int_23_27       10.50 1.0
+    23 28 table b-adn-666_c6.tbl int_23_28       10.50 1.0
+    23 29 table b-adn-666_c6.tbl int_23_29       10.50 1.0
+    23 30 table b-adn-666_c6.tbl int_23_30       10.50 1.0
+    23 31 table b-adn-666_c6.tbl int_23_31       10.50 1.0
+    23 32 table b-adn-666_c6.tbl int_23_32       10.50 1.0
+    23 33 table b-adn-666_c6.tbl int_23_33       10.50 1.0
+    23 34 table b-adn-666_c6.tbl int_23_34       10.50 1.0
+    23 35 table b-adn-666_c6.tbl int_23_35       10.50 1.0
+    23 36 table b-adn-666_c6.tbl int_23_36       10.50 1.0
+    23 37 table b-adn-666_c6.tbl int_23_37       10.50 1.0
+    23 38 table b-adn-666_c6.tbl int_23_38       10.50 1.0
+    23 39 table b-adn-666_c6.tbl int_23_39       10.50 1.0
+    23 40 table b-adn-666_c6.tbl int_23_40       10.50 1.0
+    23 41 table b-adn-666_c6.tbl int_23_41       10.50 1.0
+    23 42 table b-adn-666_c6.tbl int_23_42       10.50 1.0
+    23 43 table b-adn-666_c6.tbl int_23_43       10.50 1.0
+    23 44 table b-adn-666_c6.tbl int_23_44       10.50 1.0
+    23 45 table b-adn-666_c6.tbl int_23_45       10.50 1.0
+    23 46 table b-adn-666_c6.tbl int_23_46       10.50 1.0
+    23 47 table b-adn-666_c6.tbl int_23_47       10.50 1.0
+    23 48 table b-adn-666_c6.tbl int_23_48       10.50 1.0
+    23 49 table b-adn-666_c6.tbl int_23_49       10.50 1.0
+    23 50 table b-adn-666_c6.tbl int_23_50       10.50 1.0
+    23 51 table b-adn-666_c6.tbl int_23_51       10.50 1.0
+    23 52 table b-adn-666_c6.tbl int_23_52       10.50 1.0
+    23 53 table b-adn-666_c6.tbl int_23_53       10.50 1.0
+    23 54 table b-adn-666_c6.tbl int_23_54       10.50 1.0
+    23 55 table b-adn-666_c6.tbl int_23_55       10.50 1.0
+    23 56 table b-adn-666_c6.tbl int_23_56       10.50 1.0
+    24 24 table b-adn-666_c6.tbl int_24_24       10.50 1.0
+    24 25 table b-adn-666_c6.tbl int_24_25       10.50 1.0
+    24 26 table b-adn-666_c6.tbl int_24_26       10.50 1.0
+    24 27 table b-adn-666_c6.tbl int_24_27       10.50 1.0
+    24 28 table b-adn-666_c6.tbl int_24_28       10.50 1.0
+    24 29 table b-adn-666_c6.tbl int_24_29       10.50 1.0
+    24 30 table b-adn-666_c6.tbl int_24_30       10.50 1.0
+    24 31 table b-adn-666_c6.tbl int_24_31       10.50 1.0
+    24 32 table b-adn-666_c6.tbl int_24_32       10.50 1.0
+    24 33 table b-adn-666_c6.tbl int_24_33       10.50 1.0
+    24 34 table b-adn-666_c6.tbl int_24_34       10.50 1.0
+    24 35 table b-adn-666_c6.tbl int_24_35       10.50 1.0
+    24 36 table b-adn-666_c6.tbl int_24_36       10.50 1.0
+    24 37 table b-adn-666_c6.tbl int_24_37       10.50 1.0
+    24 38 table b-adn-666_c6.tbl int_24_38       10.50 1.0
+    24 39 table b-adn-666_c6.tbl int_24_39       10.50 1.0
+    24 40 table b-adn-666_c6.tbl int_24_40       10.50 1.0
+    24 41 table b-adn-666_c6.tbl int_24_41       10.50 1.0
+    24 42 table b-adn-666_c6.tbl int_24_42       10.50 1.0
+    24 43 table b-adn-666_c6.tbl int_24_43       10.50 1.0
+    24 44 table b-adn-666_c6.tbl int_24_44       10.50 1.0
+    24 45 table b-adn-666_c6.tbl int_24_45       10.50 1.0
+    24 46 table b-adn-666_c6.tbl int_24_46       10.50 1.0
+    24 47 table b-adn-666_c6.tbl int_24_47       10.50 1.0
+    24 48 table b-adn-666_c6.tbl int_24_48       10.50 1.0
+    24 49 table b-adn-666_c6.tbl int_24_49       10.50 1.0
+    24 50 table b-adn-666_c6.tbl int_24_50       10.50 1.0
+    24 51 table b-adn-666_c6.tbl int_24_51       10.50 1.0
+    24 52 table b-adn-666_c6.tbl int_24_52       10.50 1.0
+    24 53 table b-adn-666_c6.tbl int_24_53       10.50 1.0
+    24 54 table b-adn-666_c6.tbl int_24_54       10.50 1.0
+    24 55 table b-adn-666_c6.tbl int_24_55       10.50 1.0
+    24 56 table b-adn-666_c6.tbl int_24_56       10.50 1.0
+    25 25 table b-adn-666_c6.tbl int_25_25       10.50 1.0
+    25 26 table b-adn-666_c6.tbl int_25_26       10.50 1.0
+    25 27 table b-adn-666_c6.tbl int_25_27       10.50 1.0
+    25 28 table b-adn-666_c6.tbl int_25_28       10.50 1.0
+    25 29 table b-adn-666_c6.tbl int_25_29       10.50 1.0
+    25 30 table b-adn-666_c6.tbl int_25_30       10.50 1.0
+    25 31 table b-adn-666_c6.tbl int_25_31       10.50 1.0
+    25 32 table b-adn-666_c6.tbl int_25_32       10.50 1.0
+    25 33 table b-adn-666_c6.tbl int_25_33       10.50 1.0
+    25 34 table b-adn-666_c6.tbl int_25_34       10.50 1.0
+    25 35 table b-adn-666_c6.tbl int_25_35       10.50 1.0
+    25 36 table b-adn-666_c6.tbl int_25_36       10.50 1.0
+    25 37 table b-adn-666_c6.tbl int_25_37       10.50 1.0
+    25 38 table b-adn-666_c6.tbl int_25_38       10.50 1.0
+    25 39 table b-adn-666_c6.tbl int_25_39       10.50 1.0
+    25 40 table b-adn-666_c6.tbl int_25_40       10.50 1.0
+    25 41 table b-adn-666_c6.tbl int_25_41       10.50 1.0
+    25 42 table b-adn-666_c6.tbl int_25_42       10.50 1.0
+    25 43 table b-adn-666_c6.tbl int_25_43       10.50 1.0
+    25 44 table b-adn-666_c6.tbl int_25_44       10.50 1.0
+    25 45 table b-adn-666_c6.tbl int_25_45       10.50 1.0
+    25 46 table b-adn-666_c6.tbl int_25_46       10.50 1.0
+    25 47 table b-adn-666_c6.tbl int_25_47       10.50 1.0
+    25 48 table b-adn-666_c6.tbl int_25_48       10.50 1.0
+    25 49 table b-adn-666_c6.tbl int_25_49       10.50 1.0
+    25 50 table b-adn-666_c6.tbl int_25_50       10.50 1.0
+    25 51 table b-adn-666_c6.tbl int_25_51       10.50 1.0
+    25 52 table b-adn-666_c6.tbl int_25_52       10.50 1.0
+    25 53 table b-adn-666_c6.tbl int_25_53       10.50 1.0
+    25 54 table b-adn-666_c6.tbl int_25_54       10.50 1.0
+    25 55 table b-adn-666_c6.tbl int_25_55       10.50 1.0
+    25 56 table b-adn-666_c6.tbl int_25_56       10.50 1.0
+    26 26 table b-adn-666_c6.tbl int_26_26       10.50 1.0
+    26 27 table b-adn-666_c6.tbl int_26_27       10.50 1.0
+    26 28 table b-adn-666_c6.tbl int_26_28       10.50 1.0
+    26 29 table b-adn-666_c6.tbl int_26_29       10.50 1.0
+    26 30 table b-adn-666_c6.tbl int_26_30       10.50 1.0
+    26 31 table b-adn-666_c6.tbl int_26_31       10.50 1.0
+    26 32 table b-adn-666_c6.tbl int_26_32       10.50 1.0
+    26 33 table b-adn-666_c6.tbl int_26_33       10.50 1.0
+    26 34 table b-adn-666_c6.tbl int_26_34       10.50 1.0
+    26 35 table b-adn-666_c6.tbl int_26_35       10.50 1.0
+    26 36 table b-adn-666_c6.tbl int_26_36       10.50 1.0
+    26 37 table b-adn-666_c6.tbl int_26_37       10.50 1.0
+    26 38 table b-adn-666_c6.tbl int_26_38       10.50 1.0
+    26 39 table b-adn-666_c6.tbl int_26_39       10.50 1.0
+    26 40 table b-adn-666_c6.tbl int_26_40       10.50 1.0
+    26 41 table b-adn-666_c6.tbl int_26_41       10.50 1.0
+    26 42 table b-adn-666_c6.tbl int_26_42       10.50 1.0
+    26 43 table b-adn-666_c6.tbl int_26_43       10.50 1.0
+    26 44 table b-adn-666_c6.tbl int_26_44       10.50 1.0
+    26 45 table b-adn-666_c6.tbl int_26_45       10.50 1.0
+    26 46 table b-adn-666_c6.tbl int_26_46       10.50 1.0
+    26 47 table b-adn-666_c6.tbl int_26_47       10.50 1.0
+    26 48 table b-adn-666_c6.tbl int_26_48       10.50 1.0
+    26 49 table b-adn-666_c6.tbl int_26_49       10.50 1.0
+    26 50 table b-adn-666_c6.tbl int_26_50       10.50 1.0
+    26 51 table b-adn-666_c6.tbl int_26_51       10.50 1.0
+    26 52 table b-adn-666_c6.tbl int_26_52       10.50 1.0
+    26 53 table b-adn-666_c6.tbl int_26_53       10.50 1.0
+    26 54 table b-adn-666_c6.tbl int_26_54       10.50 1.0
+    26 55 table b-adn-666_c6.tbl int_26_55       10.50 1.0
+    26 56 table b-adn-666_c6.tbl int_26_56       10.50 1.0
+    27 27 table b-adn-666_c6.tbl int_27_27       10.50 1.0
+    27 28 table b-adn-666_c6.tbl int_27_28       10.50 1.0
+    27 29 table b-adn-666_c6.tbl int_27_29       10.50 1.0
+    27 30 table b-adn-666_c6.tbl int_27_30       10.50 1.0
+    27 31 table b-adn-666_c6.tbl int_27_31       10.50 1.0
+    27 32 table b-adn-666_c6.tbl int_27_32       10.50 1.0
+    27 33 table b-adn-666_c6.tbl int_27_33       10.50 1.0
+    27 34 table b-adn-666_c6.tbl int_27_34       10.50 1.0
+    27 35 table b-adn-666_c6.tbl int_27_35       10.50 1.0
+    27 36 table b-adn-666_c6.tbl int_27_36       10.50 1.0
+    27 37 table b-adn-666_c6.tbl int_27_37       10.50 1.0
+    27 38 table b-adn-666_c6.tbl int_27_38       10.50 1.0
+    27 39 table b-adn-666_c6.tbl int_27_39       10.50 1.0
+    27 40 table b-adn-666_c6.tbl int_27_40       10.50 1.0
+    27 41 table b-adn-666_c6.tbl int_27_41       10.50 1.0
+    27 42 table b-adn-666_c6.tbl int_27_42       10.50 1.0
+    27 43 table b-adn-666_c6.tbl int_27_43       10.50 1.0
+    27 44 table b-adn-666_c6.tbl int_27_44       10.50 1.0
+    27 45 table b-adn-666_c6.tbl int_27_45       10.50 1.0
+    27 46 table b-adn-666_c6.tbl int_27_46       10.50 1.0
+    27 47 table b-adn-666_c6.tbl int_27_47       10.50 1.0
+    27 48 table b-adn-666_c6.tbl int_27_48       10.50 1.0
+    27 49 table b-adn-666_c6.tbl int_27_49       10.50 1.0
+    27 50 table b-adn-666_c6.tbl int_27_50       10.50 1.0
+    27 51 table b-adn-666_c6.tbl int_27_51       10.50 1.0
+    27 52 table b-adn-666_c6.tbl int_27_52       10.50 1.0
+    27 53 table b-adn-666_c6.tbl int_27_53       10.50 1.0
+    27 54 table b-adn-666_c6.tbl int_27_54       10.50 1.0
+    27 55 table b-adn-666_c6.tbl int_27_55       10.50 1.0
+    27 56 table b-adn-666_c6.tbl int_27_56       10.50 1.0
+    28 28 table b-adn-666_c6.tbl int_28_28       10.50 1.0
+    28 29 table b-adn-666_c6.tbl int_28_29       10.50 1.0
+    28 30 table b-adn-666_c6.tbl int_28_30       10.50 1.0
+    28 31 table b-adn-666_c6.tbl int_28_31       10.50 1.0
+    28 32 table b-adn-666_c6.tbl int_28_32       10.50 1.0
+    28 33 table b-adn-666_c6.tbl int_28_33       10.50 1.0
+    28 34 table b-adn-666_c6.tbl int_28_34       10.50 1.0
+    28 35 table b-adn-666_c6.tbl int_28_35       10.50 1.0
+    28 36 table b-adn-666_c6.tbl int_28_36       10.50 1.0
+    28 37 table b-adn-666_c6.tbl int_28_37       10.50 1.0
+    28 38 table b-adn-666_c6.tbl int_28_38       10.50 1.0
+    28 39 table b-adn-666_c6.tbl int_28_39       10.50 1.0
+    28 40 table b-adn-666_c6.tbl int_28_40       10.50 1.0
+    28 41 table b-adn-666_c6.tbl int_28_41       10.50 1.0
+    28 42 table b-adn-666_c6.tbl int_28_42       10.50 1.0
+    28 43 table b-adn-666_c6.tbl int_28_43       10.50 1.0
+    28 44 table b-adn-666_c6.tbl int_28_44       10.50 1.0
+    28 45 table b-adn-666_c6.tbl int_28_45       10.50 1.0
+    28 46 table b-adn-666_c6.tbl int_28_46       10.50 1.0
+    28 47 table b-adn-666_c6.tbl int_28_47       10.50 1.0
+    28 48 table b-adn-666_c6.tbl int_28_48       10.50 1.0
+    28 49 table b-adn-666_c6.tbl int_28_49       10.50 1.0
+    28 50 table b-adn-666_c6.tbl int_28_50       10.50 1.0
+    28 51 table b-adn-666_c6.tbl int_28_51       10.50 1.0
+    28 52 table b-adn-666_c6.tbl int_28_52       10.50 1.0
+    28 53 table b-adn-666_c6.tbl int_28_53       10.50 1.0
+    28 54 table b-adn-666_c6.tbl int_28_54       10.50 1.0
+    28 55 table b-adn-666_c6.tbl int_28_55       10.50 1.0
+    28 56 table b-adn-666_c6.tbl int_28_56       10.50 1.0
+    29 29 table b-adn-666_c6.tbl int_29_29       10.50 1.0
+    29 30 table b-adn-666_c6.tbl int_29_30       10.50 1.0
+    29 31 table b-adn-666_c6.tbl int_29_31       10.50 1.0
+    29 32 table b-adn-666_c6.tbl int_29_32       10.50 1.0
+    29 33 table b-adn-666_c6.tbl int_29_33       10.50 1.0
+    29 34 table b-adn-666_c6.tbl int_29_34       10.50 1.0
+    29 35 table b-adn-666_c6.tbl int_29_35       10.50 1.0
+    29 36 table b-adn-666_c6.tbl int_29_36       10.50 1.0
+    29 37 table b-adn-666_c6.tbl int_29_37       10.50 1.0
+    29 38 table b-adn-666_c6.tbl int_29_38       10.50 1.0
+    29 39 table b-adn-666_c6.tbl int_29_39       10.50 1.0
+    29 40 table b-adn-666_c6.tbl int_29_40       10.50 1.0
+    29 41 table b-adn-666_c6.tbl int_29_41       10.50 1.0
+    29 42 table b-adn-666_c6.tbl int_29_42       10.50 1.0
+    29 43 table b-adn-666_c6.tbl int_29_43       10.50 1.0
+    29 44 table b-adn-666_c6.tbl int_29_44       10.50 1.0
+    29 45 table b-adn-666_c6.tbl int_29_45       10.50 1.0
+    29 46 table b-adn-666_c6.tbl int_29_46       10.50 1.0
+    29 47 table b-adn-666_c6.tbl int_29_47       10.50 1.0
+    29 48 table b-adn-666_c6.tbl int_29_48       10.50 1.0
+    29 49 table b-adn-666_c6.tbl int_29_49       10.50 1.0
+    29 50 table b-adn-666_c6.tbl int_29_50       10.50 1.0
+    29 51 table b-adn-666_c6.tbl int_29_51       10.50 1.0
+    29 52 table b-adn-666_c6.tbl int_29_52       10.50 1.0
+    29 53 table b-adn-666_c6.tbl int_29_53       10.50 1.0
+    29 54 table b-adn-666_c6.tbl int_29_54       10.50 1.0
+    29 55 table b-adn-666_c6.tbl int_29_55       10.50 1.0
+    29 56 table b-adn-666_c6.tbl int_29_56       10.50 1.0
+    30 30 table b-adn-666_c6.tbl int_30_30       10.50 1.0
+    30 31 table b-adn-666_c6.tbl int_30_31       10.50 1.0
+    30 32 table b-adn-666_c6.tbl int_30_32       10.50 1.0
+    30 33 table b-adn-666_c6.tbl int_30_33       10.50 1.0
+    30 34 table b-adn-666_c6.tbl int_30_34       10.50 1.0
+    30 35 table b-adn-666_c6.tbl int_30_35       10.50 1.0
+    30 36 table b-adn-666_c6.tbl int_30_36       10.50 1.0
+    30 37 table b-adn-666_c6.tbl int_30_37       10.50 1.0
+    30 38 table b-adn-666_c6.tbl int_30_38       10.50 1.0
+    30 39 table b-adn-666_c6.tbl int_30_39       10.50 1.0
+    30 40 table b-adn-666_c6.tbl int_30_40       10.50 1.0
+    30 41 table b-adn-666_c6.tbl int_30_41       10.50 1.0
+    30 42 table b-adn-666_c6.tbl int_30_42       10.50 1.0
+    30 43 table b-adn-666_c6.tbl int_30_43       10.50 1.0
+    30 44 table b-adn-666_c6.tbl int_30_44       10.50 1.0
+    30 45 table b-adn-666_c6.tbl int_30_45       10.50 1.0
+    30 46 table b-adn-666_c6.tbl int_30_46       10.50 1.0
+    30 47 table b-adn-666_c6.tbl int_30_47       10.50 1.0
+    30 48 table b-adn-666_c6.tbl int_30_48       10.50 1.0
+    30 49 table b-adn-666_c6.tbl int_30_49       10.50 1.0
+    30 50 table b-adn-666_c6.tbl int_30_50       10.50 1.0
+    30 51 table b-adn-666_c6.tbl int_30_51       10.50 1.0
+    30 52 table b-adn-666_c6.tbl int_30_52       10.50 1.0
+    30 53 table b-adn-666_c6.tbl int_30_53       10.50 1.0
+    30 54 table b-adn-666_c6.tbl int_30_54       10.50 1.0
+    30 55 table b-adn-666_c6.tbl int_30_55       10.50 1.0
+    30 56 table b-adn-666_c6.tbl int_30_56       10.50 1.0
+    31 31 table b-adn-666_c6.tbl int_31_31       10.50 1.0
+    31 32 table b-adn-666_c6.tbl int_31_32       10.50 1.0
+    31 33 table b-adn-666_c6.tbl int_31_33       10.50 1.0
+    31 34 table b-adn-666_c6.tbl int_31_34       10.50 1.0
+    31 35 table b-adn-666_c6.tbl int_31_35       10.50 1.0
+    31 36 table b-adn-666_c6.tbl int_31_36       10.50 1.0
+    31 37 table b-adn-666_c6.tbl int_31_37       10.50 1.0
+    31 38 table b-adn-666_c6.tbl int_31_38       10.50 1.0
+    31 39 table b-adn-666_c6.tbl int_31_39       10.50 1.0
+    31 40 table b-adn-666_c6.tbl int_31_40       10.50 1.0
+    31 41 table b-adn-666_c6.tbl int_31_41       10.50 1.0
+    31 42 table b-adn-666_c6.tbl int_31_42       10.50 1.0
+    31 43 table b-adn-666_c6.tbl int_31_43       10.50 1.0
+    31 44 table b-adn-666_c6.tbl int_31_44       10.50 1.0
+    31 45 table b-adn-666_c6.tbl int_31_45       10.50 1.0
+    31 46 table b-adn-666_c6.tbl int_31_46       10.50 1.0
+    31 47 table b-adn-666_c6.tbl int_31_47       10.50 1.0
+    31 48 table b-adn-666_c6.tbl int_31_48       10.50 1.0
+    31 49 table b-adn-666_c6.tbl int_31_49       10.50 1.0
+    31 50 table b-adn-666_c6.tbl int_31_50       10.50 1.0
+    31 51 table b-adn-666_c6.tbl int_31_51       10.50 1.0
+    31 52 table b-adn-666_c6.tbl int_31_52       10.50 1.0
+    31 53 table b-adn-666_c6.tbl int_31_53       10.50 1.0
+    31 54 table b-adn-666_c6.tbl int_31_54       10.50 1.0
+    31 55 table b-adn-666_c6.tbl int_31_55       10.50 1.0
+    31 56 table b-adn-666_c6.tbl int_31_56       10.50 1.0
+    32 32 table b-adn-666_c6.tbl int_32_32       10.50 1.0
+    32 33 table b-adn-666_c6.tbl int_32_33       10.50 1.0
+    32 34 table b-adn-666_c6.tbl int_32_34       10.50 1.0
+    32 35 table b-adn-666_c6.tbl int_32_35       10.50 1.0
+    32 36 table b-adn-666_c6.tbl int_32_36       10.50 1.0
+    32 37 table b-adn-666_c6.tbl int_32_37       10.50 1.0
+    32 38 table b-adn-666_c6.tbl int_32_38       10.50 1.0
+    32 39 table b-adn-666_c6.tbl int_32_39       10.50 1.0
+    32 40 table b-adn-666_c6.tbl int_32_40       10.50 1.0
+    32 41 table b-adn-666_c6.tbl int_32_41       10.50 1.0
+    32 42 table b-adn-666_c6.tbl int_32_42       10.50 1.0
+    32 43 table b-adn-666_c6.tbl int_32_43       10.50 1.0
+    32 44 table b-adn-666_c6.tbl int_32_44       10.50 1.0
+    32 45 table b-adn-666_c6.tbl int_32_45       10.50 1.0
+    32 46 table b-adn-666_c6.tbl int_32_46       10.50 1.0
+    32 47 table b-adn-666_c6.tbl int_32_47       10.50 1.0
+    32 48 table b-adn-666_c6.tbl int_32_48       10.50 1.0
+    32 49 table b-adn-666_c6.tbl int_32_49       10.50 1.0
+    32 50 table b-adn-666_c6.tbl int_32_50       10.50 1.0
+    32 51 table b-adn-666_c6.tbl int_32_51       10.50 1.0
+    32 52 table b-adn-666_c6.tbl int_32_52       10.50 1.0
+    32 53 table b-adn-666_c6.tbl int_32_53       10.50 1.0
+    32 54 table b-adn-666_c6.tbl int_32_54       10.50 1.0
+    32 55 table b-adn-666_c6.tbl int_32_55       10.50 1.0
+    32 56 table b-adn-666_c6.tbl int_32_56       10.50 1.0
+    33 33 table b-adn-666_c6.tbl int_33_33       10.50 1.0
+    33 34 table b-adn-666_c6.tbl int_33_34       10.50 1.0
+    33 35 table b-adn-666_c6.tbl int_33_35       10.50 1.0
+    33 36 table b-adn-666_c6.tbl int_33_36       10.50 1.0
+    33 37 table b-adn-666_c6.tbl int_33_37       10.50 1.0
+    33 38 table b-adn-666_c6.tbl int_33_38       10.50 1.0
+    33 39 table b-adn-666_c6.tbl int_33_39       10.50 1.0
+    33 40 table b-adn-666_c6.tbl int_33_40       10.50 1.0
+    33 41 table b-adn-666_c6.tbl int_33_41       10.50 1.0
+    33 42 table b-adn-666_c6.tbl int_33_42       10.50 1.0
+    33 43 table b-adn-666_c6.tbl int_33_43       10.50 1.0
+    33 44 table b-adn-666_c6.tbl int_33_44       10.50 1.0
+    33 45 table b-adn-666_c6.tbl int_33_45       10.50 1.0
+    33 46 table b-adn-666_c6.tbl int_33_46       10.50 1.0
+    33 47 table b-adn-666_c6.tbl int_33_47       10.50 1.0
+    33 48 table b-adn-666_c6.tbl int_33_48       10.50 1.0
+    33 49 table b-adn-666_c6.tbl int_33_49       10.50 1.0
+    33 50 table b-adn-666_c6.tbl int_33_50       10.50 1.0
+    33 51 table b-adn-666_c6.tbl int_33_51       10.50 1.0
+    33 52 table b-adn-666_c6.tbl int_33_52       10.50 1.0
+    33 53 table b-adn-666_c6.tbl int_33_53       10.50 1.0
+    33 54 table b-adn-666_c6.tbl int_33_54       10.50 1.0
+    33 55 table b-adn-666_c6.tbl int_33_55       10.50 1.0
+    33 56 table b-adn-666_c6.tbl int_33_56       10.50 1.0
+    34 34 table b-adn-666_c6.tbl int_34_34       10.50 1.0
+    34 35 table b-adn-666_c6.tbl int_34_35       10.50 1.0
+    34 36 table b-adn-666_c6.tbl int_34_36       10.50 1.0
+    34 37 table b-adn-666_c6.tbl int_34_37       10.50 1.0
+    34 38 table b-adn-666_c6.tbl int_34_38       10.50 1.0
+    34 39 table b-adn-666_c6.tbl int_34_39       10.50 1.0
+    34 40 table b-adn-666_c6.tbl int_34_40       10.50 1.0
+    34 41 table b-adn-666_c6.tbl int_34_41       10.50 1.0
+    34 42 table b-adn-666_c6.tbl int_34_42       10.50 1.0
+    34 43 table b-adn-666_c6.tbl int_34_43       10.50 1.0
+    34 44 table b-adn-666_c6.tbl int_34_44       10.50 1.0
+    34 45 table b-adn-666_c6.tbl int_34_45       10.50 1.0
+    34 46 table b-adn-666_c6.tbl int_34_46       10.50 1.0
+    34 47 table b-adn-666_c6.tbl int_34_47       10.50 1.0
+    34 48 table b-adn-666_c6.tbl int_34_48       10.50 1.0
+    34 49 table b-adn-666_c6.tbl int_34_49       10.50 1.0
+    34 50 table b-adn-666_c6.tbl int_34_50       10.50 1.0
+    34 51 table b-adn-666_c6.tbl int_34_51       10.50 1.0
+    34 52 table b-adn-666_c6.tbl int_34_52       10.50 1.0
+    34 53 table b-adn-666_c6.tbl int_34_53       10.50 1.0
+    34 54 table b-adn-666_c6.tbl int_34_54       10.50 1.0
+    34 55 table b-adn-666_c6.tbl int_34_55       10.50 1.0
+    34 56 table b-adn-666_c6.tbl int_34_56       10.50 1.0
+    35 35 table b-adn-666_c6.tbl int_35_35       10.50 1.0
+    35 36 table b-adn-666_c6.tbl int_35_36       10.50 1.0
+    35 37 table b-adn-666_c6.tbl int_35_37       10.50 1.0
+    35 38 table b-adn-666_c6.tbl int_35_38       10.50 1.0
+    35 39 table b-adn-666_c6.tbl int_35_39       10.50 1.0
+    35 40 table b-adn-666_c6.tbl int_35_40       10.50 1.0
+    35 41 table b-adn-666_c6.tbl int_35_41       10.50 1.0
+    35 42 table b-adn-666_c6.tbl int_35_42       10.50 1.0
+    35 43 table b-adn-666_c6.tbl int_35_43       10.50 1.0
+    35 44 table b-adn-666_c6.tbl int_35_44       10.50 1.0
+    35 45 table b-adn-666_c6.tbl int_35_45       10.50 1.0
+    35 46 table b-adn-666_c6.tbl int_35_46       10.50 1.0
+    35 47 table b-adn-666_c6.tbl int_35_47       10.50 1.0
+    35 48 table b-adn-666_c6.tbl int_35_48       10.50 1.0
+    35 49 table b-adn-666_c6.tbl int_35_49       10.50 1.0
+    35 50 table b-adn-666_c6.tbl int_35_50       10.50 1.0
+    35 51 table b-adn-666_c6.tbl int_35_51       10.50 1.0
+    35 52 table b-adn-666_c6.tbl int_35_52       10.50 1.0
+    35 53 table b-adn-666_c6.tbl int_35_53       10.50 1.0
+    35 54 table b-adn-666_c6.tbl int_35_54       10.50 1.0
+    35 55 table b-adn-666_c6.tbl int_35_55       10.50 1.0
+    35 56 table b-adn-666_c6.tbl int_35_56       10.50 1.0
+    36 36 table b-adn-666_c6.tbl int_36_36       10.50 1.0
+    36 37 table b-adn-666_c6.tbl int_36_37       10.50 1.0
+    36 38 table b-adn-666_c6.tbl int_36_38       10.50 1.0
+    36 39 table b-adn-666_c6.tbl int_36_39       10.50 1.0
+    36 40 table b-adn-666_c6.tbl int_36_40       10.50 1.0
+    36 41 table b-adn-666_c6.tbl int_36_41       10.50 1.0
+    36 42 table b-adn-666_c6.tbl int_36_42       10.50 1.0
+    36 43 table b-adn-666_c6.tbl int_36_43       10.50 1.0
+    36 44 table b-adn-666_c6.tbl int_36_44       10.50 1.0
+    36 45 table b-adn-666_c6.tbl int_36_45       10.50 1.0
+    36 46 table b-adn-666_c6.tbl int_36_46       10.50 1.0
+    36 47 table b-adn-666_c6.tbl int_36_47       10.50 1.0
+    36 48 table b-adn-666_c6.tbl int_36_48       10.50 1.0
+    36 49 table b-adn-666_c6.tbl int_36_49       10.50 1.0
+    36 50 table b-adn-666_c6.tbl int_36_50       10.50 1.0
+    36 51 table b-adn-666_c6.tbl int_36_51       10.50 1.0
+    36 52 table b-adn-666_c6.tbl int_36_52       10.50 1.0
+    36 53 table b-adn-666_c6.tbl int_36_53       10.50 1.0
+    36 54 table b-adn-666_c6.tbl int_36_54       10.50 1.0
+    36 55 table b-adn-666_c6.tbl int_36_55       10.50 1.0
+    36 56 table b-adn-666_c6.tbl int_36_56       10.50 1.0
+    37 37 table b-adn-666_c6.tbl int_37_37       10.50 1.0
+    37 38 table b-adn-666_c6.tbl int_37_38       10.50 1.0
+    37 39 table b-adn-666_c6.tbl int_37_39       10.50 1.0
+    37 40 table b-adn-666_c6.tbl int_37_40       10.50 1.0
+    37 41 table b-adn-666_c6.tbl int_37_41       10.50 1.0
+    37 42 table b-adn-666_c6.tbl int_37_42       10.50 1.0
+    37 43 table b-adn-666_c6.tbl int_37_43       10.50 1.0
+    37 44 table b-adn-666_c6.tbl int_37_44       10.50 1.0
+    37 45 table b-adn-666_c6.tbl int_37_45       10.50 1.0
+    37 46 table b-adn-666_c6.tbl int_37_46       10.50 1.0
+    37 47 table b-adn-666_c6.tbl int_37_47       10.50 1.0
+    37 48 table b-adn-666_c6.tbl int_37_48       10.50 1.0
+    37 49 table b-adn-666_c6.tbl int_37_49       10.50 1.0
+    37 50 table b-adn-666_c6.tbl int_37_50       10.50 1.0
+    37 51 table b-adn-666_c6.tbl int_37_51       10.50 1.0
+    37 52 table b-adn-666_c6.tbl int_37_52       10.50 1.0
+    37 53 table b-adn-666_c6.tbl int_37_53       10.50 1.0
+    37 54 table b-adn-666_c6.tbl int_37_54       10.50 1.0
+    37 55 table b-adn-666_c6.tbl int_37_55       10.50 1.0
+    37 56 table b-adn-666_c6.tbl int_37_56       10.50 1.0
+    38 38 table b-adn-666_c6.tbl int_38_38       10.50 1.0
+    38 39 table b-adn-666_c6.tbl int_38_39       10.50 1.0
+    38 40 table b-adn-666_c6.tbl int_38_40       10.50 1.0
+    38 41 table b-adn-666_c6.tbl int_38_41       10.50 1.0
+    38 42 table b-adn-666_c6.tbl int_38_42       10.50 1.0
+    38 43 table b-adn-666_c6.tbl int_38_43       10.50 1.0
+    38 44 table b-adn-666_c6.tbl int_38_44       10.50 1.0
+    38 45 table b-adn-666_c6.tbl int_38_45       10.50 1.0
+    38 46 table b-adn-666_c6.tbl int_38_46       10.50 1.0
+    38 47 table b-adn-666_c6.tbl int_38_47       10.50 1.0
+    38 48 table b-adn-666_c6.tbl int_38_48       10.50 1.0
+    38 49 table b-adn-666_c6.tbl int_38_49       10.50 1.0
+    38 50 table b-adn-666_c6.tbl int_38_50       10.50 1.0
+    38 51 table b-adn-666_c6.tbl int_38_51       10.50 1.0
+    38 52 table b-adn-666_c6.tbl int_38_52       10.50 1.0
+    38 53 table b-adn-666_c6.tbl int_38_53       10.50 1.0
+    38 54 table b-adn-666_c6.tbl int_38_54       10.50 1.0
+    38 55 table b-adn-666_c6.tbl int_38_55       10.50 1.0
+    38 56 table b-adn-666_c6.tbl int_38_56       10.50 1.0
+    39 39 table b-adn-666_c6.tbl int_39_39       10.50 1.0
+    39 40 table b-adn-666_c6.tbl int_39_40       10.50 1.0
+    39 41 table b-adn-666_c6.tbl int_39_41       10.50 1.0
+    39 42 table b-adn-666_c6.tbl int_39_42       10.50 1.0
+    39 43 table b-adn-666_c6.tbl int_39_43       10.50 1.0
+    39 44 table b-adn-666_c6.tbl int_39_44       10.50 1.0
+    39 45 table b-adn-666_c6.tbl int_39_45       10.50 1.0
+    39 46 table b-adn-666_c6.tbl int_39_46       10.50 1.0
+    39 47 table b-adn-666_c6.tbl int_39_47       10.50 1.0
+    39 48 table b-adn-666_c6.tbl int_39_48       10.50 1.0
+    39 49 table b-adn-666_c6.tbl int_39_49       10.50 1.0
+    39 50 table b-adn-666_c6.tbl int_39_50       10.50 1.0
+    39 51 table b-adn-666_c6.tbl int_39_51       10.50 1.0
+    39 52 table b-adn-666_c6.tbl int_39_52       10.50 1.0
+    39 53 table b-adn-666_c6.tbl int_39_53       10.50 1.0
+    39 54 table b-adn-666_c6.tbl int_39_54       10.50 1.0
+    39 55 table b-adn-666_c6.tbl int_39_55       10.50 1.0
+    39 56 table b-adn-666_c6.tbl int_39_56       10.50 1.0
+    40 40 table b-adn-666_c6.tbl int_40_40       10.50 1.0
+    40 41 table b-adn-666_c6.tbl int_40_41       10.50 1.0
+    40 42 table b-adn-666_c6.tbl int_40_42       10.50 1.0
+    40 43 table b-adn-666_c6.tbl int_40_43       10.50 1.0
+    40 44 table b-adn-666_c6.tbl int_40_44       10.50 1.0
+    40 45 table b-adn-666_c6.tbl int_40_45       10.50 1.0
+    40 46 table b-adn-666_c6.tbl int_40_46       10.50 1.0
+    40 47 table b-adn-666_c6.tbl int_40_47       10.50 1.0
+    40 48 table b-adn-666_c6.tbl int_40_48       10.50 1.0
+    40 49 table b-adn-666_c6.tbl int_40_49       10.50 1.0
+    40 50 table b-adn-666_c6.tbl int_40_50       10.50 1.0
+    40 51 table b-adn-666_c6.tbl int_40_51       10.50 1.0
+    40 52 table b-adn-666_c6.tbl int_40_52       10.50 1.0
+    40 53 table b-adn-666_c6.tbl int_40_53       10.50 1.0
+    40 54 table b-adn-666_c6.tbl int_40_54       10.50 1.0
+    40 55 table b-adn-666_c6.tbl int_40_55       10.50 1.0
+    40 56 table b-adn-666_c6.tbl int_40_56       10.50 1.0
+    41 41 table b-adn-666_c6.tbl int_41_41       10.50 1.0
+    41 42 table b-adn-666_c6.tbl int_41_42       10.50 1.0
+    41 43 table b-adn-666_c6.tbl int_41_43       10.50 1.0
+    41 44 table b-adn-666_c6.tbl int_41_44       10.50 1.0
+    41 45 table b-adn-666_c6.tbl int_41_45       10.50 1.0
+    41 46 table b-adn-666_c6.tbl int_41_46       10.50 1.0
+    41 47 table b-adn-666_c6.tbl int_41_47       10.50 1.0
+    41 48 table b-adn-666_c6.tbl int_41_48       10.50 1.0
+    41 49 table b-adn-666_c6.tbl int_41_49       10.50 1.0
+    41 50 table b-adn-666_c6.tbl int_41_50       10.50 1.0
+    41 51 table b-adn-666_c6.tbl int_41_51       10.50 1.0
+    41 52 table b-adn-666_c6.tbl int_41_52       10.50 1.0
+    41 53 table b-adn-666_c6.tbl int_41_53       10.50 1.0
+    41 54 table b-adn-666_c6.tbl int_41_54       10.50 1.0
+    41 55 table b-adn-666_c6.tbl int_41_55       10.50 1.0
+    41 56 table b-adn-666_c6.tbl int_41_56       10.50 1.0
+    42 42 table b-adn-666_c6.tbl int_42_42       10.50 1.0
+    42 43 table b-adn-666_c6.tbl int_42_43       10.50 1.0
+    42 44 table b-adn-666_c6.tbl int_42_44       10.50 1.0
+    42 45 table b-adn-666_c6.tbl int_42_45       10.50 1.0
+    42 46 table b-adn-666_c6.tbl int_42_46       10.50 1.0
+    42 47 table b-adn-666_c6.tbl int_42_47       10.50 1.0
+    42 48 table b-adn-666_c6.tbl int_42_48       10.50 1.0
+    42 49 table b-adn-666_c6.tbl int_42_49       10.50 1.0
+    42 50 table b-adn-666_c6.tbl int_42_50       10.50 1.0
+    42 51 table b-adn-666_c6.tbl int_42_51       10.50 1.0
+    42 52 table b-adn-666_c6.tbl int_42_52       10.50 1.0
+    42 53 table b-adn-666_c6.tbl int_42_53       10.50 1.0
+    42 54 table b-adn-666_c6.tbl int_42_54       10.50 1.0
+    42 55 table b-adn-666_c6.tbl int_42_55       10.50 1.0
+    42 56 table b-adn-666_c6.tbl int_42_56       10.50 1.0
+    43 43 table b-adn-666_c6.tbl int_43_43       10.50 1.0
+    43 44 table b-adn-666_c6.tbl int_43_44       10.50 1.0
+    43 45 table b-adn-666_c6.tbl int_43_45       10.50 1.0
+    43 46 table b-adn-666_c6.tbl int_43_46       10.50 1.0
+    43 47 table b-adn-666_c6.tbl int_43_47       10.50 1.0
+    43 48 table b-adn-666_c6.tbl int_43_48       10.50 1.0
+    43 49 table b-adn-666_c6.tbl int_43_49       10.50 1.0
+    43 50 table b-adn-666_c6.tbl int_43_50       10.50 1.0
+    43 51 table b-adn-666_c6.tbl int_43_51       10.50 1.0
+    43 52 table b-adn-666_c6.tbl int_43_52       10.50 1.0
+    43 53 table b-adn-666_c6.tbl int_43_53       10.50 1.0
+    43 54 table b-adn-666_c6.tbl int_43_54       10.50 1.0
+    43 55 table b-adn-666_c6.tbl int_43_55       10.50 1.0
+    43 56 table b-adn-666_c6.tbl int_43_56       10.50 1.0
+    44 44 table b-adn-666_c6.tbl int_44_44       10.50 1.0
+    44 45 table b-adn-666_c6.tbl int_44_45       10.50 1.0
+    44 46 table b-adn-666_c6.tbl int_44_46       10.50 1.0
+    44 47 table b-adn-666_c6.tbl int_44_47       10.50 1.0
+    44 48 table b-adn-666_c6.tbl int_44_48       10.50 1.0
+    44 49 table b-adn-666_c6.tbl int_44_49       10.50 1.0
+    44 50 table b-adn-666_c6.tbl int_44_50       10.50 1.0
+    44 51 table b-adn-666_c6.tbl int_44_51       10.50 1.0
+    44 52 table b-adn-666_c6.tbl int_44_52       10.50 1.0
+    44 53 table b-adn-666_c6.tbl int_44_53       10.50 1.0
+    44 54 table b-adn-666_c6.tbl int_44_54       10.50 1.0
+    44 55 table b-adn-666_c6.tbl int_44_55       10.50 1.0
+    44 56 table b-adn-666_c6.tbl int_44_56       10.50 1.0
+    45 45 table b-adn-666_c6.tbl int_45_45       10.50 1.0
+    45 46 table b-adn-666_c6.tbl int_45_46       10.50 1.0
+    45 47 table b-adn-666_c6.tbl int_45_47       10.50 1.0
+    45 48 table b-adn-666_c6.tbl int_45_48       10.50 1.0
+    45 49 table b-adn-666_c6.tbl int_45_49       10.50 1.0
+    45 50 table b-adn-666_c6.tbl int_45_50       10.50 1.0
+    45 51 table b-adn-666_c6.tbl int_45_51       10.50 1.0
+    45 52 table b-adn-666_c6.tbl int_45_52       10.50 1.0
+    45 53 table b-adn-666_c6.tbl int_45_53       10.50 1.0
+    45 54 table b-adn-666_c6.tbl int_45_54       10.50 1.0
+    45 55 table b-adn-666_c6.tbl int_45_55       10.50 1.0
+    45 56 table b-adn-666_c6.tbl int_45_56       10.50 1.0
+    46 46 table b-adn-666_c6.tbl int_46_46       10.50 1.0
+    46 47 table b-adn-666_c6.tbl int_46_47       10.50 1.0
+    46 48 table b-adn-666_c6.tbl int_46_48       10.50 1.0
+    46 49 table b-adn-666_c6.tbl int_46_49       10.50 1.0
+    46 50 table b-adn-666_c6.tbl int_46_50       10.50 1.0
+    46 51 table b-adn-666_c6.tbl int_46_51       10.50 1.0
+    46 52 table b-adn-666_c6.tbl int_46_52       10.50 1.0
+    46 53 table b-adn-666_c6.tbl int_46_53       10.50 1.0
+    46 54 table b-adn-666_c6.tbl int_46_54       10.50 1.0
+    46 55 table b-adn-666_c6.tbl int_46_55       10.50 1.0
+    46 56 table b-adn-666_c6.tbl int_46_56       10.50 1.0
+    47 47 table b-adn-666_c6.tbl int_47_47       10.50 1.0
+    47 48 table b-adn-666_c6.tbl int_47_48       10.50 1.0
+    47 49 table b-adn-666_c6.tbl int_47_49       10.50 1.0
+    47 50 table b-adn-666_c6.tbl int_47_50       10.50 1.0
+    47 51 table b-adn-666_c6.tbl int_47_51       10.50 1.0
+    47 52 table b-adn-666_c6.tbl int_47_52       10.50 1.0
+    47 53 table b-adn-666_c6.tbl int_47_53       10.50 1.0
+    47 54 table b-adn-666_c6.tbl int_47_54       10.50 1.0
+    47 55 table b-adn-666_c6.tbl int_47_55       10.50 1.0
+    47 56 table b-adn-666_c6.tbl int_47_56       10.50 1.0
+    48 48 table b-adn-666_c6.tbl int_48_48       10.50 1.0
+    48 49 table b-adn-666_c6.tbl int_48_49       10.50 1.0
+    48 50 table b-adn-666_c6.tbl int_48_50       10.50 1.0
+    48 51 table b-adn-666_c6.tbl int_48_51       10.50 1.0
+    48 52 table b-adn-666_c6.tbl int_48_52       10.50 1.0
+    48 53 table b-adn-666_c6.tbl int_48_53       10.50 1.0
+    48 54 table b-adn-666_c6.tbl int_48_54       10.50 1.0
+    48 55 table b-adn-666_c6.tbl int_48_55       10.50 1.0
+    48 56 table b-adn-666_c6.tbl int_48_56       10.50 1.0
+    49 49 table b-adn-666_c6.tbl int_49_49       10.50 1.0
+    49 50 table b-adn-666_c6.tbl int_49_50       10.50 1.0
+    49 51 table b-adn-666_c6.tbl int_49_51       10.50 1.0
+    49 52 table b-adn-666_c6.tbl int_49_52       10.50 1.0
+    49 53 table b-adn-666_c6.tbl int_49_53       10.50 1.0
+    49 54 table b-adn-666_c6.tbl int_49_54       10.50 1.0
+    49 55 table b-adn-666_c6.tbl int_49_55       10.50 1.0
+    49 56 table b-adn-666_c6.tbl int_49_56       10.50 1.0
+    50 50 table b-adn-666_c6.tbl int_50_50       10.50 1.0
+    50 51 table b-adn-666_c6.tbl int_50_51       10.50 1.0
+    50 52 table b-adn-666_c6.tbl int_50_52       10.50 1.0
+    50 53 table b-adn-666_c6.tbl int_50_53       10.50 1.0
+    50 54 table b-adn-666_c6.tbl int_50_54       10.50 1.0
+    50 55 table b-adn-666_c6.tbl int_50_55       10.50 1.0
+    50 56 table b-adn-666_c6.tbl int_50_56       10.50 1.0
+    51 51 table b-adn-666_c6.tbl int_51_51       10.50 1.0
+    51 52 table b-adn-666_c6.tbl int_51_52       10.50 1.0
+    51 53 table b-adn-666_c6.tbl int_51_53       10.50 1.0
+    51 54 table b-adn-666_c6.tbl int_51_54       10.50 1.0
+    51 55 table b-adn-666_c6.tbl int_51_55       10.50 1.0
+    51 56 table b-adn-666_c6.tbl int_51_56       10.50 1.0
+    52 52 table b-adn-666_c6.tbl int_52_52       10.50 1.0
+    52 53 table b-adn-666_c6.tbl int_52_53       10.50 1.0
+    52 54 table b-adn-666_c6.tbl int_52_54       10.50 1.0
+    52 55 table b-adn-666_c6.tbl int_52_55       10.50 1.0
+    52 56 table b-adn-666_c6.tbl int_52_56       10.50 1.0
+    53 53 table b-adn-666_c6.tbl int_53_53       10.50 1.0
+    53 54 table b-adn-666_c6.tbl int_53_54       10.50 1.0
+    53 55 table b-adn-666_c6.tbl int_53_55       10.50 1.0
+    53 56 table b-adn-666_c6.tbl int_53_56       10.50 1.0
+    54 54 table b-adn-666_c6.tbl int_54_54       10.50 1.0
+    54 55 table b-adn-666_c6.tbl int_54_55       10.50 1.0
+    54 56 table b-adn-666_c6.tbl int_54_56       10.50 1.0
+    55 55 table b-adn-666_c6.tbl int_55_55       10.50 1.0
+    55 56 table b-adn-666_c6.tbl int_55_56       10.50 1.0
+    56 56 table b-adn-666_c6.tbl int_56_56       10.50 1.0

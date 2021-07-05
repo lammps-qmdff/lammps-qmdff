@@ -1,0 +1,31 @@
+units           real
+
+special_bonds   lj 0.0 0.0 0.5 0.5 coul 0.0 0.0 0.85 1.0
+neigh_modify    delay 1 every 1 check yes
+neighbor	2.5 bin
+
+atom_style      fullExc
+boundary        p p p
+read_data       b-adn_entry.data nocoeff
+
+bond_style      tableE spline 500
+angle_style     tableE spline 501
+dihedral_style  tableE spline 500
+improper_style fourierE
+pair_style      hybrid/overlay coul/cut 10.50 tableE linear 500
+read_data       b-adn_coeffs.data add append
+
+pair_coeff	* * coul/cut
+velocity        all create 500.0 3 dist gaussian
+fix             1 all shake 0.0001 20 0 b 3 4 6 18 22 28 30 31 34 36 38 40 41 43 46 48 50 56 58 60 61 62
+
+fix             2 all nvt temp 350    350.0 100.0 tchain 1
+thermo          1
+thermo_style    custom time etotal pe ke temp emol epair ebond eangle edihed eimp  evdwl ecoul press vol
+timestep        0.5
+
+log             b-adn_cool.log
+dump            1 all custom 1 mpyrpc_force.xyz id type x y z fx fy fz 
+
+run             5
+

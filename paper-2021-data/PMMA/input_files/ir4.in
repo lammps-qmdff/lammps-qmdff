@@ -1,0 +1,46 @@
+units           real
+
+special_bonds   lj 0.0 0.0 0.5 0.5 coul 0.0 0.0 0.85 1.0
+neigh_modify    delay 1 every 1 check yes
+neighbor	2.5 bin
+
+atom_style      fullExc
+boundary        p p p
+
+bond_style      tableE spline 100
+angle_style     tableE2 spline 501
+dihedral_style  tableE spline 500
+improper_style fourierE
+pair_style      hybrid/overlay coul/long 10.50 tableE spline 100 
+kspace_style    ewald 1.0e-5
+
+read_data       ir4_d1_entry.data
+read_data       ir4_d1_coeffs.data add append
+
+pair_coeff	* * coul/long
+velocity        all create 298.15 553586 dist gaussian
+fix             1 all shake 0.0001 20 0 b 3 4 9 10 11 12 13 17 18 19 24 25 26 27 28 32 33 34 35 36 37 38 39 40 60 61 62 65 66 67 70 76 77 78 79 80 81 82 83 84 86 87 100 102 104 110 111 112 113 114 115 116 117 118 119 125 126 127 130 131 132 135 141 142 143 144 145 146 147 148 149 151 152 165 167 169 175 176 177 178 179 180 181 182 183 184 190 191 192 195 196 197 200 206 207 208 209 210 211 212 213 214 216 217 221 223 225 231 232 233 234 235 236 237 238 239 240 259 261 263 269 270 271 272 273 274 275 276 277 278 284 285 286 289 290 291 294 300 301 302 303 304 305 306 307 308 310 311 324 326 328 334 335 336 337 338 339 340 341 342 343 349 350 351 354 355 356 359 365 366 367 368 369 370 371 372 373 375 376 389 391 393 399 400 401 402 403 404 405 406 407 408 414 415 416 419 420 421 424 430 431 432 433 434 435 436 437 438 440 441
+
+log             ir4_d1.log
+dump            1 all dcd 50 ir4_d1.dcd
+dump_modify     1 sort id
+
+thermo          50
+thermo_style    custom time etotal pe ke temp emol epair ebond eangle edihed eimp evdwl ecoul press vol density
+
+timestep        0.5
+
+#fix              2 all nve
+#fix              3 all langevin 298.0 298.0 1.0 45373812
+#run              100
+
+fix             2 all nvt temp 298.15  298.15 100.0 tchain 1
+run             1000
+
+timestep        1.0
+unfix           2
+fix             2 all npt temp 298.15 298.15 100.0 iso 1.0 1.0 1000.0
+
+run             30000
+
+write_data      npt_final.data

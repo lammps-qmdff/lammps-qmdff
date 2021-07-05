@@ -1,0 +1,46 @@
+units           real
+
+special_bonds   lj 0.0 0.0 0.5 0.5 coul 0.0 0.0 0.85 1.0
+neigh_modify    delay 1 every 1 check yes
+neighbor	2.5 bin
+
+atom_style      fullExc
+boundary        p p p
+
+bond_style      tableE spline 100
+angle_style     tableE2 spline 501
+dihedral_style  tableE spline 500
+improper_style fourierE
+pair_style      hybrid/overlay coul/long 10.50 tableE spline 100 
+kspace_style    ewald 1.0e-5
+
+read_data       ir3_d1_entry.data
+read_data       ir3_d1_coeffs.data add append
+
+pair_coeff	* * coul/long
+velocity        all create 298.15 553586 dist gaussian
+fix             1 all shake 0.0001 20 0 b 3 4 9 10 11 12 13 17 18 19 24 25 26 27 28 32 33 34 35 36 37 38 39 40 60 61 62 65 66 67 70 72 74 75 88 90 92 94 95 101 102 103 106 107 108 111 113 115 116 129 131 133 135 136 142 143 144 147 148 149 152 154 156 157 161 163 165 167 168 187 189 191 193 194 200 201 202 205 206 207 210 212 214 215 228 230 232 234 235 241 242 243 246 247 248 251 253 255 256 269 271 273 275 276 282 283 284 287 288 289 292 294 296 297
+
+log             ir3_d1.log
+dump            1 all dcd 50 ir3_d1.dcd
+dump_modify     1 sort id
+
+thermo          50
+thermo_style    custom time etotal pe ke temp emol epair ebond eangle edihed eimp evdwl ecoul press vol density
+
+timestep        0.5
+
+#fix              2 all nve
+#fix              3 all langevin 298.0 298.0 1.0 45373812
+#run              100
+
+fix             2 all nvt temp 298.15  298.15 100.0 tchain 1
+run             1000
+
+timestep        1.0
+unfix           2
+fix             2 all npt temp 298.15 298.15 100.0 iso 1.0 1.0 1000.0
+
+run             30000
+
+write_data      npt_final.data

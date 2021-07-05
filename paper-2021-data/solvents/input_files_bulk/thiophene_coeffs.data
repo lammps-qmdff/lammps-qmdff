@@ -1,0 +1,113 @@
+Created by: multicomponent LAMMPS, Feb 2019
+
+       9  atom types
+       9  bond types
+      13  angle types
+      14  dihedral types
+       0  improper types
+
+
+ Masses
+
+       1     32.060
+       2     12.011
+       3     12.011
+       4     12.011
+       5     12.011
+       6      1.008
+       7      1.008
+       8      1.008
+       9      1.008
+
+ Bond Coeffs
+
+     1   thiophene_excl.tbl exc_1_4 exc_1_4 
+     2   thiophene_excl.tbl exc_1_5 exc_1_5 
+     3   thiophene_excl.tbl exc_2_3 exc_2_3 
+     4   thiophene_excl.tbl exc_2_4 exc_2_4 
+     5   thiophene_excl.tbl exc_2_6 exc_2_6 
+     6   thiophene_excl.tbl exc_3_5 exc_3_5 
+     7   thiophene_excl.tbl exc_3_7 exc_3_7 
+     8   thiophene_excl.tbl exc_4_8 exc_4_8 
+     9   thiophene_excl.tbl exc_5_9 exc_5_9 
+
+ Angle Coeffs
+
+     1   thiophene_excl.tbl ang_1_4_5 ang_1_4_5
+     2   thiophene_excl.tbl ang_2_4_6 ang_2_4_6
+     3   thiophene_excl.tbl ang_2_3_6 ang_2_3_6
+     4   thiophene_excl.tbl ang_2_3_4 ang_2_3_4
+     5   thiophene_excl.tbl ang_3_5_7 ang_3_5_7
+     6   thiophene_excl.tbl ang_3_2_7 ang_3_2_7
+     7   thiophene_excl.tbl ang_3_2_5 ang_3_2_5
+     8   thiophene_excl.tbl ang_4_2_8 ang_4_2_8
+     9   thiophene_excl.tbl ang_4_1_8 ang_4_1_8
+    10   thiophene_excl.tbl ang_4_1_2 ang_4_1_2
+    11   thiophene_excl.tbl ang_5_3_9 ang_5_3_9
+    12   thiophene_excl.tbl ang_5_1_9 ang_5_1_9
+    13   thiophene_excl.tbl ang_5_1_3 ang_5_1_3
+
+ Dihedral Coeffs
+
+     1   thiophene_dih.tbl dih_4_1_5_9 dih_4_1_5_9
+     2   thiophene_dih.tbl dih_4_1_5_3 dih_4_1_5_3
+     3   thiophene_dih.tbl dih_5_1_4_8 dih_5_1_4_8
+     4   thiophene_dih.tbl dih_5_1_4_2 dih_5_1_4_2
+     5   thiophene_dih.tbl dih_6_2_4_8 dih_6_2_4_8
+     6   thiophene_dih.tbl dih_3_2_4_8 dih_3_2_4_8
+     7   thiophene_dih.tbl dih_6_2_4_1 dih_6_2_4_1
+     8   thiophene_dih.tbl dih_6_2_3_7 dih_6_2_3_7
+     9   thiophene_dih.tbl dih_4_2_3_7 dih_4_2_3_7
+    10   thiophene_dih.tbl dih_6_2_3_5 dih_6_2_3_5
+    11   thiophene_dih.tbl dih_4_2_3_5 dih_4_2_3_5
+    12   thiophene_dih.tbl dih_7_3_5_9 dih_7_3_5_9
+    13   thiophene_dih.tbl dih_2_3_5_9 dih_2_3_5_9
+    14   thiophene_dih.tbl dih_7_3_5_1 dih_7_3_5_1
+
+ PairIJ Coeffs
+
+     1 1 tableE thiophene_c6.tbl int_1_1         int_1_1         10.50 1.0
+     1 2 tableE thiophene_c6.tbl int_1_2         int_1_2         10.50 1.0
+     1 3 tableE thiophene_c6.tbl int_1_3         int_1_3         10.50 1.0
+     1 4 tableE thiophene_c6.tbl int_1_4         int_1_4         10.50 1.0
+     1 5 tableE thiophene_c6.tbl int_1_5         int_1_5         10.50 1.0
+     1 6 tableE thiophene_c6.tbl int_1_6         int_1_6         10.50 1.0
+     1 7 tableE thiophene_c6.tbl int_1_7         int_1_7         10.50 1.0
+     1 8 tableE thiophene_c6.tbl int_1_8         int_1_8         10.50 1.0
+     1 9 tableE thiophene_c6.tbl int_1_9         int_1_9         10.50 1.0
+     2 2 tableE thiophene_c6.tbl int_2_2         int_2_2         10.50 1.0
+     2 3 tableE thiophene_c6.tbl int_2_3         int_2_3         10.50 1.0
+     2 4 tableE thiophene_c6.tbl int_2_4         int_2_4         10.50 1.0
+     2 5 tableE thiophene_c6.tbl int_2_5         int_2_5         10.50 1.0
+     2 6 tableE thiophene_c6.tbl int_2_6         int_2_6         10.50 1.0
+     2 7 tableE thiophene_c6.tbl int_2_7         int_2_7         10.50 1.0
+     2 8 tableE thiophene_c6.tbl int_2_8         int_2_8         10.50 1.0
+     2 9 tableE thiophene_c6.tbl int_2_9         int_2_9         10.50 1.0
+     3 3 tableE thiophene_c6.tbl int_3_3         int_3_3         10.50 1.0
+     3 4 tableE thiophene_c6.tbl int_3_4         int_3_4         10.50 1.0
+     3 5 tableE thiophene_c6.tbl int_3_5         int_3_5         10.50 1.0
+     3 6 tableE thiophene_c6.tbl int_3_6         int_3_6         10.50 1.0
+     3 7 tableE thiophene_c6.tbl int_3_7         int_3_7         10.50 1.0
+     3 8 tableE thiophene_c6.tbl int_3_8         int_3_8         10.50 1.0
+     3 9 tableE thiophene_c6.tbl int_3_9         int_3_9         10.50 1.0
+     4 4 tableE thiophene_c6.tbl int_4_4         int_4_4         10.50 1.0
+     4 5 tableE thiophene_c6.tbl int_4_5         int_4_5         10.50 1.0
+     4 6 tableE thiophene_c6.tbl int_4_6         int_4_6         10.50 1.0
+     4 7 tableE thiophene_c6.tbl int_4_7         int_4_7         10.50 1.0
+     4 8 tableE thiophene_c6.tbl int_4_8         int_4_8         10.50 1.0
+     4 9 tableE thiophene_c6.tbl int_4_9         int_4_9         10.50 1.0
+     5 5 tableE thiophene_c6.tbl int_5_5         int_5_5         10.50 1.0
+     5 6 tableE thiophene_c6.tbl int_5_6         int_5_6         10.50 1.0
+     5 7 tableE thiophene_c6.tbl int_5_7         int_5_7         10.50 1.0
+     5 8 tableE thiophene_c6.tbl int_5_8         int_5_8         10.50 1.0
+     5 9 tableE thiophene_c6.tbl int_5_9         int_5_9         10.50 1.0
+     6 6 tableE thiophene_c6.tbl int_6_6         int_6_6         10.50 1.0
+     6 7 tableE thiophene_c6.tbl int_6_7         int_6_7         10.50 1.0
+     6 8 tableE thiophene_c6.tbl int_6_8         int_6_8         10.50 1.0
+     6 9 tableE thiophene_c6.tbl int_6_9         int_6_9         10.50 1.0
+     7 7 tableE thiophene_c6.tbl int_7_7         int_7_7         10.50 1.0
+     7 8 tableE thiophene_c6.tbl int_7_8         int_7_8         10.50 1.0
+     7 9 tableE thiophene_c6.tbl int_7_9         int_7_9         10.50 1.0
+     8 8 tableE thiophene_c6.tbl int_8_8         int_8_8         10.50 1.0
+     8 9 tableE thiophene_c6.tbl int_8_9         int_8_9         10.50 1.0
+     9 9 tableE thiophene_c6.tbl int_9_9         int_9_9         10.50 1.0

@@ -1,0 +1,65 @@
+Created by: multicomponent LAMMPS, Feb 2019
+
+       6  atom types
+       5  bond types
+       7  angle types
+       3  dihedral types
+       0  improper types
+
+
+ Masses
+
+       1     15.999
+       2     12.011
+       3      1.008
+       4      1.008
+       5      1.008
+       6      1.008
+
+ Bond Coeffs
+
+     1   methanol_excl.tbl exc_1_2 exc_1_2 
+     2   methanol_excl.tbl exc_1_6 exc_1_6 
+     3   methanol_excl.tbl exc_2_3 exc_2_3 
+     4   methanol_excl.tbl exc_2_4 exc_2_4 
+     5   methanol_excl.tbl exc_2_5 exc_2_5 
+
+ Angle Coeffs
+
+     1   methanol_excl.tbl ang_1_2_6 ang_1_2_6
+     2   methanol_excl.tbl ang_2_3_5 ang_2_3_5
+     3   methanol_excl.tbl ang_2_4_5 ang_2_4_5
+     4   methanol_excl.tbl ang_2_4_3 ang_2_4_3
+     5   methanol_excl.tbl ang_2_1_5 ang_2_1_5
+     6   methanol_excl.tbl ang_2_1_3 ang_2_1_3
+     7   methanol_excl.tbl ang_2_1_4 ang_2_1_4
+
+ Dihedral Coeffs
+
+     1   methanol_dih.tbl dih_6_1_2_5 dih_6_1_2_5
+     2   methanol_dih.tbl dih_6_1_2_3 dih_6_1_2_3
+     3   methanol_dih.tbl dih_6_1_2_4 dih_6_1_2_4
+
+ PairIJ Coeffs
+
+     1 1 tableE methanol_c6.tbl int_1_1         int_1_1         10.50 1.0
+     1 2 tableE methanol_c6.tbl int_1_2         int_1_2         10.50 1.0
+     1 3 tableE methanol_c6.tbl int_1_3         int_1_3         10.50 1.0
+     1 4 tableE methanol_c6.tbl int_1_4         int_1_4         10.50 1.0
+     1 5 tableE methanol_c6.tbl int_1_5         int_1_5         10.50 1.0
+     1 6 tableE methanol_c6.tbl int_1_6         int_1_6         10.50 1.0
+     2 2 tableE methanol_c6.tbl int_2_2         int_2_2         10.50 1.0
+     2 3 tableE methanol_c6.tbl int_2_3         int_2_3         10.50 1.0
+     2 4 tableE methanol_c6.tbl int_2_4         int_2_4         10.50 1.0
+     2 5 tableE methanol_c6.tbl int_2_5         int_2_5         10.50 1.0
+     2 6 tableE methanol_c6.tbl int_2_6         int_2_6         10.50 1.0
+     3 3 tableE methanol_c6.tbl int_3_3         int_3_3         10.50 1.0
+     3 4 tableE methanol_c6.tbl int_3_4         int_3_4         10.50 1.0
+     3 5 tableE methanol_c6.tbl int_3_5         int_3_5         10.50 1.0
+     3 6 tableE methanol_c6.tbl int_3_6         int_3_6         10.50 1.0
+     4 4 tableE methanol_c6.tbl int_4_4         int_4_4         10.50 1.0
+     4 5 tableE methanol_c6.tbl int_4_5         int_4_5         10.50 1.0
+     4 6 tableE methanol_c6.tbl int_4_6         int_4_6         10.50 1.0
+     5 5 tableE methanol_c6.tbl int_5_5         int_5_5         10.50 1.0
+     5 6 tableE methanol_c6.tbl int_5_6         int_5_6         10.50 1.0
+     6 6 tableE methanol_c6.tbl int_6_6         int_6_6         10.50 1.0

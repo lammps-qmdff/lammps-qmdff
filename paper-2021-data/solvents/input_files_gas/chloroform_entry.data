@@ -1,0 +1,41 @@
+Created by: LAMMPS for multicomponent system, Feb 2019
+
+       5  atoms
+       4  bonds
+       6  angles
+       0  dihedrals
+       0  impropers
+
+       5  atom types
+       4  bond types
+       6  angle types
+       0  dihedral types
+       0  improper types
+
+    -2.65    88.19  xlo xhi
+    -2.65    88.19  ylo yhi
+    -2.65    88.19  zlo zhi
+
+ Atoms
+
+   1       1     1 -0.061679 -0.061679      48.929      66.900      61.434
+   2       1     2 -0.061661 -0.061661      46.899      64.802      61.893
+   3       1     3 -0.061654 -0.061654      47.019      66.197      59.289
+   4       1     4  0.042020  0.042020      47.958      65.595      60.689
+   5       1     5  0.142974  0.142974      48.656      64.838      60.315
+
+ Bonds
+
+    1       1       1       4 # exc_1_4
+    2       2       2       4 # exc_2_4
+    3       3       3       4 # exc_3_4
+    4       4       4       5 # exc_4_5
+
+ Angles
+
+    1       1       2       4       5	#
+    2       2       3       4       5	#
+    3       3       3       4       2	#
+    4       4       1       4       5	#
+    5       5       1       4       2	#
+    6       6       1       4       3	#

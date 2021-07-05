@@ -1,0 +1,40 @@
+units           real
+
+special_bonds   lj 0.0 0.0 0.5 0.5 coul 0.0 0.0 0.85 1.0
+neigh_modify    delay 1 every 1 check yes
+neighbor	2.5 bin
+
+atom_style      fullExc
+boundary        p p p
+
+bond_style      tableE spline 500
+angle_style     tableE2 spline 501
+dihedral_style  tableE spline 500
+improper_style fourierE
+pair_style      hybrid/overlay coul/long 10.50 tableE linear 500
+kspace_style    pppm 1.0e-5
+
+read_data       annealed_300K.data
+read_data       material_2_coeffs.data add append
+
+dump            1 all dcd 1000 300K_2.dcd
+dump_modify     1 unwrap yes flush yes
+
+pair_coeff	* * coul/long
+# velocity        all create    700.0 10397 dist gaussian
+fix             1 all shake 0.0001 20 0 b 43 44 45 46 47 53 54 55 56 57 63 64 65 66 67 73 74 75 76 77 83 84 85 86 87 93 94 95 96 97 103 104 105 106 107 113 114 115 116 117 123 124 125 126 127 133 134 135 136 137 143 144 145 146 147 153 154 155 156 157
+
+thermo          1000
+thermo_style    custom time etotal pe ke temp emol epair ebond eangle edihed eimp  evdwl ecoul press vol
+thermo_modify   flush yes
+
+log             300K_2.log
+
+timestep     1.0
+
+fix             2 all npt temp 300.0 300.0 200.0 iso 1.0 1.0 2000.0
+
+run            1000000
+write_data     300K_2_end.data
+
+

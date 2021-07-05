@@ -1,0 +1,1107 @@
+ 
+        ______________________________________
+       |                                      |
+       |               Q M D F F              |
+       |          ==================          |
+       |              S. Grimme               |
+       |       Universitaet Bonn, MCTC        |
+       |         2013-14, Version 3.2         |
+       |    Wed Apr 15 13:33:05 CEST 2015     |
+       |______________________________________|
+ 
+        cite this work as:
+        S. Grimme, J. Chem. Theor. Comput.
+        10 (2014), 4497-4514 (DOI: 10.1021/ct500573f)
+ 
+ use           :
+ qmdff <coord_file_name or orca_hess_name> [-options]
+ some options  :
+ -echo         : stop after FF setup without fit
+ -hthr <real>  : Hessian neglect threshold
+                 1.e-4 is default, increase to 1.e-3
+                 for very large system to save memory
+                 with very little accuracy loss
+ -athr <real>  : planar/linear cut-off (deg., def: 2)
+ -qscal <real> : CM5 charge scaling factor (def: 1.15)
+ -hscal <real> : scale Hessian elements (e.g.for HF-3c
+                 hscal=0.75)
+ -wbothr <real>: consider a neighboring atom as boned
+                 if WBO > this threshold
+ -md <real>    : do test MD for a time of <real> ps
+ -temp <real>  : use a temperature of <real> in NVT MD
+ -opt          : Cartesian optimization (preliminary)
+ -rd           : read solvent file (for testing)
+ -nohess       : skip Hessian calc (in -rd -md runs)
+ -an           : read coord1 and coord2 and
+                 analyse energy contributions
+                 same ordering required!
+ -wbothr
+ 0.4
+ -hthr
+ 0.0
+ 
+ Hessian neglect threshold (au) 0.000E+00
+ linear or plane cutoff (deg.)      2.000
+ D3                         0.4500            4.0000            2.7000
+ HB(N,O,F)                  0.8000            0.3000            0.1000
+ HB(P,S,Cl)                 2.0000            2.0000            2.0000
+ HB(As,Se,Br)               0.0000            2.0000            2.0000
+ HX(Cl,Br,I)                0.3000            0.6000            0.8000
+ 
+  NONB ini ...
+
+ Charges (in a.u.) from CM5PAC (June 22, 2013)
+ -----------------------------------------------
+ Center     Atomic      CM5         Hirshfeld
+ Number     Number      Charge      Charge
+ -----------------------------------------------
+    1          8       -0.414725    0.000000
+    2         72        0.869269    0.000000
+    3         72        0.857386    0.000000
+    4         72        0.856320    0.000000
+    5          8       -0.411651    0.000000
+    6         72        0.866926    0.000000
+    7          8       -0.134206    0.000000
+    8          8       -0.148809    0.000000
+    9          6        0.048297    0.000000
+   10          6       -0.014363    0.000000
+   11          6       -0.095806    0.000000
+   12          6       -0.139896    0.000000
+   13          1        0.052648    0.000000
+   14          1        0.055804    0.000000
+   15          1        0.051355    0.000000
+   16          8       -0.140145    0.000000
+   17          8       -0.156855    0.000000
+   18          6        0.048427    0.000000
+   19          6       -0.013903    0.000000
+   20          6       -0.095483    0.000000
+   21          6       -0.139276    0.000000
+   22          1        0.053076    0.000000
+   23          1        0.053176    0.000000
+   24          1        0.051263    0.000000
+   25          8       -0.150102    0.000000
+   26          8       -0.145435    0.000000
+   27          6        0.048137    0.000000
+   28          6       -0.013898    0.000000
+   29          6       -0.095453    0.000000
+   30          6       -0.139302    0.000000
+   31          8       -0.146015    0.000000
+   32          8       -0.140903    0.000000
+   33          6        0.047822    0.000000
+   34          6       -0.014142    0.000000
+   35          1        0.052798    0.000000
+   36          1        0.052941    0.000000
+   37          1        0.051261    0.000000
+   38          6       -0.095690    0.000000
+   39          6       -0.139581    0.000000
+   40          1        0.051990    0.000000
+   41          1        0.056911    0.000000
+   42          1        0.052048    0.000000
+   43          1        0.058297    0.000000
+   44          1        0.052039    0.000000
+   45          1        0.058133    0.000000
+   46          1        0.057343    0.000000
+   47          1        0.052001    0.000000
+   48          8       -0.141478    0.000000
+   49          8       -0.146334    0.000000
+   50          6        0.047961    0.000000
+   51          6       -0.014674    0.000000
+   52          6       -0.096253    0.000000
+   53          6       -0.139721    0.000000
+   54          1        0.053220    0.000000
+   55          1        0.054118    0.000000
+   56          1        0.051264    0.000000
+   57          1        0.052179    0.000000
+   58          1        0.059282    0.000000
+   59          8       -0.151902    0.000000
+   60          8       -0.130527    0.000000
+   61          6        0.048302    0.000000
+   62          6       -0.014592    0.000000
+   63          6       -0.095938    0.000000
+   64          6       -0.139898    0.000000
+   65          1        0.052689    0.000000
+   66          1        0.055827    0.000000
+   67          1        0.051367    0.000000
+   68          1        0.057981    0.000000
+   69          1        0.052032    0.000000
+   70          8       -0.149508    0.000000
+   71          8       -0.139999    0.000000
+   72          6        0.047715    0.000000
+   73          6       -0.014501    0.000000
+   74          6       -0.095662    0.000000
+   75          6       -0.139508    0.000000
+   76          1        0.053056    0.000000
+   77          1        0.053850    0.000000
+   78          1        0.051256    0.000000
+   79          1        0.051974    0.000000
+   80          1        0.057416    0.000000
+   81          8       -0.141399    0.000000
+   82          8       -0.151527    0.000000
+   83          6        0.047903    0.000000
+   84          6       -0.014216    0.000000
+   85          6       -0.095619    0.000000
+   86          6       -0.139420    0.000000
+   87          1        0.053575    0.000000
+   88          1        0.051233    0.000000
+   89          1        0.051981    0.000000
+   90          1        0.058159    0.000000
+   91          8       -0.147990    0.000000
+   92          8       -0.144521    0.000000
+   93          6        0.047842    0.000000
+   94          6       -0.014223    0.000000
+   95          6       -0.095709    0.000000
+   96          6       -0.139380    0.000000
+   97          1        0.052608    0.000000
+   98          1        0.054382    0.000000
+   99          1        0.051255    0.000000
+  100          1        0.057410    0.000000
+  101          1        0.051983    0.000000
+  102          8       -0.138466    0.000000
+  103          8       -0.151411    0.000000
+  104          6        0.047860    0.000000
+  105          6       -0.014253    0.000000
+  106          6       -0.095801    0.000000
+  107          6       -0.139482    0.000000
+  108          1        0.053036    0.000000
+  109          1        0.053249    0.000000
+  110          1        0.051246    0.000000
+  111          1        0.057405    0.000000
+  112          1        0.051987    0.000000
+  113          8       -0.126199    0.000000
+  114          8       -0.120332    0.000000
+  115          6        0.033558    0.000000
+  116          6       -0.014518    0.000000
+  117          6       -0.095475    0.000000
+  118          6       -0.139379    0.000000
+  119          1        0.052691    0.000000
+  120          1        0.052497    0.000000
+  121          1        0.051190    0.000000
+  122          1        0.056485    0.000000
+  123          1        0.051902    0.000000
+  124          1        0.056288    0.000000
+  125          1        0.053193    0.000000
+  126          1        0.051370    0.000000
+  127          1        0.052635    0.000000
+  128          8       -0.121856    0.000000
+  129          8       -0.123885    0.000000
+  130          6        0.033729    0.000000
+  131          6       -0.014513    0.000000
+  132          6       -0.095480    0.000000
+  133          6       -0.139372    0.000000
+  134          1        0.052562    0.000000
+  135          1        0.052635    0.000000
+  136          1        0.051187    0.000000
+  137          1        0.056468    0.000000
+  138          1        0.051903    0.000000
+ -----------------------------------------------
+
+ Dipole moment (in Debye)
+ -----------------------------------------------
+                 X        Y        Z     Total
+ -----------------------------------------------
+ CM5         -0.2471  -0.2688  -0.2029   0.4177
+ Hirshfeld    0.0000   0.0000   0.0000   0.0000
+ -----------------------------------------------
+
+             ==============================
+             scaling CM5 charges by  1.15
+             and as such written to FF file
+             ==============================
+ 
+ sum of read atomic charges: -5.759281940243000E-016
+ normalizing ...
+ sum of used atomic charges: -1.457167719820518E-016
+ 
+ 
+           =================
+           topology analysis
+           =================
+   #   Z           coordinates           CN   q   hyb/lin/metbond   neighbors
+   1   8   0.98932   0.73525   0.61931  3.00 -0.477    3 0 1      4   2   3
+   2  72   2.52317   3.94603   2.19863 10.12  1.000    0 0 1      1  82  26  32  71 113  60 114 115   3   4
+   3  72  -2.20991  -1.09667   2.07650  9.51  0.986    0 0 1      5   1 103  25  59  31  92   4   2   6
+   4  72   2.14463  -1.45233  -2.31510  9.47  0.985    0 0 1      1   5  17  70   8  49  81   3   6   2
+   5   8  -0.82509  -3.48752  -0.61768  3.00 -0.473    3 0 1      3   6   4
+   6  72  -1.81788  -7.09435  -1.62246 10.10  0.997    0 0 1      5  91  16  48 102   7 129 128 130   4   3
+   7   8  -3.37803  -4.72102  -4.73853  2.04 -0.154    3 0 1      9   6
+   8   8  -0.89814  -1.21208  -5.04976  2.06 -0.171    3 0 1      9   4
+   9   6  -2.91738  -2.49381  -5.50773  3.33  0.056    2 0 0      7   8  10
+  10   6  -4.85781  -1.17912  -7.10829  3.08 -0.017    2 0 0     11   9  12
+  11   6  -7.17787  -2.21462  -7.31511  3.08 -0.110    2 0 0     43  42  10
+  12   6  -4.08249   1.27121  -8.32436  4.04 -0.161    3 0 0     15  14  13  10
+  13   1  -2.45379   0.97910  -9.59307  1.00  0.061    0 0 0     12
+  14   1  -3.46400   2.65166  -6.89311  1.00  0.064    0 0 0     12
+  15   1  -5.64918   2.08630  -9.42250  1.00  0.059    0 0 0     12
+  16   8   0.68028  -7.65485  -4.90018  2.04 -0.161    3 0 1     18   6
+  17   8   3.32182  -4.29934  -4.91781  2.05 -0.180    3 0 1     18   4
+  18   6   2.55824  -6.44079  -5.78376  3.33  0.056    2 0 0     16  17  19
+  19   6   3.93276  -7.60941  -7.95658  3.07 -0.016    2 0 0     20  18  21
+  20   6   5.93422  -6.38768  -8.95624  3.08 -0.110    2 0 0     41  40  19
+  21   6   2.95759 -10.11842  -8.87019  4.04 -0.160    3 0 0     24  23  22  19
+  22   1   3.01540 -11.53137  -7.33937  1.00  0.061    0 0 0     21
+  23   1   0.96039  -9.96974  -9.44419  1.00  0.061    0 0 0     21
+  24   1   4.07685 -10.81604 -10.47683  1.00  0.059    0 0 0     21
+  25   8  -2.88253   1.20583   5.37319  2.05 -0.173    3 0 1     27   3
+  26   8  -0.50961   4.72538   4.88097  2.05 -0.167    3 0 1     27   2
+  27   6  -2.21898   3.45702   6.00617  3.35  0.055    2 0 0     26  25  28
+  28   6  -3.58083   4.61571   8.19422  3.07 -0.016    2 0 0     29  27  30
+  29   6  -2.98613   6.99440   8.88991  3.08 -0.110    2 0 0     46  47  28
+  30   6  -5.55397   3.01644   9.47227  4.04 -0.160    3 0 0     37  36  35  28
+  31   8   0.75612  -2.39340   4.63242  2.06 -0.168    3 0 1     33   3
+  32   8   2.97480   1.22065   5.31704  2.05 -0.162    3 0 1     33   2
+  33   6   2.54217  -1.12299   5.67107  3.36  0.055    2 0 0     32  31  34
+  34   6   4.19051  -2.55053   7.47896  3.08 -0.016    2 0 0     38  33  39
+  35   1  -4.71711   1.25457  10.20689  1.00  0.061    0 0 0     30
+  36   1  -7.03053   2.43877   8.12026  1.00  0.061    0 0 0     30
+  37   1  -6.44348   4.04391  11.04522  1.00  0.059    0 0 0     30
+  38   6   6.43084  -1.53018   8.13914  3.08 -0.110    2 0 0     45  44  34
+  39   6   3.24381  -5.07968   8.36192  4.04 -0.161    3 0 0    126 124 125  34
+  40   1   6.99034  -7.18487 -10.54389  1.00  0.060    0 0 0     20
+  41   1   6.54361  -4.56888  -8.19153  1.00  0.065    0 0 0     20
+  42   1  -8.66819  -1.29592  -8.41408  1.00  0.060    0 0 0     11
+  43   1  -7.61193  -4.00286  -6.37941  1.00  0.067    0 0 0     11
+  44   1   7.72507  -2.51980   9.41193  1.00  0.060    0 0 0     38
+  45   1   6.99303   0.31148   7.39201  1.00  0.067    0 0 0     38
+  46   1  -1.53389   8.05069   7.87045  1.00  0.066    0 0 0     29
+  47   1  -3.93957   7.91667  10.47478  1.00  0.060    0 0 0     29
+  48   8   2.02312  -7.70487  -0.14149  2.05 -0.163    3 0 1     50   6
+  49   8   4.14698  -3.98846   0.25114  2.05 -0.168    3 0 1     50   4
+  50   6   3.79569  -6.33223   0.74761  3.35  0.055    2 0 0     48  49  51
+  51   6   5.63516  -7.62557   2.47263  3.08 -0.017    2 0 0     52  50  53
+  52   6   7.64689  -6.33087   3.35480  3.08 -0.111    2 0 0     58  57  51
+  53   6   5.06935 -10.33787   3.11151  4.04 -0.161    3 0 0     56  54  55  51
+  54   1   5.03886 -11.51434   1.39244  1.00  0.061    0 0 0     53
+  55   1   3.16531 -10.51253   3.94127  1.00  0.062    0 0 0     53
+  56   1   6.47215 -11.10535   4.44041  1.00  0.059    0 0 0     53
+  57   1   9.01112  -7.22007   4.62866  1.00  0.060    0 0 0     52
+  58   1   7.94970  -4.35455   2.84635  1.00  0.068    0 0 0     52
+  59   8  -3.74256   2.29109   0.40404  2.06 -0.175    3 0 1     61   3
+  60   8  -0.77522   5.37269  -0.06373  2.03 -0.150    3 0 1     61   2
+  61   6  -2.86566   4.33343  -0.60108  3.34  0.056    2 0 0     60  59  62
+  62   6  -4.52095   5.52098  -2.57797  3.07 -0.017    2 0 0     63  61  64
+  63   6  -3.58521   7.44009  -3.97181  3.08 -0.110    2 0 0     68  69  62
+  64   6  -7.11246   4.40284  -2.92602  4.04 -0.161    3 0 0     67  66  65  62
+  65   1  -8.22245   4.55191  -1.16729  1.00  0.061    0 0 0     64
+  66   1  -6.99386   2.37005  -3.36594  1.00  0.064    0 0 0     64
+  67   1  -8.14301   5.37144  -4.45062  1.00  0.059    0 0 0     64
+  68   1  -1.67194   8.14372  -3.64147  1.00  0.067    0 0 0     63
+  69   1  -4.70992   8.32002  -5.46695  1.00  0.060    0 0 0     63
+  70   8   6.00222  -0.16699  -1.89387  2.06 -0.172    3 0 1     72   4
+  71   8   6.22292   2.07612   1.74794  2.04 -0.161    3 0 1     72   2
+  72   6   7.20386   0.70618   0.02674  3.36  0.055    2 0 0     71  70  73
+  73   6   9.94411   0.02049   0.22543  3.07 -0.017    2 0 0     74  72  75
+  74   6  11.30700   0.95709   2.16551  3.08 -0.110    2 0 0     80  79  73
+  75   6  10.96216  -1.75611  -1.74639  4.04 -0.160    3 0 0     78  76  77  73
+  76   1  10.71594  -0.96720  -3.65886  1.00  0.061    0 0 0     75
+  77   1   9.90747  -3.55411  -1.71511  1.00  0.062    0 0 0     75
+  78   1  12.97946  -2.14793  -1.43121  1.00  0.059    0 0 0     75
+  79   1  13.30393   0.47848   2.40272  1.00  0.060    0 0 0     74
+  80   1  10.42684   2.22222   3.54043  1.00  0.066    0 0 0     74
+  81   8   2.45746   2.09645  -4.43766  2.04 -0.163    3 0 1     83   4
+  82   8   3.87432   4.90599  -1.53175  2.06 -0.174    3 0 1     83   2
+  83   6   3.28465   4.27652  -3.78881  3.36  0.055    2 0 0     82  81  84
+  84   6   3.53900   6.20446  -5.84291  3.07 -0.016    2 0 0     85  83  86
+  85   6   4.09192   8.60781  -5.19483  3.08 -0.110    2 0 0     90  89  84
+  86   6   3.05667   5.32121  -8.50079  4.04 -0.160    3 0 0     88  87 127  84
+  87   1   1.12802   4.55117  -8.67270  1.00  0.062    0 0 0     86
+  88   1   3.29222   6.87521  -9.86162  1.00  0.059    0 0 0     86
+  89   1   4.25796  10.09021  -6.62615  1.00  0.060    0 0 0     85
+  90   1   4.36368   9.11530  -3.21071  1.00  0.067    0 0 0     85
+  91   8  -5.67122  -6.12877  -0.57456  2.06 -0.170    3 0 1     93   6
+  92   8  -5.88946  -1.96813   0.41776  2.04 -0.166    3 0 1     93   3
+  93   6  -6.88936  -4.06620  -0.25728  3.36  0.055    2 0 0     91  92  94
+  94   6  -9.67135  -4.15490  -0.76433  3.07 -0.016    2 0 0     95  93  96
+  95   6 -11.02623  -2.00322  -0.58500  3.08 -0.110    2 0 0    100 101  94
+  96   6 -10.74422  -6.67684  -1.51944  4.04 -0.160    3 0 0     99  98  97  94
+  97   1 -10.50583  -8.06953   0.01332  1.00  0.060    0 0 0     96
+  98   1  -9.71818  -7.45374  -3.15804  1.00  0.063    0 0 0     96
+  99   1 -12.76681  -6.52442  -1.97521  1.00  0.059    0 0 0     96
+ 100   1 -10.10829  -0.23401  -0.04590  1.00  0.066    0 0 0     95
+ 101   1 -13.05409  -1.97705  -0.98465  1.00  0.060    0 0 0     95
+ 102   8  -2.18209  -7.86206   2.46794  2.04 -0.159    3 0 1    104   6
+ 103   8  -3.67015  -4.24385   4.21549  2.05 -0.174    3 0 1    104   3
+ 104   6  -3.06225  -6.58813   4.31951  3.36  0.055    2 0 0    102 103 105
+ 105   6  -3.40933  -7.97298   6.76311  3.07 -0.016    2 0 0    106 104 107
+ 106   6  -4.20239  -6.67740   8.81048  3.08 -0.110    2 0 0    111 112 105
+ 107   6  -2.79149 -10.74685   6.76163  4.04 -0.160    3 0 0    110 109 108 105
+ 108   1  -0.78506 -11.05325   6.28666  1.00  0.061    0 0 0    107
+ 109   1  -3.88152 -11.75120   5.29813  1.00  0.061    0 0 0    107
+ 110   1  -3.18106 -11.60318   8.61554  1.00  0.059    0 0 0    107
+ 111   1  -4.59633  -4.65444   8.67691  1.00  0.066    0 0 0    106
+ 112   1  -4.46924  -7.61309  10.63426  1.00  0.060    0 0 0    106
+ 113   8   5.04270   5.96806   4.93459  2.01 -0.145    3 0 1    115   2
+ 114   8   2.69865   8.23190   2.33161  2.00 -0.138    3 0 1    115   2
+ 115   6   4.31055   8.15737   4.14923  3.85  0.039    2 0 1    114 113 116   2
+ 116   6   5.26200  10.54776   5.28897  3.06 -0.017    2 0 0    117 115 118
+ 117   6   6.90110  10.39836   7.23392  3.08 -0.110    2 0 0    122 123 116
+ 118   6   4.28910  12.96939   4.16348  4.04 -0.160    3 0 0    121 119 120 116
+ 119   1   2.21017  13.05017   4.27285  1.00  0.061    0 0 0    118
+ 120   1   4.76438  13.08460   2.13784  1.00  0.060    0 0 0    118
+ 121   1   5.08519  14.62424   5.13786  1.00  0.059    0 0 0    118
+ 122   1   7.50970   8.55563   7.93992  1.00  0.065    0 0 0    117
+ 123   1   7.65086  12.09574   8.14510  1.00  0.060    0 0 0    117
+ 124   1   2.97190  -6.35764   6.74135  1.00  0.065    0 0 0     39
+ 125   1   1.38343  -4.90660   9.28572  1.00  0.061    0 0 0     39
+ 126   1   4.58242  -5.95758   9.68928  1.00  0.059    0 0 0     39
+ 127   1   4.34758   3.76869  -9.01691  1.00  0.061    0 0 0     86
+ 128   8  -4.19330  -9.70112  -4.04399  2.00 -0.140    3 0 1    130   6
+ 129   8  -1.47975 -11.32287  -1.32280  2.01 -0.142    3 0 1    130   6
+ 130   6  -3.14673 -11.66526  -3.06867  3.85  0.039    2 0 1    128 129 131   6
+ 131   6  -3.79129 -14.27735  -3.89733  3.06 -0.017    2 0 0    132 130 133
+ 132   6  -5.52136 -14.57242  -5.74418  3.08 -0.110    2 0 0    137 138 131
+ 133   6  -2.43097 -16.40267  -2.58968  4.04 -0.160    3 0 0    136 135 134 131
+ 134   1  -2.78195 -16.35151  -0.53648  1.00  0.060    0 0 0    133
+ 135   1  -0.36968 -16.21328  -2.82692  1.00  0.061    0 0 0    133
+ 136   1  -3.03140 -18.24920  -3.33257  1.00  0.059    0 0 0    133
+ 137   1  -6.41881 -12.92089  -6.59972  1.00  0.065    0 0 0    132
+ 138   1  -6.06155 -16.44742  -6.42683  1.00  0.060    0 0 0    132
+ 
+ monopole moment for charges used (au/Debye):    0.18898   0.48035
+ reading from ... cluster2_nm.out
+          18  molecular fragments found
+123456777777777888888888999999****999**8877**99*********************************
+**********************************************************
+setting 1,3-metal interaction to screened NCI   1  82
+setting 1,3-metal interaction to screened NCI   1  26
+setting 1,3-metal interaction to screened NCI   1  32
+setting 1,3-metal interaction to screened NCI   1  71
+setting 1,3-metal interaction to screened NCI   1 113
+setting 1,3-metal interaction to screened NCI   1  60
+setting 1,3-metal interaction to screened NCI   1 114
+setting 1,3-metal interaction to screened NCI   1 115
+setting 1,3-metal interaction to screened NCI  82  26
+setting 1,3-metal interaction to screened NCI  82  32
+setting 1,3-metal interaction to screened NCI  82  71
+setting 1,3-metal interaction to screened NCI  82 113
+setting 1,3-metal interaction to screened NCI  82  60
+setting 1,3-metal interaction to screened NCI  82 114
+setting 1,3-metal interaction to screened NCI  82 115
+setting 1,3-metal interaction to screened NCI  82   3
+setting 1,3-metal interaction to screened NCI  26  32
+setting 1,3-metal interaction to screened NCI  26  71
+setting 1,3-metal interaction to screened NCI  26 113
+setting 1,3-metal interaction to screened NCI  26  60
+setting 1,3-metal interaction to screened NCI  26 114
+setting 1,3-metal interaction to screened NCI  26 115
+setting 1,3-metal interaction to screened NCI  26   3
+setting 1,3-metal interaction to screened NCI  32  71
+setting 1,3-metal interaction to screened NCI  32 113
+setting 1,3-metal interaction to screened NCI  32  60
+setting 1,3-metal interaction to screened NCI  32 114
+setting 1,3-metal interaction to screened NCI  32 115
+setting 1,3-metal interaction to screened NCI  32   3
+setting 1,3-metal interaction to screened NCI  71 113
+setting 1,3-metal interaction to screened NCI  71  60
+setting 1,3-metal interaction to screened NCI  71 114
+setting 1,3-metal interaction to screened NCI  71 115
+setting 1,3-metal interaction to screened NCI  71   3
+setting 1,3-metal interaction to screened NCI 113  60
+setting 1,3-metal interaction to screened NCI 113   3
+setting 1,3-metal interaction to screened NCI  60 114
+setting 1,3-metal interaction to screened NCI  60 115
+setting 1,3-metal interaction to screened NCI  60   3
+setting 1,3-metal interaction to screened NCI 114   3
+setting 1,3-metal interaction to screened NCI 115   3
+setting 1,3-metal interaction to screened NCI   4  82
+setting 1,3-metal interaction to screened NCI   4  26
+setting 1,3-metal interaction to screened NCI   4  32
+setting 1,3-metal interaction to screened NCI   4  71
+setting 1,3-metal interaction to screened NCI   4 113
+setting 1,3-metal interaction to screened NCI   4  60
+setting 1,3-metal interaction to screened NCI   4 114
+setting 1,3-metal interaction to screened NCI   4 115
+setting 1,3-metal interaction to screened NCI   5   1
+setting 1,3-metal interaction to screened NCI   5 103
+setting 1,3-metal interaction to screened NCI   5  25
+setting 1,3-metal interaction to screened NCI   5  59
+setting 1,3-metal interaction to screened NCI   5  31
+setting 1,3-metal interaction to screened NCI   5  92
+setting 1,3-metal interaction to screened NCI   5   2
+setting 1,3-metal interaction to screened NCI   1 103
+setting 1,3-metal interaction to screened NCI   1  25
+setting 1,3-metal interaction to screened NCI   1  59
+setting 1,3-metal interaction to screened NCI   1  31
+setting 1,3-metal interaction to screened NCI   1  92
+setting 1,3-metal interaction to screened NCI 103  25
+setting 1,3-metal interaction to screened NCI 103  59
+setting 1,3-metal interaction to screened NCI 103  31
+setting 1,3-metal interaction to screened NCI 103  92
+setting 1,3-metal interaction to screened NCI 103   4
+setting 1,3-metal interaction to screened NCI 103   2
+setting 1,3-metal interaction to screened NCI  25  59
+setting 1,3-metal interaction to screened NCI  25  31
+setting 1,3-metal interaction to screened NCI  25  92
+setting 1,3-metal interaction to screened NCI  25   4
+setting 1,3-metal interaction to screened NCI  25   2
+setting 1,3-metal interaction to screened NCI  59  31
+setting 1,3-metal interaction to screened NCI  59  92
+setting 1,3-metal interaction to screened NCI  59   4
+setting 1,3-metal interaction to screened NCI  59   2
+setting 1,3-metal interaction to screened NCI  31  92
+setting 1,3-metal interaction to screened NCI  31   4
+setting 1,3-metal interaction to screened NCI  31   2
+setting 1,3-metal interaction to screened NCI  92   4
+setting 1,3-metal interaction to screened NCI  92   2
+setting 1,3-metal interaction to screened NCI   6   1
+setting 1,3-metal interaction to screened NCI   6 103
+setting 1,3-metal interaction to screened NCI   6  25
+setting 1,3-metal interaction to screened NCI   6  59
+setting 1,3-metal interaction to screened NCI   6  31
+setting 1,3-metal interaction to screened NCI   6  92
+setting 1,3-metal interaction to screened NCI   6   2
+setting 1,3-metal interaction to screened NCI   1  17
+setting 1,3-metal interaction to screened NCI   1  70
+setting 1,3-metal interaction to screened NCI   1   8
+setting 1,3-metal interaction to screened NCI   1  49
+setting 1,3-metal interaction to screened NCI   1  81
+setting 1,3-metal interaction to screened NCI   5  17
+setting 1,3-metal interaction to screened NCI   5  70
+setting 1,3-metal interaction to screened NCI   5   8
+setting 1,3-metal interaction to screened NCI   5  49
+setting 1,3-metal interaction to screened NCI   5  81
+setting 1,3-metal interaction to screened NCI  17  70
+setting 1,3-metal interaction to screened NCI  17   8
+setting 1,3-metal interaction to screened NCI  17  49
+setting 1,3-metal interaction to screened NCI  17  81
+setting 1,3-metal interaction to screened NCI  17   3
+setting 1,3-metal interaction to screened NCI  17   6
+setting 1,3-metal interaction to screened NCI  70   8
+setting 1,3-metal interaction to screened NCI  70  49
+setting 1,3-metal interaction to screened NCI  70  81
+setting 1,3-metal interaction to screened NCI  70   3
+setting 1,3-metal interaction to screened NCI  70   6
+setting 1,3-metal interaction to screened NCI   8  49
+setting 1,3-metal interaction to screened NCI   8  81
+setting 1,3-metal interaction to screened NCI   8   3
+setting 1,3-metal interaction to screened NCI   8   6
+setting 1,3-metal interaction to screened NCI  49  81
+setting 1,3-metal interaction to screened NCI  49   3
+setting 1,3-metal interaction to screened NCI  49   6
+setting 1,3-metal interaction to screened NCI  81   3
+setting 1,3-metal interaction to screened NCI  81   6
+setting 1,3-metal interaction to screened NCI   2  17
+setting 1,3-metal interaction to screened NCI   2  70
+setting 1,3-metal interaction to screened NCI   2   8
+setting 1,3-metal interaction to screened NCI   2  49
+setting 1,3-metal interaction to screened NCI   2  81
+setting 1,3-metal interaction to screened NCI   5  91
+setting 1,3-metal interaction to screened NCI   5  16
+setting 1,3-metal interaction to screened NCI   5  48
+setting 1,3-metal interaction to screened NCI   5 102
+setting 1,3-metal interaction to screened NCI   5   7
+setting 1,3-metal interaction to screened NCI   5 129
+setting 1,3-metal interaction to screened NCI   5 128
+setting 1,3-metal interaction to screened NCI   5 130
+setting 1,3-metal interaction to screened NCI  91  16
+setting 1,3-metal interaction to screened NCI  91  48
+setting 1,3-metal interaction to screened NCI  91 102
+setting 1,3-metal interaction to screened NCI  91   7
+setting 1,3-metal interaction to screened NCI  91 129
+setting 1,3-metal interaction to screened NCI  91 128
+setting 1,3-metal interaction to screened NCI  91 130
+setting 1,3-metal interaction to screened NCI  91   4
+setting 1,3-metal interaction to screened NCI  16  48
+setting 1,3-metal interaction to screened NCI  16 102
+setting 1,3-metal interaction to screened NCI  16   7
+setting 1,3-metal interaction to screened NCI  16 129
+setting 1,3-metal interaction to screened NCI  16 128
+setting 1,3-metal interaction to screened NCI  16 130
+setting 1,3-metal interaction to screened NCI  16   4
+setting 1,3-metal interaction to screened NCI  48 102
+setting 1,3-metal interaction to screened NCI  48   7
+setting 1,3-metal interaction to screened NCI  48 129
+setting 1,3-metal interaction to screened NCI  48 128
+setting 1,3-metal interaction to screened NCI  48 130
+setting 1,3-metal interaction to screened NCI  48   4
+setting 1,3-metal interaction to screened NCI 102   7
+setting 1,3-metal interaction to screened NCI 102 129
+setting 1,3-metal interaction to screened NCI 102 128
+setting 1,3-metal interaction to screened NCI 102 130
+setting 1,3-metal interaction to screened NCI 102   4
+setting 1,3-metal interaction to screened NCI   7 129
+setting 1,3-metal interaction to screened NCI   7 128
+setting 1,3-metal interaction to screened NCI   7 130
+setting 1,3-metal interaction to screened NCI   7   4
+setting 1,3-metal interaction to screened NCI 129   4
+setting 1,3-metal interaction to screened NCI 128   4
+setting 1,3-metal interaction to screened NCI 130   4
+setting 1,3-metal interaction to screened NCI   3  91
+setting 1,3-metal interaction to screened NCI   3  16
+setting 1,3-metal interaction to screened NCI   3  48
+setting 1,3-metal interaction to screened NCI   3 102
+setting 1,3-metal interaction to screened NCI   3   7
+setting 1,3-metal interaction to screened NCI   3 129
+setting 1,3-metal interaction to screened NCI   3 128
+setting 1,3-metal interaction to screened NCI   3 130
+     directly bonded atoms
+  pair distance (Ang.) Rcov  WBO
+   2   1      2.060   2.28   0.59
+   3   1      2.098   2.28   0.52
+   3   2      3.660   3.28   0.05
+   4   1      2.031   2.28   0.62
+   4   2      3.729   3.28   0.05
+   4   3      3.278   3.28   0.07
+   5   3      2.042   2.28   0.61
+   5   4      2.106   2.28   0.51
+   6   3      3.735   3.28   0.05
+   6   4      3.667   3.28   0.05
+   6   5      2.050   2.28   0.61
+   7   6      2.231   2.28   0.51
+   8   4      2.169   2.28   0.56
+   9   7      1.271   1.39   1.41
+   9   8      1.289   1.39   1.33
+  10   9      1.502   1.50   1.04
+  11  10      1.349   1.50   1.83
+  12  10      1.505   1.50   1.03
+  13  12      1.103   1.07   0.93
+  14  12      1.102   1.07   0.91
+  15  12      1.100   1.07   0.95
+  16   6      2.201   2.28   0.53
+  17   4      2.134   2.28   0.56
+  18  16      1.272   1.39   1.40
+  18  17      1.287   1.39   1.31
+  19  18      1.495   1.50   1.05
+  20  19      1.349   1.50   1.83
+  21  19      1.504   1.50   1.03
+  22  21      1.103   1.07   0.93
+  23  21      1.102   1.07   0.93
+  24  21      1.100   1.07   0.95
+  25   3      2.157   2.28   0.55
+  26   2      2.182   2.28   0.53
+  27  25      1.286   1.39   1.32
+  27  26      1.274   1.39   1.39
+  28  27      1.495   1.50   1.05
+  29  28      1.349   1.50   1.84
+  30  28      1.505   1.50   1.03
+  31   3      2.183   2.28   0.57
+  32   2      2.205   2.28   0.51
+  33  31      1.283   1.39   1.33
+  33  32      1.275   1.39   1.38
+  34  33      1.499   1.50   1.04
+  35  30      1.103   1.07   0.93
+  36  30      1.103   1.07   0.93
+  37  30      1.100   1.07   0.95
+  38  34      1.349   1.50   1.84
+  39  34      1.504   1.50   1.03
+  40  20      1.094   1.07   0.93
+  41  20      1.093   1.07   0.92
+  42  11      1.094   1.07   0.93
+  43  11      1.092   1.07   0.92
+  44  38      1.094   1.07   0.93
+  45  38      1.093   1.07   0.92
+  46  29      1.093   1.07   0.92
+  47  29      1.094   1.07   0.93
+  48   6      2.202   2.28   0.51
+  49   4      2.184   2.28   0.56
+  50  48      1.276   1.39   1.38
+  50  49      1.281   1.39   1.34
+  51  50      1.500   1.50   1.04
+  52  51      1.349   1.50   1.82
+  53  51      1.505   1.50   1.03
+  54  53      1.102   1.07   0.93
+  55  53      1.103   1.07   0.92
+  56  53      1.100   1.07   0.95
+  57  52      1.094   1.07   0.93
+  58  52      1.092   1.07   0.91
+  59   3      2.158   2.28   0.57
+  60   2      2.247   2.28   0.51
+  61  59      1.291   1.39   1.32
+  61  60      1.268   1.39   1.42
+  62  61      1.502   1.50   1.03
+  63  62      1.349   1.50   1.83
+  64  62      1.505   1.50   1.03
+  65  64      1.103   1.07   0.93
+  66  64      1.102   1.07   0.92
+  67  64      1.100   1.07   0.95
+  68  63      1.093   1.07   0.91
+  69  63      1.094   1.07   0.93
+  70   4      2.163   2.28   0.55
+  71   2      2.207   2.28   0.51
+  72  70      1.285   1.39   1.33
+  72  71      1.275   1.39   1.39
+  73  72      1.498   1.50   1.04
+  74  73      1.349   1.50   1.83
+  75  73      1.504   1.50   1.03
+  76  75      1.102   1.07   0.93
+  77  75      1.103   1.07   0.92
+  78  75      1.100   1.07   0.95
+  79  74      1.094   1.07   0.93
+  80  74      1.093   1.07   0.92
+  81   4      2.194   2.28   0.53
+  82   2      2.160   2.28   0.53
+  83  81      1.281   1.39   1.36
+  83  82      1.279   1.39   1.35
+  84  83      1.497   1.50   1.05
+  85  84      1.349   1.50   1.83
+  86  84      1.504   1.50   1.03
+  87  86      1.103   1.07   0.93
+  88  86      1.100   1.07   0.95
+  89  85      1.094   1.07   0.93
+  90  85      1.093   1.07   0.91
+  91   6      2.174   2.28   0.52
+  92   3      2.185   2.28   0.54
+  93  91      1.279   1.39   1.36
+  93  92      1.281   1.39   1.35
+  94  93      1.497   1.50   1.05
+  95  94      1.349   1.50   1.83
+  96  94      1.504   1.50   1.03
+  97  96      1.103   1.07   0.93
+  98  96      1.103   1.07   0.92
+  99  96      1.100   1.07   0.95
+ 100  95      1.093   1.07   0.92
+ 101  95      1.094   1.07   0.93
+ 102   6      2.211   2.28   0.51
+ 103   3      2.157   2.28   0.54
+ 104 102      1.277   1.39   1.38
+ 104 103      1.283   1.39   1.33
+ 105 104      1.498   1.50   1.05
+ 106 105      1.349   1.50   1.83
+ 107 105      1.504   1.50   1.03
+ 108 107      1.103   1.07   0.93
+ 109 107      1.102   1.07   0.93
+ 110 107      1.100   1.07   0.95
+ 111 106      1.093   1.07   0.92
+ 112 106      1.094   1.07   0.93
+ 113   2      2.240   2.28   0.55
+ 114   2      2.271   2.28   0.51
+ 115   2      2.632   2.39   0.04
+ 115 113      1.290   1.39   1.30
+ 115 114      1.286   1.39   1.34
+ 116 115      1.489   1.50   1.05
+ 117 116      1.348   1.50   1.84
+ 118 116      1.504   1.50   1.03
+ 119 118      1.102   1.07   0.93
+ 120 118      1.103   1.07   0.93
+ 121 118      1.100   1.07   0.95
+ 122 117      1.093   1.07   0.92
+ 123 117      1.094   1.07   0.93
+ 124  39      1.102   1.07   0.92
+ 125  39      1.103   1.07   0.93
+ 126  39      1.100   1.07   0.95
+ 127  86      1.103   1.07   0.93
+ 128   6      2.264   2.28   0.53
+ 129   6      2.250   2.28   0.54
+ 130   6      2.633   2.39   0.05
+ 130 128      1.286   1.39   1.33
+ 130 129      1.290   1.39   1.31
+ 131 130      1.490   1.50   1.05
+ 132 131      1.348   1.50   1.84
+ 133 131      1.504   1.50   1.03
+ 134 133      1.103   1.07   0.93
+ 135 133      1.103   1.07   0.93
+ 136 133      1.100   1.07   0.95
+ 137 132      1.093   1.07   0.92
+ 138 132      1.094   1.07   0.93
+smallest distance considered as NCI for :  90  82    4.56    2.41
+ 
+ 
+           ========
+           FF setup
+           ========
+ 
+  bthr, skiplin13    5.00000000000000      F
+           0  HB terms
+           0  XB terms
+atom   1 is in ring    1   3   4   5
+atom   2 is in ring    1   2   3   4   5
+atom   3 is in ring    3   5   6  91  92  93
+atom   4 is in ring    1   2   4  81  82  83
+atom   5 is in ring    1   3   4   5
+atom   6 is in ring    1   3   4   5   6
+atom   7 is in ring    1   3   4   6   7   8   9
+atom   8 is in ring    3   4   5   6   7   8   9
+atom   9 is in ring    3   4   5   6   7   8   9
+atom  16 is in ring    1   3   4   6  16  17  18
+atom  17 is in ring    3   4   5   6  16  17  18
+atom  18 is in ring    3   4   5   6  16  17  18
+atom  25 is in ring    1   2   3   4  25  26  27
+atom  26 is in ring    2   3   4   5  25  26  27
+atom  27 is in ring    1   2   3   4  25  26  27
+atom  31 is in ring    1   2   3   4  31  32  33
+atom  32 is in ring    2   3   4   5  31  32  33
+atom  33 is in ring    1   2   3   4  31  32  33
+atom  48 is in ring    1   3   4   6  48  49  50
+atom  49 is in ring    3   4   5   6  48  49  50
+atom  50 is in ring    3   4   5   6  48  49  50
+atom  59 is in ring    1   2   3   4  59  60  61
+atom  60 is in ring    2   3   4   5  59  60  61
+atom  61 is in ring    1   2   3   4  59  60  61
+atom  70 is in ring    1   2   4  70  71  72
+atom  71 is in ring    1   2   4  70  71  72
+atom  72 is in ring    1   2   4  70  71  72
+atom  81 is in ring    1   2   4  81  82  83
+atom  82 is in ring    1   2   4  81  82  83
+atom  83 is in ring    1   2   4  81  82  83
+atom  91 is in ring    3   5   6  91  92  93
+atom  92 is in ring    3   5   6  91  92  93
+atom  93 is in ring    3   5   6  91  92  93
+atom 102 is in ring    3   5   6 102 103 104
+atom 103 is in ring    3   5   6 102 103 104
+atom 104 is in ring    3   5   6 102 103 104
+atom 113 is in ring    2 113 114 115
+atom 114 is in ring    2 113 114 115
+atom 115 is in ring    2 113 114 115
+atom 128 is in ring    6 128 129 130
+atom 129 is in ring    6 128 129 130
+atom 130 is in ring    6 128 129 130
+ computing torsion potentials by TB for rotatable bonds ...
+ warning: open-shell TB model structure. replaced by cation
+pair   10   9  barrier (kcal) :  1.97   %MAD(fit): 16.6 fit pot used? T
+ warning: open-shell TB model structure. replaced by cation
+pair   12  10  barrier (kcal) :  0.71   %MAD(fit): 13.2 fit pot used? T
+ warning: open-shell TB model structure. replaced by cation
+pair   19  18  barrier (kcal) :  0.77   %MAD(fit):  3.3 fit pot used? T
+ warning: open-shell TB model structure. replaced by cation
+pair   21  19  barrier (kcal) :  0.70   %MAD(fit):  1.1 fit pot used? T
+ warning: open-shell TB model structure. replaced by cation
+pair   28  27  barrier (kcal) :  0.80   %MAD(fit):  3.7 fit pot used? T
+ warning: open-shell TB model structure. replaced by cation
+pair   30  28  barrier (kcal) :  0.65   %MAD(fit):  1.3 fit pot used? T
+ warning: open-shell TB model structure. replaced by cation
+pair   34  33  barrier (kcal) :  2.84   %MAD(fit): 34.5 fit pot used? T
+ warning: open-shell TB model structure. replaced by cation
+pair   39  34  barrier (kcal) :  0.76   %MAD(fit): 23.5 fit pot used? T
+ warning: open-shell TB model structure. replaced by cation
+pair   51  50  barrier (kcal) :  2.82   %MAD(fit):  9.6 fit pot used? T
+ warning: open-shell TB model structure. replaced by cation
+pair   53  51  barrier (kcal) :  0.76   %MAD(fit): 11.6 fit pot used? T
+ warning: open-shell TB model structure. replaced by cation
+pair   62  61  barrier (kcal) :  0.83   %MAD(fit): 27.8 fit pot used? T
+ warning: open-shell TB model structure. replaced by cation
+pair   64  62  barrier (kcal) :  0.71   %MAD(fit):  7.3 fit pot used? T
+pair   73  72  barrier (kcal) :  2.82   %MAD(fit):  8.1 fit pot used? T
+ warning: open-shell TB model structure. replaced by cation
+pair   75  73  barrier (kcal) :  0.71   %MAD(fit):  6.0 fit pot used? T
+pair   84  83  barrier (kcal) :  2.99   %MAD(fit): 12.1 fit pot used? T
+ warning: open-shell TB model structure. replaced by cation
+pair   86  84  barrier (kcal) :  0.69   %MAD(fit):  9.2 fit pot used? T
+pair   94  93  barrier (kcal) :  2.97   %MAD(fit):  1.6 fit pot used? T
+ warning: open-shell TB model structure. replaced by cation
+pair   96  94  barrier (kcal) :  0.70   %MAD(fit):  7.4 fit pot used? T
+pair  105 104  barrier (kcal) :  2.72   %MAD(fit):  4.1 fit pot used? T
+ warning: open-shell TB model structure. replaced by cation
+pair  107 105  barrier (kcal) :  0.68   %MAD(fit): 10.2 fit pot used? T
+pair  116 115  barrier (kcal) :  0.00   %MAD(fit): 76.7 fit pot used? F
+ warning: open-shell TB model structure. replaced by cation
+pair  118 116  barrier (kcal) :  0.48   %MAD(fit):  3.7 fit pot used? T
+pair  131 130  barrier (kcal) :  0.00   %MAD(fit): 90.2 fit pot used? F
+ warning: open-shell TB model structure. replaced by cation
+pair  133 131  barrier (kcal) :  0.50   %MAD(fit):  8.7 fit pot used? T
+largest distance considered as covalent stretch :    7.79    4.12
+ local symmetry analysis (rotable bonds) ...
+rotation on atom   9 symmetrizes:   7   8
+rotation on atom  12 symmetrizes:  13  14  15
+rotation on atom  18 symmetrizes:  16  17
+rotation on atom  21 symmetrizes:  22  23  24
+rotation on atom  27 symmetrizes:  25  26
+rotation on atom  30 symmetrizes:  35  36  37
+rotation on atom  33 symmetrizes:  31  32
+rotation on atom  39 symmetrizes: 124 125 126
+rotation on atom  50 symmetrizes:  48  49
+rotation on atom  53 symmetrizes:  54  55  56
+rotation on atom  61 symmetrizes:  59  60
+rotation on atom  64 symmetrizes:  65  66  67
+rotation on atom  72 symmetrizes:  70  71
+rotation on atom  75 symmetrizes:  76  77  78
+rotation on atom  83 symmetrizes:  81  82
+rotation on atom  86 symmetrizes:  87  88 127
+rotation on atom  93 symmetrizes:  91  92
+rotation on atom  96 symmetrizes:  97  98  99
+rotation on atom 104 symmetrizes: 102 103
+rotation on atom 107 symmetrizes: 108 109 110
+rotation on atom 118 symmetrizes: 119 120 121
+rotation on atom 133 symmetrizes: 134 135 136
+ ff_set done.
+ 
+         863  terms. bond, angle, tors:         359         212         292
+        9094  non-covalent terms
+ intramolecular non-bonding energies
+ Enci      (Re)=  0.217307141117534     
+ EHB       (Re)=  0.000000000000000E+000
+ Enci ES   (Re)=  0.227357625114375     
+ Enci DISP (Re)= -0.199387604063290     
+ Enci REP  (Re)=  0.189337120066495     
+ 
+           =======================
+           Levenberg-Marquardt fit
+           =======================
+         751  parameters to determine
+  # OMP threads =           4
+       73555  data points
+ 85.62 % of full Hessian
+ memory requirements (Gb)  0.413669675588608     
+ 
+ computing dH/dFC ...
+iter    1 RMSD =   55.714525 change ************
+iter    2 RMSD =    0.299782 change    -184.8504
+iter    3 RMSD =    0.297812 change      -0.0066
+iter    4 RMSD =    0.297804 change      -0.0000
+iter    5 RMSD =    0.297799 change      -0.0000
+iter    6 RMSD =    0.297795 change      -0.0000
+iter    7 RMSD =    0.297792 change      -0.0000
+ hfit completed.
+ removing small FCs ...
+ discarded bond            2         116 -4.473422839522170E-003
+ discarded bond            6         131 -3.126776907515321E-003
+ bonds  old,new         359         357
+ discarded angle          115           2         116   3.14159265358979     
+ -0.208751405834662     
+ discarded angle          130           6         131   3.14159265358979     
+ -0.210515665403003     
+ angles old,new         212         209
+ tors   old,new         292         263
+ # tors FCs < 0          28
+ # tors FCs > 1           1
+ 
+           =======================
+           Levenberg-Marquardt fit
+           =======================
+         717  parameters to determine
+  # OMP threads =           4
+       73555  data points
+ 85.62 % of full Hessian
+ memory requirements (Gb)  0.394850820302963     
+ 
+ computing dH/dFC ...
+iter    1 RMSD =    0.399077 change ************
+iter    2 RMSD =    0.305723 change      -0.3054
+iter    3 RMSD =    0.305717 change      -0.0000
+iter    4 RMSD =    0.305717 change      -0.0000
+ hfit completed.
+ removing small FCs ...
+ bonds  old,new         357         357
+ angles old,new         209         209
+ tors   old,new         263         257
+ # tors FCs < 0           6
+ # tors FCs > 1           1
+ E(Re,bonded only)=  2.998826647177767E-002
+ G(Re,bonded only)=  0.449053371032284     
+ 
+           =============
+           Hessian check
+           =============
+ 
+ vibrational frequencies from projected FF Hessian
+freq.   1-   6:     -42.24   -40.65   -38.13   -35.89   -14.78   -10.23
+freq.   7-  12:      -6.46    -0.00    -0.00    -0.00     0.00     0.00
+freq.  13-  18:       0.00     5.60    13.26    17.11    19.56    20.97
+freq.  19-  24:      22.02    22.70    24.67    28.28    30.16    31.57
+freq.  25-  30:      33.21    36.86    39.26    43.92    44.43    52.65
+freq.  31-  36:      56.63    58.01    60.22    61.28    62.70    63.51
+freq.  37-  42:      63.88    65.49    68.07    71.71    74.36    76.06
+freq.  43-  48:      79.20    80.27    81.61    83.01    85.76    88.11
+freq.  49-  54:      89.75    93.04    98.93   102.45   103.42   104.13
+freq.  55-  60:     104.28   105.93   106.49   107.03   107.98   110.69
+freq.  61-  66:     111.20   114.57   117.53   118.66   121.10   122.22
+freq.  67-  72:     123.03   124.76   126.28   127.28   128.95   131.17
+freq.  73-  78:     133.61   136.55   137.46   140.45   141.62   142.69
+freq.  79-  84:     144.46   146.27   149.06   150.08   153.40   154.90
+freq.  85-  90:     157.30   160.61   164.56   165.69   168.33   170.36
+freq.  91-  96:     172.51   176.45   181.67   191.56   193.29   195.78
+freq.  97- 102:     199.63   201.08   208.10   214.25   216.21   220.44
+freq. 103- 108:     225.47   230.23   231.09   237.64   242.31   243.88
+freq. 109- 114:     280.43   285.41   286.52   288.97   294.44   298.09
+freq. 115- 120:     299.02   299.52   303.23   304.35   311.09   315.91
+freq. 121- 126:     371.47   378.85   379.66   381.83   383.20   383.78
+freq. 127- 132:     384.94   387.45   388.52   389.54   390.03   391.29
+freq. 133- 138:     392.63   393.60   394.10   396.67   399.49   401.40
+freq. 139- 144:     403.24   406.76   411.76   413.76   419.01   422.35
+freq. 145- 150:     428.05   446.18   448.17   464.43   467.72   467.98
+freq. 151- 156:     540.47   542.73   543.89   544.92   548.00   549.98
+freq. 157- 162:     550.78   551.87   553.56   554.46   572.17   591.89
+freq. 163- 168:     594.51   594.65   629.70   630.83   632.55   632.68
+freq. 169- 174:     634.26   635.26   636.23   636.59   637.10   639.57
+freq. 175- 180:     643.74   683.05   687.76   688.98   695.54   697.28
+freq. 181- 186:     708.15   709.85   710.02   713.02   715.16   718.64
+freq. 187- 192:     736.33   736.90   774.49   788.23   793.67   797.12
+freq. 193- 198:     821.12   826.03   826.86   830.43   831.43   831.61
+freq. 199- 204:     832.84   852.85   855.56   856.85   857.40   857.56
+freq. 205- 210:     858.33   859.37   859.84   860.02   860.30   861.94
+freq. 211- 216:     872.37   902.42   908.97   910.71   916.19   932.74
+freq. 217- 222:     936.44   939.38   942.13   943.11   945.19   946.62
+freq. 223- 228:     947.64   947.86   948.53   948.81   950.37   951.84
+freq. 229- 234:     951.95   952.63   953.69   955.24   962.23   967.83
+freq. 235- 240:     969.84   970.03   970.11   970.98   971.03   972.20
+freq. 241- 246:     973.05   973.47   973.72   973.82   974.67   992.22
+freq. 247- 252:    1010.52  1011.98  1016.41  1017.15  1018.16  1020.39
+freq. 253- 258:    1020.56  1022.39  1022.65  1023.87  1026.47  1031.01
+freq. 259- 264:    1220.05  1220.71  1224.91  1227.02  1227.17  1227.39
+freq. 265- 270:    1228.39  1228.49  1229.30  1230.08  1233.13  1233.57
+freq. 271- 276:    1306.01  1307.25  1307.53  1308.28  1309.21  1309.66
+freq. 277- 282:    1309.85  1310.24  1311.99  1312.71  1313.63  1317.53
+freq. 283- 288:    1344.46  1350.87  1352.02  1353.60  1354.06  1354.62
+freq. 289- 294:    1355.74  1355.84  1357.97  1358.84  1362.29  1364.17
+freq. 295- 300:    1365.16  1370.50  1371.32  1373.31  1373.64  1374.65
+freq. 301- 306:    1374.98  1375.61  1376.38  1376.67  1377.44  1377.55
+freq. 307- 312:    1378.61  1379.20  1379.46  1381.73  1381.80  1383.73
+freq. 313- 318:    1384.35  1384.45  1385.60  1388.73  1388.96  1389.98
+freq. 319- 324:    1415.53  1416.21  1416.89  1417.18  1418.04  1418.30
+freq. 325- 330:    1419.35  1419.49  1421.72  1422.05  1422.23  1422.98
+freq. 331- 336:    1512.67  1513.64  1572.11  1576.15  1577.22  1579.04
+freq. 337- 342:    1579.33  1579.45  1579.93  1582.03  1583.08  1589.31
+freq. 343- 348:    1664.92  1665.53  1665.56  1665.75  1666.14  1667.15
+freq. 349- 354:    1667.41  1668.01  1669.23  1669.67  1670.12  1672.48
+freq. 355- 360:    3035.28  3036.98  3040.08  3040.79  3040.84  3041.06
+freq. 361- 366:    3041.70  3044.30  3044.63  3045.18  3048.75  3049.52
+freq. 367- 372:    3049.68  3056.95  3057.93  3059.61  3059.92  3061.11
+freq. 373- 378:    3061.44  3061.55  3062.53  3063.14  3064.54  3066.42
+freq. 379- 384:    3076.52  3077.81  3077.97  3078.38  3079.45  3079.79
+freq. 385- 390:    3080.41  3082.31  3083.30  3085.37  3086.70  3087.53
+freq. 391- 396:    3117.35  3118.75  3120.18  3121.18  3122.26  3122.67
+freq. 397- 402:    3123.81  3125.06  3126.82  3127.89  3130.43  3131.46
+freq. 403- 408:    3178.78  3178.81  3179.50  3179.78  3180.10  3180.50
+freq. 409- 414:    3180.73  3181.72  3181.89  3182.31  3183.48  3189.15
+writing <g98.out> molden file
+ !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    incorrect curvatures of FF Hessian detected
+  but dont worry because the FF PES is not exactly
+ the same as the input one and re-opt may be ncessary
+ in order to remove the imaginary modes. If they are 
+ < 200-300 cm-1 the FF seems to be ok.
+ !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ 
+ vibrational frequencies from projected QM Hessian
+freq.   1-   6:      -0.00    -0.00     0.00     0.00     0.00     0.00
+freq.   7-  12:      16.04    17.08    19.45    20.78    23.75    24.12
+freq.  13-  18:      25.96    28.75    29.26    32.23    33.12    35.86
+freq.  19-  24:      36.16    37.93    39.42    43.61    45.87    47.57
+freq.  25-  30:      48.67    50.90    51.85    53.42    55.58    56.27
+freq.  31-  36:      57.51    58.25    60.82    64.69    70.83    76.32
+freq.  37-  42:      78.35    79.48    83.94    86.16    88.41    89.81
+freq.  43-  48:      90.51    91.04    93.74    97.24    99.91   104.75
+freq.  49-  54:     106.62   109.26   113.09   113.35   117.50   122.12
+freq.  55-  60:     131.59   135.78   138.96   139.74   146.68   150.06
+freq.  61-  66:     151.24   152.29   155.86   158.11   158.61   160.75
+freq.  67-  72:     161.20   166.61   169.06   171.36   171.98   172.80
+freq.  73-  78:     173.84   174.52   177.01   179.54   180.79   183.03
+freq.  79-  84:     183.40   184.81   187.52   189.32   190.89   192.12
+freq.  85-  90:     194.45   196.48   199.65   201.83   209.00   211.47
+freq.  91-  96:     213.92   216.41   220.65   223.09   225.45   228.72
+freq.  97- 102:     231.16   241.89   243.27   250.40   253.10   258.14
+freq. 103- 108:     262.75   272.29   277.01   280.19   290.96   296.51
+freq. 109- 114:     315.79   321.33   322.04   323.08   324.20   326.88
+freq. 115- 120:     332.84   339.63   341.18   343.55   344.61   346.59
+freq. 121- 126:     352.40   364.12   371.25   371.35   373.25   375.52
+freq. 127- 132:     379.69   383.40   385.15   385.57   394.11   396.38
+freq. 133- 138:     397.40   399.28   401.34   404.75   406.09   410.07
+freq. 139- 144:     410.63   412.94   419.72   423.16   424.04   424.59
+freq. 145- 150:     425.02   430.31   475.00   514.22   536.62   537.42
+freq. 151- 156:     554.80   565.31   567.25   569.31   574.89   576.04
+freq. 157- 162:     579.43   582.26   585.22   588.96   590.00   594.59
+freq. 163- 168:     596.54   599.54   600.68   603.51   605.81   608.60
+freq. 169- 174:     613.14   615.87   630.86   631.49   632.79   633.87
+freq. 175- 180:     635.93   636.72   636.93   637.91   639.50   641.14
+freq. 181- 186:     642.70   644.86   646.31   648.20   651.66   715.38
+freq. 187- 192:     802.02   802.61   805.62   806.15   807.36   807.63
+freq. 193- 198:     809.12   809.85   811.67   811.76   813.43   813.51
+freq. 199- 204:     839.78   840.62   842.14   843.17   844.63   846.31
+freq. 205- 210:     848.18   848.52   851.06   852.45   867.31   867.54
+freq. 211- 216:     917.31   920.28   925.38   925.54   926.22   926.67
+freq. 217- 222:     926.71   927.18   928.15   930.18   930.40   933.94
+freq. 223- 228:     939.02   943.17   943.61   943.84   944.35   945.19
+freq. 229- 234:     945.91   945.99   946.85   947.57   949.73   950.55
+freq. 235- 240:     990.20   990.42   992.83   993.23   993.36   993.72
+freq. 241- 246:     994.06   994.19   994.69   995.04   995.11   995.49
+freq. 247- 252:    1029.20  1030.27  1032.85  1033.18  1033.85  1033.93
+freq. 253- 258:    1034.00  1034.10  1034.48  1035.60  1035.66  1038.31
+freq. 259- 264:    1232.30  1232.64  1233.54  1234.02  1234.52  1235.20
+freq. 265- 270:    1236.51  1237.52  1238.97  1240.01  1240.35  1245.61
+freq. 271- 276:    1361.02  1361.83  1363.05  1363.44  1363.57  1363.79
+freq. 277- 282:    1363.80  1364.30  1364.56  1364.71  1365.65  1366.24
+freq. 283- 288:    1386.28  1386.78  1388.01  1388.26  1389.39  1389.74
+freq. 289- 294:    1390.28  1390.87  1391.04  1391.28  1391.48  1391.60
+freq. 295- 300:    1400.69  1403.14  1410.83  1411.72  1415.16  1418.46
+freq. 301- 306:    1420.91  1421.72  1426.23  1426.82  1427.66  1431.05
+freq. 307- 312:    1431.37  1431.75  1432.02  1432.21  1432.25  1432.71
+freq. 313- 318:    1433.08  1433.15  1433.94  1435.58  1440.36  1441.48
+freq. 319- 324:    1443.19  1445.85  1447.72  1448.71  1449.56  1450.18
+freq. 325- 330:    1450.74  1452.10  1454.04  1458.35  1463.50  1470.22
+freq. 331- 336:    1510.09  1511.78  1522.11  1523.34  1524.20  1530.86
+freq. 337- 342:    1543.79  1551.28  1560.48  1587.30  1619.34  1630.26
+freq. 343- 348:    1661.98  1662.52  1662.72  1663.26  1663.73  1663.81
+freq. 349- 354:    1664.64  1665.77  1668.04  1668.93  1669.66  1672.47
+freq. 355- 360:    2985.90  2987.07  2987.96  2988.68  2989.11  2989.25
+freq. 361- 366:    2989.52  2990.19  2990.42  2990.88  2990.95  2991.17
+freq. 367- 372:    3053.33  3053.56  3053.80  3053.84  3054.38  3055.47
+freq. 373- 378:    3055.50  3055.56  3056.50  3056.65  3057.09  3060.46
+freq. 379- 384:    3082.09  3083.03  3084.45  3084.51  3085.13  3085.22
+freq. 385- 390:    3086.03  3086.08  3086.11  3086.22  3086.62  3087.75
+freq. 391- 396:    3095.55  3095.87  3096.65  3097.90  3098.15  3098.70
+freq. 397- 402:    3099.01  3099.68  3100.20  3100.89  3101.16  3101.55
+freq. 403- 408:    3195.90  3196.72  3196.88  3197.15  3197.87  3197.93
+freq. 409- 414:    3198.51  3198.93  3199.58  3200.09  3200.14  3203.54
+ZPVE comparison (FF/true, kcal) :     624.940     632.037
+MAD of frequencies (cm-1)       :      24.740
+ 
+ total E(Re,input)=  0.247295407589311     
+ total G(Re,input)=  5.799794602754785E-002
+ total E(Re,input) per atom=  1.791995707168924E-003
+ total G(Re,input) per atom=  4.202749712141149E-004
+ (should be < 0.01)
+
+ Fxyz =   -0.323D-16,  -0.301D-16,  -0.102D-16
+ Mxyz =   -0.314D-15,  -0.161D-15,   0.197D-15
+
+total De molecule->atoms (Eh/kcal)=      22.926   14386.419
+                    ==================
+                    thermo calculation
+                    ==================
+ linear ? F
+ Nvib=         401
+ symmetry:c1
+ RotN=   1.00000000000000     
+ZPVE+H0-H298 (kcal) =  684.882
+
+HOF->De (kcal) =   13972.853
+
+HOF@298 (kcal) =    -413.566
+                    ======================
+                    covalent bond energies
+                    ======================
+ sum 12+0.5*13 terms
+  HF  2  O   1=   40.3      HF  3  O   1=   39.2      HF  3  HF  2=   31.2      HF  4  O   1=   44.1
+  HF  4  HF  2=   36.1      HF  4  HF  3=   55.3      O   5  HF  3=   42.1      O   5  HF  4=   37.6
+  HF  6  HF  3=   35.4      HF  6  HF  4=   30.9      HF  6  O   5=   39.7      O   7  HF  6=   21.2
+  O   8  HF  4=   25.5      C   9  O   7=  142.7      C   9  O   8=  143.7      C  10  C   9=  111.8
+  C  11  C  10=  144.0      C  12  C  10=   94.2      H  13  C  12=  105.8      H  14  C  12=  105.6
+  H  15  C  12=  104.0      O  16  HF  6=   19.2      O  17  HF  4=   24.4      C  18  O  16=  139.9
+  C  18  O  17=  147.2      C  19  C  18=  115.1      C  20  C  19=  144.4      C  21  C  19=   94.9
+  H  22  C  21=  106.2      H  23  C  21=  106.1      H  24  C  21=  103.8      O  25  HF  3=   22.9
+  O  26  HF  2=   20.3      C  27  O  25=  142.5      C  27  O  26=  143.0      C  28  C  27=  114.9
+  C  29  C  28=  144.9      C  30  C  28=   95.5      O  31  HF  3=   26.7      O  32  HF  2=   22.2
+  C  33  O  31=  144.4      C  33  O  32=  145.1      C  34  C  33=  110.7      H  35  C  30=  105.7
+  H  36  C  30=  106.3      H  37  C  30=  103.5      C  38  C  34=  144.4      C  39  C  34=   93.6
+  H  40  C  20=  102.8      H  41  C  20=  108.0      H  42  C  11=  102.9      H  43  C  11=  107.8
+  H  44  C  38=  102.7      H  45  C  38=  107.7      H  46  C  29=  108.3      H  47  C  29=  103.3
+  O  48  HF  6=   21.9      O  49  HF  4=   24.6      C  50  O  48=  142.3      C  50  O  49=  145.6
+  C  51  C  50=  111.6      C  52  C  51=  142.4      C  53  C  51=   94.4      H  54  C  53=  106.4
+  H  55  C  53=  106.1      H  56  C  53=  104.0      H  57  C  52=  102.5      H  58  C  52=  108.1
+  O  59  HF  3=   23.5      O  60  HF  2=   20.0      C  61  O  59=  143.3      C  61  O  60=  142.9
+  C  62  C  61=  111.8      C  63  C  62=  143.5      C  64  C  62=   94.4      H  65  C  64=  105.9
+  H  66  C  64=  106.0      H  67  C  64=  103.5      H  68  C  63=  107.8      H  69  C  63=  102.6
+  O  70  HF  4=   22.5      O  71  HF  2=   21.4      C  72  O  70=  141.0      C  72  O  71=  142.3
+  C  73  C  72=  112.7      C  74  C  73=  144.4      C  75  C  73=   95.7      H  76  C  75=  105.6
+  H  77  C  75=  105.4      H  78  C  75=  103.3      H  79  C  74=  103.1      H  80  C  74=  108.1
+  O  81  HF  4=   19.3      O  82  HF  2=   22.5      C  83  O  81=  140.8      C  83  O  82=  144.9
+  C  84  C  83=  114.2      C  85  C  84=  145.0      C  86  C  84=   93.8      H  87  C  86=  106.2
+  H  88  C  86=  103.4      H  89  C  85=  102.9      H  90  C  85=  107.9      O  91  HF  6=   22.5
+  O  92  HF  3=   21.7      C  93  O  91=  140.8      C  93  O  92=  141.6      C  94  C  93=  113.5
+  C  95  C  94=  143.8      C  96  C  94=   95.8      H  97  C  96=  106.2      H  98  C  96=  106.5
+  H  99  C  96=  103.2      H 100  C  95=  108.3      H 101  C  95=  103.1      O 102  HF  6=   20.9
+  O 103  HF  3=   21.9      C 104  O 102=  141.1      C 104  O 103=  143.7      C 105  C 104=  113.0
+  C 106  C 105=  143.8      C 107  C 105=   94.5      H 108  C 107=  106.0      H 109  C 107=  106.3
+  H 110  C 107=  103.9      H 111  C 106=  108.1      H 112  C 106=  102.7      O 113  HF  2=   84.4
+  O 114  HF  2=   84.2      C 115  HF  2=  113.2      C 115  O 113=  138.7      C 115  O 114=  139.9
+  C 116  C 115=  104.3      C 117  C 116=  145.1      C 118  C 116=   95.8      H 119  C 118=  106.1
+  H 120  C 118=  106.0      H 121  C 118=  103.9      H 122  C 117=  108.1      H 123  C 117=  104.2
+  H 124  C  39=  105.9      H 125  C  39=  105.7      H 126  C  39=  104.1      H 127  C  86=  106.2
+  O 128  HF  6=   85.0      O 129  HF  6=   84.8      C 130  HF  6=  113.9      C 130  O 128=  140.7
+  C 130  O 129=  138.4      C 131  C 130=  104.0      C 132  C 131=  145.4      C 133  C 131=   96.1
+  H 134  C 133=  105.9      H 135  C 133=  105.8      H 136  C 133=  103.8      H 137  C 132=  108.0
+  H 138  C 132=  104.4
+ 
+ writing <solvent> file.
+ 
+ all done.

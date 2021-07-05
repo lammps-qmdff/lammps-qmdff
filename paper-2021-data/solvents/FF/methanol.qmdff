@@ -1,0 +1,200 @@
+ 
+        ______________________________________
+       |                                      |
+       |               Q M D F F              |
+       |          ==================          |
+       |              S. Grimme               |
+       |       Universitaet Bonn, MCTC        |
+       |         2013-14, Version 3.2         |
+       |    Wed Apr 15 13:33:05 CEST 2015     |
+       |______________________________________|
+ 
+        cite this work as:
+        S. Grimme, J. Chem. Theor. Comput.
+        10 (2014), 4497-4514 (DOI: 10.1021/ct500573f)
+ 
+ use           :
+ qmdff <coord_file_name or orca_hess_name> [-options]
+ some options  :
+ -echo         : stop after FF setup without fit
+ -hthr <real>  : Hessian neglect threshold
+                 1.e-4 is default, increase to 1.e-3
+                 for very large system to save memory
+                 with very little accuracy loss
+ -athr <real>  : planar/linear cut-off (deg., def: 2)
+ -qscal <real> : CM5 charge scaling factor (def: 1.15)
+ -hscal <real> : scale Hessian elements (e.g.for HF-3c
+                 hscal=0.75)
+ -wbothr <real>: consider a neighboring atom as boned
+                 if WBO > this threshold
+ -md <real>    : do test MD for a time of <real> ps
+ -temp <real>  : use a temperature of <real> in NVT MD
+ -opt          : Cartesian optimization (preliminary)
+ -rd           : read solvent file (for testing)
+ -nohess       : skip Hessian calc (in -rd -md runs)
+ -an           : read coord1 and coord2 and
+                 analyse energy contributions
+                 same ordering required!
+ 
+ Hessian neglect threshold (au) 0.100E-03
+ linear or plane cutoff (deg.)      2.000
+ D3                         0.4500            4.0000            2.7000
+ HB(N,O,F)                  0.8000            0.3000            0.1000
+ HB(P,S,Cl)                 2.0000            2.0000            2.0000
+ HB(As,Se,Br)               0.0000            2.0000            2.0000
+ HX(Cl,Br,I)                0.3000            0.6000            0.8000
+ 
+  NONB ini ...
+
+ Charges (in a.u.) from CM5PAC (June 22, 2013)
+ -----------------------------------------------
+ Center     Atomic      CM5         Hirshfeld
+ Number     Number      Charge      Charge
+ -----------------------------------------------
+    1          8       -0.213843    0.000000
+    2          6       -0.121668    0.000000
+    3          1        0.054943    0.000000
+    4          1        0.054943    0.000000
+    5          1        0.058178    0.000000
+    6          1        0.167448    0.000000
+ -----------------------------------------------
+
+ Dipole moment (in Debye)
+ -----------------------------------------------
+                 X        Y        Z     Total
+ -----------------------------------------------
+ CM5         -0.3955  -0.6808  -0.2305   0.8203
+ Hirshfeld    0.0000   0.0000   0.0000   0.0000
+ -----------------------------------------------
+
+             ==============================
+             scaling CM5 charges by  1.15
+             and as such written to FF file
+             ==============================
+ 
+ sum of read atomic charges: -8.326672684688674E-017
+ normalizing ...
+ sum of used atomic charges:  5.551115123125783E-017
+ 
+ 
+           =================
+           topology analysis
+           =================
+   #   Z           coordinates           CN   q   hyb/lin/metbond   neighbors
+   1   8   1.37502   0.02116   0.00723  1.99 -0.246    3 0 0      6   2
+   2   6  -1.31216  -0.03285  -0.01110  3.98 -0.140    3 0 0      5   3   4   1
+   3   1  -2.11951  -1.45892   1.29761  0.99  0.063    0 0 0      2
+   4   1  -2.11946  -0.37089  -1.91693  0.99  0.063    0 0 0      2
+   5   1  -1.95485   1.84188   0.62343  0.99  0.067    0 0 0      2
+   6   1   1.94353  -1.63593  -0.55374  1.01  0.193    0 0 0      1
+ 
+ monopole moment for charges used (au/Debye):    0.37116   0.94341
+ reading from ... methanol_nm.out
+           1  molecular fragments found
+111111
+     directly bonded atoms
+  pair distance (Ang.) Rcov  WBO
+   2   1      1.422   1.39   0.98
+   3   2      1.110   1.07   0.94
+   4   2      1.110   1.07   0.94
+   5   2      1.101   1.07   0.96
+   6   1      0.973   0.96   0.88
+smallest distance considered as NCI for :   6   4    4.47    2.36
+ 
+ 
+           ========
+           FF setup
+           ========
+ 
+  bthr, skiplin13    5.00000000000000      F
+           0  HB terms
+           0  XB terms
+ computing torsion potentials by TB for rotatable bonds ...
+pair    2   1  barrier (kcal) :  1.45   %MAD(fit):  0.3 fit pot used? T
+largest distance considered as covalent stretch :    4.01    2.12
+ local symmetry analysis (rotable bonds) ...
+rotation on atom   2 symmetrizes:   3   4   5
+ ff_set done.
+ 
+          22  terms. bond, angle, tors:          12           7           3
+           3  non-covalent terms
+ intramolecular non-bonding energies
+ Enci      (Re)=  6.636638724893233E-003
+ EHB       (Re)=  0.000000000000000E+000
+ Enci ES   (Re)=  6.673839179940166E-003
+ Enci DISP (Re)= -2.362838664948224E-004
+ Enci REP  (Re)=  1.990834114478870E-004
+ 
+           =======================
+           Levenberg-Marquardt fit
+           =======================
+          19  parameters to determine
+  # OMP threads =           4
+         167  data points
+ 97.66 % of full Hessian
+ memory requirements (Gb)  2.498552203178406E-005
+ 
+ computing dH/dFC ...
+iter    1 RMSD =    1.528524 change ************
+iter    2 RMSD =    0.010691 change    -141.9683
+iter    3 RMSD =    0.010638 change      -0.0050
+iter    4 RMSD =    0.010638 change       0.0000
+ hfit completed.
+ removing small FCs ...
+ bonds  old,new          12          12
+ angles old,new           7           7
+ tors   old,new           3           3
+ # tors FCs < 0           0
+ # tors FCs > 1           0
+ E(Re,bonded only)=  8.532398548539079E-004
+ G(Re,bonded only)=  3.971587282225585E-002
+ 
+           =============
+           Hessian check
+           =============
+ 
+ vibrational frequencies from projected FF Hessian
+freq.   1-   6:      -0.00    -0.00    -0.00     0.00     0.00     0.00
+freq.   7-  12:     269.95   964.74  1056.26  1153.81  1294.02  1400.59
+freq.  13-  18:    1431.99  1521.66  2976.64  2989.27  3147.18  3716.23
+writing <g98.out> molden file
+ 
+ vibrational frequencies from projected QM Hessian
+freq.   1-   6:      -0.00    -0.00    -0.00    -0.00     0.00     0.00
+freq.   7-  12:     341.42  1031.82  1073.38  1141.04  1351.37  1449.09
+freq.  13-  18:    1456.77  1479.09  2911.74  2957.43  3058.18  3718.64
+ZPVE comparison (FF/true, kcal) :      31.340      31.408
+MAD of frequencies (cm-1)       :      44.150
+ 
+ total E(Re,input)=  7.489878579747140E-003
+ total G(Re,input)=  1.394508922867624E-002
+ total E(Re,input) per atom=  1.248313096624523E-003
+ total G(Re,input) per atom=  2.324181538112707E-003
+ (should be < 0.01)
+
+ Fxyz =   -0.130D-17,   0.119D-17,   0.542D-19
+ Mxyz =   -0.488D-18,   0.314D-17,  -0.737D-17
+
+total De molecule->atoms (Eh/kcal)=       0.823     516.146
+                    ==================
+                    thermo calculation
+                    ==================
+ linear ? F
+ Nvib=          12
+ symmetry:c1
+ RotN=   1.00000000000000     
+ZPVE+H0-H298 (kcal) =   34.074
+
+HOF->De (kcal) =     464.046
+
+HOF@298 (kcal) =     -52.100
+                    ======================
+                    covalent bond energies
+                    ======================
+ sum 12+0.5*13 terms
+  C   2  O   1=   85.5      H   3  C   2=  105.6      H   4  C   2=  105.8      H   5  C   2=  105.7
+  H   6  O   1=  118.3
+ 
+ writing <solvent> file.
+ 
+ all done.

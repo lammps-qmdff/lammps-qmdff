@@ -1,0 +1,38 @@
+Created by: multicomponent LAMMPS, Feb 2019
+
+       3  atom types
+       2  bond types
+       1  angle types
+       0  dihedral types
+       0  improper types
+
+
+ Masses
+
+       1     15.999
+       2      1.008
+       3      1.008
+
+ Bond Coeffs
+
+     1   water_excl.tbl exc_1_2 exc_1_2 
+     2   water_excl.tbl exc_1_3 exc_1_3 
+
+ Angle Coeffs
+
+     1   water_excl.tbl ang_1_3_2 ang_1_3_2
+
+ Dihedral Coeffs
+
+
+ Improper Coeffs
+
+
+ PairIJ Coeffs
+
+     1 1 tableE water_c6.tbl    int_1_1         int_1_1         10.50 1.0
+     1 2 tableE water_c6.tbl    int_1_2         int_1_2         10.50 1.0
+     1 3 tableE water_c6.tbl    int_1_3         int_1_3         10.50 1.0
+     2 2 tableE water_c6.tbl    int_2_2         int_2_2         10.50 1.0
+     2 3 tableE water_c6.tbl    int_2_3         int_2_3         10.50 1.0
+     3 3 tableE water_c6.tbl    int_3_3         int_3_3         10.50 1.0

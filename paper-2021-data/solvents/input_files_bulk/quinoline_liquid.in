@@ -1,0 +1,49 @@
+units           real
+
+special_bonds   lj 0.0 0.0 0.5 0.5 coul 0.0 0.0 0.85 1.0
+neigh_modify    delay 1 every 1 check yes
+neighbor	2.5 bin
+
+atom_style      fullExc
+boundary        p p p
+read_data       quinoline_entry.data nocoeff
+
+bond_style      tableE spline 500
+angle_style     tableE2 spline 501
+dihedral_style  tableE spline 500
+improper_style fourierE
+pair_style      hybrid/overlay coul/long 10.50 tableE linear 500
+kspace_style    ewald 1.0e-5
+
+read_data       quinoline_coeffs.data add append
+
+pair_coeff	* * coul/long
+velocity        all create    298.15 3 dist gaussian
+fix             1 all shake 0.0001 20 0 b 8 10 12 14 15 17 18
+
+dump            1 all dcd 2000 quinoline.dcd
+dump_modify     1 unwrap yes flush yes
+log             quinoline.log
+
+thermo          2000
+thermo_style    custom time etotal pe ke temp emol epair ebond eangle edihed eimp  evdwl ecoul press vol density
+
+timestep        0.5
+
+fix             2 all nvt temp 298.15 298.15 100.0 tchain 1
+run             50000
+
+fix             3   all deform 1 x scale 0.4 y scale 0.4 z scale 0.4
+run            50000
+
+unfix           3
+
+run             50000
+
+unfix           2
+
+timestep        1.0
+fix             2 all npt temp 298.15 298.15 100.0 iso 1.0 1.0 1000.0
+run             500000
+
+write_data     npt_final.data

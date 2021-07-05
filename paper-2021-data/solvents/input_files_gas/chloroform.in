@@ -1,0 +1,44 @@
+units           real
+
+special_bonds   lj 0.0 0.0 0.5 0.5 coul 0.0 0.0 0.85 1.0
+neigh_modify    delay 1 every 1 check yes
+neighbor	2.5 bin
+
+atom_style      fullExc
+boundary        p p p
+read_data       chloroform_entry.data nocoeff
+
+bond_style      tableE spline 500
+angle_style     tableE2 spline 501
+dihedral_style  tableE spline 500
+improper_style fourierE
+pair_style      hybrid/overlay coul/long 10.50 tableE linear 500
+kspace_style    ewald 1.0e-4
+
+read_data       chloroform_coeffs.data add append
+
+pair_coeff	* * coul/long
+velocity        all create    298.15 3 dist gaussian
+fix             1 all shake 0.0001 20 0 b 4
+
+dump            1 all dcd 2000 chloroform.dcd
+dump_modify     1 unwrap yes flush yes
+log             chloroform.log
+
+thermo          2000
+thermo_style    custom time etotal pe ke temp emol epair ebond eangle edihed eimp  evdwl ecoul press vol density
+
+timestep        0.5
+
+fix             2 all nve
+fix             3 all langevin 298.15 298.15 200.0 5645746
+run             50000
+
+run            50000
+
+run             50000
+
+timestep        1.0
+run             500000
+
+write_data     nvt_final.data

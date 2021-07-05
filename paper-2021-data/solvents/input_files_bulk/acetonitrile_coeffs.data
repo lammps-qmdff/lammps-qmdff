@@ -1,0 +1,59 @@
+Created by: multicomponent LAMMPS, Feb 2019
+
+       6  atom types
+       5  bond types
+       7  angle types
+       0  dihedral types
+       0  improper types
+
+
+ Masses
+
+       1     14.007
+       2     12.011
+       3     12.011
+       4      1.008
+       5      1.008
+       6      1.008
+
+ Bond Coeffs
+
+     1   acetonitrile_excl.tbl exc_1_3 exc_1_3 
+     2   acetonitrile_excl.tbl exc_2_3 exc_2_3 
+     3   acetonitrile_excl.tbl exc_2_4 exc_2_4 
+     4   acetonitrile_excl.tbl exc_2_5 exc_2_5 
+     5   acetonitrile_excl.tbl exc_2_6 exc_2_6 
+
+ Angle Coeffs
+
+     1   acetonitrile_excl.tbl ang_2_5_6 ang_2_5_6
+     2   acetonitrile_excl.tbl ang_2_4_6 ang_2_4_6
+     3   acetonitrile_excl.tbl ang_2_4_5 ang_2_4_5
+     4   acetonitrile_excl.tbl ang_2_3_6 ang_2_3_6
+     5   acetonitrile_excl.tbl ang_2_3_5 ang_2_3_5
+     6   acetonitrile_excl.tbl ang_2_3_4 ang_2_3_4
+     7   acetonitrile_excl.tbl ang_3_2_1 ang_3_2_1
+
+ PairIJ Coeffs
+
+     1 1 tableE acetonitrile_c6.tbl int_1_1         int_1_1         10.50 1.0
+     1 2 tableE acetonitrile_c6.tbl int_1_2         int_1_2         10.50 1.0
+     1 3 tableE acetonitrile_c6.tbl int_1_3         int_1_3         10.50 1.0
+     1 4 tableE acetonitrile_c6.tbl int_1_4         int_1_4         10.50 1.0
+     1 5 tableE acetonitrile_c6.tbl int_1_5         int_1_5         10.50 1.0
+     1 6 tableE acetonitrile_c6.tbl int_1_6         int_1_6         10.50 1.0
+     2 2 tableE acetonitrile_c6.tbl int_2_2         int_2_2         10.50 1.0
+     2 3 tableE acetonitrile_c6.tbl int_2_3         int_2_3         10.50 1.0
+     2 4 tableE acetonitrile_c6.tbl int_2_4         int_2_4         10.50 1.0
+     2 5 tableE acetonitrile_c6.tbl int_2_5         int_2_5         10.50 1.0
+     2 6 tableE acetonitrile_c6.tbl int_2_6         int_2_6         10.50 1.0
+     3 3 tableE acetonitrile_c6.tbl int_3_3         int_3_3         10.50 1.0
+     3 4 tableE acetonitrile_c6.tbl int_3_4         int_3_4         10.50 1.0
+     3 5 tableE acetonitrile_c6.tbl int_3_5         int_3_5         10.50 1.0
+     3 6 tableE acetonitrile_c6.tbl int_3_6         int_3_6         10.50 1.0
+     4 4 tableE acetonitrile_c6.tbl int_4_4         int_4_4         10.50 1.0
+     4 5 tableE acetonitrile_c6.tbl int_4_5         int_4_5         10.50 1.0
+     4 6 tableE acetonitrile_c6.tbl int_4_6         int_4_6         10.50 1.0
+     5 5 tableE acetonitrile_c6.tbl int_5_5         int_5_5         10.50 1.0
+     5 6 tableE acetonitrile_c6.tbl int_5_6         int_5_6         10.50 1.0
+     6 6 tableE acetonitrile_c6.tbl int_6_6         int_6_6         10.50 1.0
